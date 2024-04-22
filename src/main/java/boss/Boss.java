@@ -409,6 +409,7 @@ public class Boss {
     private static void scanLogin() {
         CHROME_DRIVER.get(homeUrl + "/web/user/?ka=header-login");
         log.info("等待登陆..");
+		// Thread.sleep(20000);
         WAIT.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@ka='header-home-logo']")));
         boolean login = false;
         while (!login) {

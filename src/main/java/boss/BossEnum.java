@@ -49,6 +49,7 @@ public class BossEnum {
         BEIJING("北京", "101010100"),
         SHANGHAI("上海", "101020100"),
         GUANGZHOU("广州", "101280100"),
+        HANGZHOU("杭州", "101210100"),
         SHENZHEN("深圳", "101280600"),
         CHENGDU("成都", "101270100");
 
