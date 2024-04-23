@@ -243,96 +243,167 @@ public class Boss {
                 tag.append(tagElement.getText()).append("·");
             }
             job.setCompanyTag(tag.substring(0, tag.length() - 1)); // 删除最后一个 "·"
-            jobs.add(job);
+			if (checkJob(job)) {
+				jobs.add(job);
+			}
         }
-        for (Job job : jobs) {
-            // 打开新的标签页并打开链接
-            JavascriptExecutor jse = CHROME_DRIVER;
-            jse.executeScript("window.open(arguments[0], '_blank')", job.getHref());
-
-            // 切换到新的标签页
-            ArrayList<String> tabs = new ArrayList<>(CHROME_DRIVER.getWindowHandles());
-            CHROME_DRIVER.switchTo().window(tabs.get(tabs.size() - 1));
-            try {
-                WAIT.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[class*='btn btn-startchat']")));
-            } catch (Exception e) {
-                WebElement element = SeleniumUtil.findElement(By.xpath("//div[@class='error-content']"));
-                if (element != null && element.getText().contains("异常访问")) {
-                    return -2;
-                }
-            }
-            SeleniumUtil.sleep(1);
-            WebElement btn = CHROME_DRIVER.findElement(By.cssSelector("[class*='btn btn-startchat']"));
-            if ("立即沟通".equals(btn.getText())) {
-                btn.click();
-                if (isLimit()) {
-                    SeleniumUtil.sleep(1);
-                    return -1;
-                }
-                try {
-                    SeleniumUtil.sleep(1);
-                    try {
-                        CHROME_DRIVER.findElement(By.xpath("//textarea[@class='input-area']"));
-                        WebElement close = CHROME_DRIVER.findElement(By.xpath("//i[@class='icon-close']"));
-                        close.click();
-                        btn.click();
-                    } catch (Exception ignore) {
-                    }
-                    WebElement input = WAIT.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='chat-input']")));
-                    input.click();
-                    SeleniumUtil.sleepByMilliSeconds(500);
-                    try {
-                        // 是否出现不匹配的对话框
-                        WebElement element = CHROME_DRIVER.findElement(By.xpath("//div[@class='dialog-container']"));
-                        if ("不匹配".equals(element.getText())) {
-                            CHROME_DRIVER.close();
-                            CHROME_DRIVER.switchTo().window(tabs.get(0));
-                            continue;
-                        }
-                    } catch (Exception e) {
-                        log.debug("岗位匹配，下一步发送消息...");
-                    }
-                    input.sendKeys(config.getSayHi());
-                    WebElement send = WAIT.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@type='send']")));
-                    send.click();
-
-                    WebElement recruiterNameElement = CHROME_DRIVER.findElement(By.xpath("//p[@class='base-info fl']/span[@class='name']"));
-                    WebElement recruiterTitleElement = CHROME_DRIVER.findElement(By.xpath("//p[@class='base-info fl']/span[@class='base-title']"));
-                    String recruiter = recruiterNameElement.getText() + " " + recruiterTitleElement.getText();
-
-                    WebElement companyElement;
-                    try {
-                        companyElement = CHROME_DRIVER.findElement(By.xpath("//p[@class='base-info fl']/span[not(@class)]"));
-                    } catch (Exception e) {
-                        WAIT.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p[@class='base-info fl']/span[not(@class)]")));
-                        companyElement = CHROME_DRIVER.findElement(By.xpath("//p[@class='base-info fl']/span[not(@class)]"));
-
-                    }
-                    String company = null;
-                    if (companyElement != null) {
-                        company = companyElement.getText();
-                        job.setCompanyName(company);
-                    }
-
-                    WebElement positionNameElement = CHROME_DRIVER.findElement(By.xpath("//a[@class='position-content']/span[@class='position-name']"));
-                    WebElement salaryElement = CHROME_DRIVER.findElement(By.xpath("//a[@class='position-content']/span[@class='salary']"));
-                    WebElement cityElement = CHROME_DRIVER.findElement(By.xpath("//a[@class='position-content']/span[@class='city']"));
-                    String position = positionNameElement.getText() + " " + salaryElement.getText() + " " + cityElement.getText();
-                    log.info("投递【{}】公司，【{}】职位，招聘官:【{}】", company == null ? "未知公司: " + job.getHref() : company, position, recruiter);
-                    returnList.add(job);
-                    noJobPages = 0;
-                } catch (Exception e) {
-                    log.error("发送消息失败:{}", e.getMessage(), e);
-                }
-            }
-            SeleniumUtil.sleep(1);
-            CHROME_DRIVER.close();
-            CHROME_DRIVER.switchTo().window(tabs.get(0));
-        }
-        return returnList.size();
+		Integer x = getJobs(jobs);
+		if (x != null) return x;
+		return returnList.size();
     }
 
-    private static boolean isTargetJob(String keyword, String jobName) {
+	private static Integer getJobs(List<Job> jobs) {
+
+		for (Job job : jobs) {
+			// 打开新的标签页并打开链接
+			JavascriptExecutor jse = CHROME_DRIVER;
+			jse.executeScript("window.open(arguments[0], '_blank')", job.getHref());
+
+			// 切换到新的标签页
+			ArrayList<String> tabs = new ArrayList<>(CHROME_DRIVER.getWindowHandles());
+			CHROME_DRIVER.switchTo().window(tabs.get(tabs.size() - 1));
+			try {
+				WAIT.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[class*='btn btn-startchat']")));
+			} catch (Exception e) {
+				WebElement element = SeleniumUtil.findElement(By.xpath("//div[@class='error-content']"));
+				if (element != null && element.getText().contains("异常访问")) {
+					return -2;
+				}
+			}
+			SeleniumUtil.sleep(1);
+			WebElement btn = CHROME_DRIVER.findElement(By.cssSelector("[class*='btn btn-startchat']"));
+
+			boolean isMsgTo = checkJob(job);
+
+			if (isMsgTo && "立即沟通".equals(btn.getText())) {
+				// 是否要沟通
+
+				if (isMsgTo) {
+					btn.click();
+				}
+
+				if (isLimit()) {
+					SeleniumUtil.sleep(1);
+					return -1;
+				}
+				if (isMsgTo) {
+
+					// 开始沟通
+					try {
+
+						SeleniumUtil.sleep(1);
+						// try {
+						// 	CHROME_DRIVER.findElement(By.xpath("//textarea[@class='input-area']"));
+						// 	WebElement close = CHROME_DRIVER.findElement(By.xpath("//i[@class='icon-close']"));
+						// 	close.click();
+						// 	btn.click();
+						// } catch (Exception ignore) {
+						// 	log.error("error ignore:", ignore);
+						// }
+						try {
+							// 是否有继续沟通
+							WebElement btnMsgContinue =CHROME_DRIVER.findElement(
+									By.cssSelector("[class*='btn-sure']"));
+							btnMsgContinue.click();
+						} catch (Exception ignore) {
+							log.debug("没有继续沟通按钮");
+						}
+
+						// 输入沟通内容
+						WebElement input = WAIT.until(
+								ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='chat-input']")));
+						input.click();
+						SeleniumUtil.sleepByMilliSeconds(500);
+						try {
+							// 是否出现不匹配的对话框
+							WebElement element = CHROME_DRIVER.findElement(
+									By.xpath("//div[@class='dialog-container']"));
+							if ("不匹配".equals(element.getText())) {
+								CHROME_DRIVER.close();
+								CHROME_DRIVER.switchTo().window(tabs.get(0));
+								continue;
+							}
+						} catch (Exception e) {
+							log.debug("岗位匹配，下一步发送消息...");
+						}
+						input.sendKeys(config.getSayHi());
+						WebElement send = WAIT.until(
+								ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@type='send']")));
+						send.click();
+
+						WebElement recruiterNameElement = CHROME_DRIVER.findElement(
+								By.xpath("//p[@class='base-info fl']/span[@class='name']"));
+						WebElement recruiterTitleElement = CHROME_DRIVER.findElement(
+								By.xpath("//p[@class='base-info fl']/span[@class='base-title']"));
+						String recruiter = recruiterNameElement.getText() + " " + recruiterTitleElement.getText();
+
+						WebElement companyElement;
+						try {
+							companyElement = CHROME_DRIVER.findElement(
+									By.xpath("//p[@class='base-info fl']/span[not(@class)]"));
+						} catch (Exception e) {
+							WAIT.until(ExpectedConditions.presenceOfElementLocated(
+									By.xpath("//p[@class='base-info fl']/span[not(@class)]")));
+							companyElement = CHROME_DRIVER.findElement(
+									By.xpath("//p[@class='base-info fl']/span[not(@class)]"));
+						}
+						String company = null;
+						if (companyElement != null) {
+							company = companyElement.getText();
+							job.setCompanyName(company);
+						}
+
+						WebElement positionNameElement = CHROME_DRIVER.findElement(
+								By.xpath("//a[@class='position-content']/span[@class='position-name']"));
+						WebElement salaryElement = CHROME_DRIVER.findElement(
+								By.xpath("//a[@class='position-content']/span[@class='salary']"));
+						WebElement cityElement = CHROME_DRIVER.findElement(
+								By.xpath("//a[@class='position-content']/span[@class='city']"));
+						String position =
+								positionNameElement.getText() + " " + salaryElement.getText() + " " + cityElement.getText();
+						log.info("投递【{}】公司，【{}】职位，招聘官:【{}】",
+								company == null ? "未知公司: " + job.getHref() : company, position, recruiter);
+						returnList.add(job);
+						noJobPages = 0;
+					} catch (Exception e) {
+						log.error("发送消息失败:{}", e.getMessage(), e);
+					}
+				}
+				SeleniumUtil.sleep(10);
+
+			}
+			CHROME_DRIVER.close();
+			CHROME_DRIVER.switchTo().window(tabs.get(0));
+
+			SeleniumUtil.sleep(1);
+		}
+		return null;
+	}
+
+	private static boolean checkJob(Job job) {
+
+		try {
+			String aa = job.getSalary();
+			String substring = aa.substring(0, aa.indexOf("K"));
+			String[] split = substring.split("-");
+			Integer minSalary = Integer.valueOf(split[0]);
+			Integer maxSalary = Integer.valueOf(split[1]);
+			if (minSalary < config.getMinSalary()) {
+				return false;
+			}
+			if (maxSalary > config.getMaxSalary()) {
+				return true;
+			}
+		} catch (Exception e) {
+			log.error("e", e);
+			log.error("error getSalary", job.getSalary());
+
+		}
+		log.info("忽略{}, {}", job.getJobName(), job.getSalary());
+		return false;
+	}
+
+	private static boolean isTargetJob(String keyword, String jobName) {
         boolean keywordIsAI = false;
         for (String target : new String[]{"大模型", "AI"}) {
             if (keyword.contains(target)) {

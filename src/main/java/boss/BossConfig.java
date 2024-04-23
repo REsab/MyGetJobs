@@ -43,6 +43,9 @@ public class BossConfig {
      * 薪资范围
      */
     private String salary;
+	private Integer minSalary;
+	private Integer maxSalary;
+
 
     /**
      * 学历要求列表
