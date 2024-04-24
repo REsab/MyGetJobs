@@ -33,6 +33,9 @@ public class Boss {
     static List<String> blackCompanies;
     static List<String> blackRecruiters;
     static List<String> blackJobs;
+
+	static List<String> bossStatusBlackList;
+	static List<String> bossStatusWhiteList;
     static List<Job> returnList = new ArrayList<>();
     static String dataPath = "./src/main/java/boss/data.json";
     static String cookiePath = "./src/main/java/boss/cookie.json";
@@ -205,6 +208,9 @@ public class Boss {
         blackCompanies = jsonObject.getJSONArray("blackCompanies").toList().stream().map(Object::toString).collect(Collectors.toList());
         blackRecruiters = jsonObject.getJSONArray("blackRecruiters").toList().stream().map(Object::toString).collect(Collectors.toList());
         blackJobs = jsonObject.getJSONArray("blackJobs").toList().stream().map(Object::toString).collect(Collectors.toList());
+		// bossStatus = jsonObject.getJSONArray("bossStatus").toList().stream().map(Object::toString).collect(Collectors.toList());
+		bossStatusBlackList = jsonObject.getJSONArray("bossStatusBlackList").toList().stream().map(Object::toString).collect(Collectors.toList());
+		bossStatusWhiteList = jsonObject.getJSONArray("bossStatusWhiteList").toList().stream().map(Object::toString).collect(Collectors.toList());
     }
 
     @SneakyThrows
@@ -237,7 +243,7 @@ public class Boss {
             job.setJobName(jobName);
             job.setJobArea(jobCard.findElement(By.cssSelector("div.job-title span.job-area")).getText());
             job.setSalary(jobCard.findElement(By.cssSelector("div.job-info span.salary")).getText());
-            List<WebElement> tagElements = jobCard.findElements(By.cssSelector("div.job-info ul.tag-list li"));
+			List<WebElement> tagElements = jobCard.findElements(By.cssSelector("div.job-info ul.tag-list li"));
             StringBuilder tag = new StringBuilder();
             for (WebElement tagElement : tagElements) {
                 tag.append(tagElement.getText()).append("·");
@@ -271,10 +277,11 @@ public class Boss {
 				}
 			}
 			SeleniumUtil.sleep(1);
+
+			// 检查活跃度
+			boolean isMsgTo = checkOnLine();
+
 			WebElement btn = CHROME_DRIVER.findElement(By.cssSelector("[class*='btn btn-startchat']"));
-
-			boolean isMsgTo = checkJob(job);
-
 			if (isMsgTo && "立即沟通".equals(btn.getText())) {
 				// 是否要沟通
 
@@ -378,6 +385,37 @@ public class Boss {
 			SeleniumUtil.sleep(1);
 		}
 		return null;
+	}
+
+	private static boolean checkOnLine() {
+		// boss-online-tag
+		try {
+			//在线
+			WebElement infoPublic = CHROME_DRIVER.findElement(By.className("boss-online-tag"));
+			String text = infoPublic.getText();
+			return true;
+		}catch (Exception e){
+		}
+
+		try {
+			//近期活跃
+			WebElement infoPublic2 = CHROME_DRIVER.findElement(By.className("boss-active-time"));
+			String text = infoPublic2.getText();
+			boolean contains = bossStatusWhiteList.contains(text);
+			boolean contains1 = bossStatusBlackList.contains(text);
+
+			if (contains )
+				return true;
+
+			if (contains1)
+				return false;
+
+			log.info("忽略bossStatus: {}", text);
+
+		}catch (Exception e){
+
+		}
+		return false;
 	}
 
 	private static boolean checkJob(Job job) {
