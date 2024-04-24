@@ -30,6 +30,7 @@ public class Job implements Serializable {
      * 岗位薪水
      */
     private String salary;
+    private String bossActiveTime;
 
     /**
      * 公司标签

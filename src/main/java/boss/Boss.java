@@ -39,7 +39,7 @@ public class Boss {
     static List<Job> returnList = new ArrayList<>();
     static String dataPath = "./src/main/java/boss/data.json";
     static String cookiePath = "./src/main/java/boss/cookie.json";
-    static final int noJobMaxPages = 5; // 无岗位最大页数
+    static final int noJobMaxPages = 13; // 无岗位最大页数
     static int noJobPages;
     static int lastSize;
     static BossConfig config = BossConfig.init();
@@ -279,7 +279,7 @@ public class Boss {
 			SeleniumUtil.sleep(1);
 
 			// 检查活跃度
-			boolean isMsgTo = checkOnLine();
+			boolean isMsgTo = checkOnLine(job);
 
 			WebElement btn = CHROME_DRIVER.findElement(By.cssSelector("[class*='btn btn-startchat']"));
 			if (isMsgTo && "立即沟通".equals(btn.getText())) {
@@ -368,8 +368,8 @@ public class Boss {
 								By.xpath("//a[@class='position-content']/span[@class='city']"));
 						String position =
 								positionNameElement.getText() + " " + salaryElement.getText() + " " + cityElement.getText();
-						log.info("投递【{}】公司，【{}】职位，招聘官:【{}】",
-								company == null ? "未知公司: " + job.getHref() : company, position, recruiter);
+						log.info("投递【{}】公司，【{}】职位，招聘官:【{}】,在线：【{}】",
+								company == null ? "未知公司: " + job.getHref() : company, position, recruiter,job.getBossActiveTime());
 						returnList.add(job);
 						noJobPages = 0;
 					} catch (Exception e) {
@@ -387,12 +387,13 @@ public class Boss {
 		return null;
 	}
 
-	private static boolean checkOnLine() {
+	private static boolean checkOnLine(Job job) {
 		// boss-online-tag
 		try {
 			//在线
 			WebElement infoPublic = CHROME_DRIVER.findElement(By.className("boss-online-tag"));
 			String text = infoPublic.getText();
+			job.setBossActiveTime(text);
 			return true;
 		}catch (Exception e){
 		}
@@ -404,17 +405,19 @@ public class Boss {
 			boolean contains = bossStatusWhiteList.contains(text);
 			boolean contains1 = bossStatusBlackList.contains(text);
 
-			if (contains )
+			if (contains) {
+
+				job.setBossActiveTime(text);
 				return true;
+			}
 
-			if (contains1)
-				return false;
-
-			log.info("忽略bossStatus: {}", text);
-
-		}catch (Exception e){
+			if (contains1) return false;
+			log.debug("忽略bossStatus: {}", text);
+		} catch (Exception e) {
 
 		}
+
+		log.error("找不到boss状态");
 		return false;
 	}
 
