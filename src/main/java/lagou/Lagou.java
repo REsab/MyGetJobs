@@ -24,6 +24,8 @@ public class Lagou {
 
     static Integer page = 1;
     static Integer maxPage = 500;
+    static Integer minSalaryBoss = 15;
+    static Integer maxSalaryBoss = 20;
     static String homeUrl = "https://www.lagou.com?";
     static String wechatUrl = "https://open.weixin.qq.com/connect/qrconnect?appid=wx9d8d3686b76baff8&redirect_uri=https%3A%2F%2Fpassport.lagou.com%2Foauth20%2Fcallback_weixinProvider.html&response_type=code&scope=snsapi_login#wechat_redirect";
     static int jobCount = 0;
@@ -80,7 +82,7 @@ public class Lagou {
             WebElement element = null;
             try {
                 element = elements.get(i);
-            } catch (Exception e) {
+			} catch (Exception e) {
                 log.error("获取岗位列表中某个岗位失败，岗位列表数量：{},获取第【{}】个元素失败", i + 1, elements.size());
             }
             try {
@@ -100,7 +102,10 @@ public class Lagou {
                 SeleniumUtil.sleep(10);
                 continue;
             }
-            if ("投简历".equals(submit.getText())) {
+boolean isJob=	checkJob();
+			if (isJob) {
+
+			if ("投简历".equals(submit.getText())) {
                 String jobTitle = null;
                 String companyName = null;
                 String jobInfo = null;
@@ -178,13 +183,43 @@ public class Lagou {
             } else {
                 log.info("这个岗位没有投简历按钮...一秒后关闭标签页面！");
                 TimeUnit.SECONDS.sleep(1);
-            }
+			}
+			}
             CHROME_DRIVER.close();
             getWindow();
         }
     }
 
-    private static void getWindow() {
+	private static boolean checkJob() 	{
+		try {
+
+			WebElement salary = CHROME_DRIVER.findElement(By.className("salary__22Kt_"));
+			String text = salary.getText();
+			log.info("薪资：{}", text);
+			if (text.contains("面议")) {
+				log.info("薪资面议，跳过");
+				return false;
+			}
+			String[] split = text.split("-");
+			String min = split[0].replace("k", "");
+			String max = split[1].replace("k", "");
+			int minSalary = Integer.parseInt(min);
+			int maxSalary = Integer.parseInt(max);
+			if (minSalary < minSalaryBoss || maxSalary > maxSalaryBoss) {
+				log.info("薪资不符合要求，跳过");
+				return false;
+			}
+			log.info("薪资符合要求");
+			return true;
+
+		} catch (Exception e) {
+			log.error("没有找到页面内容：salary__22Kt_");
+			return false;
+		}
+
+	}
+
+	private static void getWindow() {
         try {
             ArrayList<String> tabs = new ArrayList<>(CHROME_DRIVER.getWindowHandles());
             if (tabs.size() > 1) {
