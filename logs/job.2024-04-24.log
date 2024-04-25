@@ -1,0 +1,1245 @@
+2024-04-24 10:53:08.795 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 10:53:10.699 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 10:53:12.114 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 10:53:14.865 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 10:53:14.869 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 10:53:18.846 [main] INFO  boss.Boss - 忽略高级java开发, 15-17K
+2024-04-24 10:53:19.272 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 10:53:19.403 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 10:53:25.343 [main] INFO  boss.Boss - 投递【杭州酒工哥】公司，【Java 15-25K 杭州】职位，招聘官:【李女士 人事】
+2024-04-24 10:53:41.440 [main] INFO  boss.Boss - 投递【橙子科技】公司，【高级Java开发工程师 15-26K·13薪 杭州】职位，招聘官:【王少川 CEO】
+2024-04-24 10:53:57.486 [main] INFO  boss.Boss - 投递【质心物联】公司，【高级java开发工程师 18-35K 杭州】职位，招聘官:【胡梦云 人事专员】
+2024-04-24 10:54:14.252 [main] INFO  boss.Boss - 投递【图南益】公司，【java研发工程师 15-25K 杭州】职位，招聘官:【陈宜明 副总经理】
+2024-04-24 10:55:21.191 [main] ERROR utils.SeleniumUtil - Could not find element:By.xpath: //div[@class='error-content']
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='error-content']"}
+  (Session info: chrome=124.0.6367.62)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'zyl03', ip: '192.168.6.148', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.62, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: /var/folders/cd/gs9yyg_106b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49340}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 122e1aec4531a132548b906de7458707
+*** Element info: {Using=xpath, value=//div[@class='error-content']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at utils.SeleniumUtil.findElement(SeleniumUtil.java:196)
+	at boss.Boss.getJobs(Boss.java:268)
+	at boss.Boss.resumeSubmission(Boss.java:250)
+	at boss.Boss.main(Boss.java:59)
+2024-04-24 10:55:25.723 [main] INFO  boss.Boss - 投递【基本起源】公司，【Java工程师 15-25K 杭州】职位，招聘官:【刘女士 人事】
+2024-04-24 10:55:44.083 [main] INFO  boss.Boss - 投递【莱宸科技】公司，【JAVA后端工程师 15-25K·13薪 杭州】职位，招聘官:【王哲 架构师】
+2024-04-24 10:56:00.617 [main] INFO  boss.Boss - 投递【新蓝传媒】公司，【java开发工程师 15-28K·14薪 杭州】职位，招聘官:【俞妮娜 总监助理】
+2024-04-24 10:56:17.704 [main] INFO  boss.Boss - 投递【闪布科技】公司，【Java开发工程师 15-25K·14薪 杭州】职位，招聘官:【段宏熙 人力资源总监HRD】
+2024-04-24 10:56:33.822 [main] INFO  boss.Boss - 投递【翰丰投资】公司，【Java 15-25K 杭州】职位，招聘官:【任健 募资总监】
+2024-04-24 10:56:49.824 [main] INFO  boss.Boss - 投递【火灿科技】公司，【Java 15-25K 杭州】职位，招聘官:【吴美玲 Hr】
+2024-04-24 10:57:07.585 [main] INFO  boss.Boss - 投递【矩阵数据】公司，【Java开发工程师 18-25K 杭州】职位，招聘官:【薛海昌 招聘者】
+2024-04-24 10:57:25.553 [main] INFO  boss.Boss - 投递【杭州慧巨变】公司，【Java 15-25K 杭州】职位，招聘官:【张春来 招聘者】
+2024-04-24 10:57:43.101 [main] INFO  boss.Boss - 投递【宁达科技】公司，【java开发工程师 15-25K·13薪 杭州】职位，招聘官:【柴女士 招聘者】
+2024-04-24 10:57:59.677 [main] INFO  boss.Boss - 投递【香檀】公司，【Java 18-35K·16薪 杭州】职位，招聘官:【方蕾 招聘专员】
+2024-04-24 10:58:10.750 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 10:58:13.576 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 10:58:14.126 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 10:58:14.187 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 10:58:14.307 [main] INFO  boss.Boss - 忽略JAVA开发工程师, 16-20K
+2024-04-24 10:58:14.812 [main] INFO  boss.Boss - 忽略Java, 15-20K·14薪
+2024-04-24 10:58:14.871 [main] INFO  boss.Boss - 忽略java, 16-18K
+2024-04-24 10:58:20.319 [main] INFO  boss.Boss - 投递【白豪斯出海】公司，【Java PHP 程序员（远程岗） 18-22K 杭州】职位，招聘官:【张婷 招聘者】
+2024-04-24 10:58:36.413 [main] INFO  boss.Boss - 投递【源彤智能】公司，【Java开发工程师 15-30K 杭州】职位，招聘官:【徐伟波 人事】
+2024-04-24 10:58:54.072 [main] INFO  boss.Boss - 投递【复杂美科技】公司，【Java开发工程师 18-35K·13薪 杭州】职位，招聘官:【吴思进 创始人兼CEO】
+2024-04-24 10:59:10.852 [main] INFO  boss.Boss - 投递【杭州首融银链电商科技】公司，【java开发工程师 16-24K 杭州】职位，招聘官:【殷女士 人事经理】
+2024-04-24 10:59:27.682 [main] INFO  boss.Boss - 投递【南讯软件】公司，【Java 15-25K·13薪 杭州】职位，招聘官:【艾奕凡 项目经理】
+2024-04-24 10:59:45.545 [main] INFO  boss.Boss - 投递【嘉建科技】公司，【Java高级开发工程师 16-25K 杭州】职位，招聘官:【毛先生 招聘者】
+2024-04-24 11:00:04.077 [main] INFO  boss.Boss - 投递【华智云服】公司，【Java 15-22K 杭州】职位，招聘官:【姜中原 人力资源总监】
+2024-04-24 11:00:26.332 [main] INFO  boss.Boss - 投递【杭州狂热科技有限公司】公司，【Java 15-30K 杭州】职位，招聘官:【刘勇 招聘者】
+2024-04-24 11:00:45.967 [main] INFO  boss.Boss - 投递【如程】公司，【JAVA开发工程师 15-22K 杭州】职位，招聘官:【黄女士 HR】
+2024-04-24 11:01:02.547 [main] INFO  boss.Boss - 投递【魔厨科技】公司，【高级java工程师 16-22K 杭州】职位，招聘官:【李卓林 cto】
+2024-04-24 11:01:19.170 [main] INFO  boss.Boss - 投递【延阳】公司，【Java开发工程师 18-21K·13薪 杭州】职位，招聘官:【赵云飞 总经理】
+2024-04-24 11:01:35.642 [main] INFO  boss.Boss - 投递【云娇燕】公司，【Java开发工程师 15-30K 杭州】职位，招聘官:【陈君飞 招聘者】
+2024-04-24 11:01:53.103 [main] INFO  boss.Boss - 投递【华峰智链】公司，【Java 15-25K 杭州】职位，招聘官:【王栋 招聘者】
+2024-04-24 11:02:12.994 [main] INFO  boss.Boss - 投递【津禾生物科技】公司，【JAVA高级工程师 15-25K 杭州】职位，招聘官:【周洁 HR】
+2024-04-24 11:02:32.299 [main] INFO  boss.Boss - 投递【杭州城市大脑】公司，【Java 15-25K·15薪 杭州】职位，招聘官:【马红涛 Java研发工程师】
+2024-04-24 11:02:50.946 [main] INFO  boss.Boss - 投递【杭州栗仁网络科技】公司，【java高级开发工程师 15-30K·13薪 杭州】职位，招聘官:【李怡汶 HR经理】
+2024-04-24 11:03:07.175 [main] INFO  boss.Boss - 投递【海禾润金融】公司，【Java 18-25K 杭州】职位，招聘官:【赵恒冬 招聘者】
+2024-04-24 11:03:18.250 [main] INFO  boss.Boss - 投递【Java】关键词第【3】页
+2024-04-24 11:03:21.363 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 11:03:21.672 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 11:03:22.683 [main] INFO  boss.Boss - 忽略Java, 15-20K·14薪
+2024-04-24 11:03:29.281 [main] INFO  boss.Boss - 投递【萝泊科技】公司，【高级Java开发工程师 15-30K 杭州】职位，招聘官:【吴倩 招聘者】
+2024-04-24 11:03:49.595 [main] INFO  boss.Boss - 投递【金戈多能源】公司，【Java开发工程师 18-25K 杭州】职位，招聘官:【张女士 人事/行政】
+2024-04-24 11:04:08.174 [main] INFO  boss.Boss - 投递【佑他科技】公司，【Java 15-25K 杭州】职位，招聘官:【刘静 招聘经理】
+2024-04-24 11:04:24.955 [main] INFO  boss.Boss - 投递【优传声】公司，【Java开发工程师 16-25K·13薪 杭州】职位，招聘官:【严先生 人事】
+2024-04-24 11:04:41.128 [main] INFO  boss.Boss - 投递【西湖新基建】公司，【JAVA开发工程师 16-22K 杭州】职位，招聘官:【黄女士 综合管理部】
+2024-04-24 11:04:57.927 [main] INFO  boss.Boss - 投递【远图】公司，【Java开发工程师 15-25K 杭州】职位，招聘官:【郑先生 技术经理】
+2024-04-24 11:05:15.245 [main] INFO  boss.Boss - 投递【玖阖网络科技】公司，【高级Java工程师 15-25K 杭州】职位，招聘官:【朱侃 产品经理】
+2024-04-24 11:05:33.354 [main] INFO  boss.Boss - 投递【九问数字科技】公司，【高级Java开发工程师 15-30K 杭州】职位，招聘官:【吴肖 研发技术总监】
+2024-04-24 11:05:51.604 [main] INFO  boss.Boss - 投递【飓卓科技】公司，【高级Java开发工程师 15-22K 杭州】职位，招聘官:【叶敏俊 hr】
+2024-04-24 11:06:08.626 [main] INFO  boss.Boss - 投递【微医养】公司，【Java 14-25K 杭州】职位，招聘官:【王彪 主管】
+2024-04-24 11:06:26.206 [main] INFO  boss.Boss - 投递【小麦助教】公司，【Java后端工程师 15-25K 杭州】职位，招聘官:【柏壑 招聘者】
+2024-04-24 11:06:43.077 [main] INFO  boss.Boss - 投递【墨趣科技】公司，【Java 15-25K 杭州】职位，招聘官:【赖斌辉 部门经理】
+2024-04-24 11:07:01.213 [main] INFO  boss.Boss - 投递【上海创识天沪信息...】公司，【java开发工程师 15-30K·13薪 杭州】职位，招聘官:【吴桢林 技术总监】
+2024-04-24 11:07:19.767 [main] INFO  boss.Boss - 投递【云团科技】公司，【Java开发工程师 15-25K 杭州】职位，招聘官:【张先生 经理】
+2024-04-24 11:07:36.003 [main] INFO  boss.Boss - 投递【超材四维】公司，【高级Java工程师 15-30K 杭州】职位，招聘官:【赵先生 招聘者】
+2024-04-24 11:07:58.934 [main] INFO  boss.Boss - 投递【中研今科】公司，【高级java开发工程师 14-22K 杭州】职位，招聘官:【邹先生 CTO】
+2024-04-24 11:08:10.008 [main] INFO  boss.Boss - 投递【Java】关键词第【4】页
+2024-04-24 11:08:12.716 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 11:08:12.774 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 11:08:13.054 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 11:08:13.615 [main] INFO  boss.Boss - 忽略java开发, 15-20K·13薪
+2024-04-24 11:08:22.031 [main] INFO  boss.Boss - 投递【爱梵塔】公司，【Java 14-28K·13薪 杭州】职位，招聘官:【麻线伟 项目经理】
+2024-04-24 11:08:38.259 [main] INFO  boss.Boss - 投递【文鳐科技】公司，【Java 16-30K·13薪 杭州】职位，招聘官:【徐少林 公司职员】
+2024-04-24 11:08:58.563 [main] INFO  boss.Boss - 投递【链金云上】公司，【Java开发工程师 15-25K 杭州】职位，招聘官:【刘帅 项目总监】
+2024-04-24 11:09:16.531 [main] INFO  boss.Boss - 投递【启盈信息科技】公司，【Java开发 15-30K·13薪 杭州】职位，招聘官:【单群 hr】
+2024-04-24 11:09:32.796 [main] INFO  boss.Boss - 投递【振瀚科技】公司，【java工程师 15-25K·13薪 杭州】职位，招聘官:【鲁馨怡 行政前台】
+2024-04-24 11:09:53.427 [main] INFO  boss.Boss - 投递【优迈科思】公司，【Java 18-25K·14薪 杭州】职位，招聘官:【周运建 高级研发工程师】
+2024-04-24 11:10:11.099 [main] INFO  boss.Boss - 投递【杰士达科技】公司，【Java开发工程师 14-28K 杭州】职位，招聘官:【刘恒 人事经理】
+2024-04-24 11:10:27.404 [main] INFO  boss.Boss - 投递【数钥科技】公司，【java开发工程师 15-28K 杭州】职位，招聘官:【丁忠立 资深Java开发】
+2024-04-24 11:10:43.703 [main] INFO  boss.Boss - 投递【厌氧科技】公司，【JAVA 后端开发工程师 15-30K·16薪 杭州】职位，招聘官:【张女士 人力资源】
+2024-04-24 11:11:00.144 [main] INFO  boss.Boss - 投递【杭州图尔兹信息技...】公司，【Java开发工程师 15-30K·16薪 杭州】职位，招聘官:【练先生 研发工程师】
+2024-04-24 11:11:17.489 [main] INFO  boss.Boss - 投递【思湃德】公司，【Java 15-30K 杭州】职位，招聘官:【方亚华 总经理】
+2024-04-24 11:11:34.751 [main] INFO  boss.Boss - 投递【杭州产链数字科技】公司，【高级java开发工程师 15-22K·16薪 杭州】职位，招聘官:【赵臣臣 项目经理】
+2024-04-24 11:11:52.521 [main] INFO  boss.Boss - 投递【格像科技】公司，【Java高级开发工程师 15-30K 杭州】职位，招聘官:【赵洪亮 工程总监】
+2024-04-24 11:12:09.738 [main] INFO  boss.Boss - 投递【微洱】公司，【Java 15-30K 杭州】职位，招聘官:【董军旗 研发】
+2024-04-24 11:12:25.967 [main] INFO  boss.Boss - 投递【数字浙江】公司，【高级java开发工程师 15-25K 杭州】职位，招聘官:【洪先生 招聘者】
+2024-04-24 11:12:43.304 [main] INFO  boss.Boss - 投递【成都海狸】公司，【高级Java工程师 15-25K 杭州】职位，招聘官:【张羽 HR】
+2024-04-24 11:13:05.278 [main] INFO  boss.Boss - 投递【天翼智慧城市】公司，【高级JAVA工程师 15-25K·14薪 杭州】职位，招聘官:【于砚丽 人事】
+2024-04-24 11:13:21.570 [main] INFO  boss.Boss - 投递【超级码科技股份】公司，【Java高级开发工程师 15-22K·13薪 杭州】职位，招聘官:【陈晓亮 技术总监】
+2024-04-24 11:13:39.840 [main] INFO  boss.Boss - 投递【账王】公司，【中级JAVA开发工程师 15-25K·13薪 杭州】职位，招聘官:【方女士 招聘助理】
+2024-04-24 11:13:50.907 [main] INFO  boss.Boss - 投递【Java】关键词第【5】页
+2024-04-24 11:13:53.836 [main] INFO  boss.Boss - 忽略Java开发工程师, 14-20K
+2024-04-24 11:13:54.293 [main] INFO  boss.Boss - 忽略Java, 15-18K
+2024-04-24 11:13:54.540 [main] INFO  boss.Boss - 忽略Java, 15-19K
+2024-04-24 11:13:54.658 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-16K
+2024-04-24 11:13:54.899 [main] INFO  boss.Boss - 忽略Java开发工程师(J10453), 15-18K
+2024-04-24 11:13:55.017 [main] INFO  boss.Boss - 忽略高级java 工程师, 15-20K
+2024-04-24 11:14:04.640 [main] INFO  boss.Boss - 投递【安华信达(北京)...】公司，【中高级Java开发工程师 14-28K 杭州】职位，招聘官:【王先生 销售总监】
+2024-04-24 11:14:20.983 [main] INFO  boss.Boss - 投递【两氢一氧】公司，【Java 15-30K 杭州】职位，招聘官:【王江南 研发】
+2024-04-24 11:14:39.602 [main] INFO  boss.Boss - 投递【首秀网络】公司，【高级java开发工程师 16-30K 杭州】职位，招聘官:【宋科伟 招聘者】
+2024-04-24 11:14:56.395 [main] INFO  boss.Boss - 投递【一喂顺风车】公司，【高级Java开发工程师 18-25K 杭州】职位，招聘官:【王女士 HR】
+2024-04-24 11:15:20.988 [main] INFO  boss.Boss - 投递【实在智能】公司，【高级JAVA开发工程师 18-36K 杭州】职位，招聘官:【高扬 COO】
+2024-04-24 11:15:37.536 [main] INFO  boss.Boss - 投递【企加云CRM】公司，【产品研发集成工程师 Java 15-30K 杭州】职位，招聘官:【周警伟 技术总监】
+2024-04-24 11:15:53.714 [main] INFO  boss.Boss - 投递【公交云】公司，【java高级研发工程师 15-30K 杭州】职位，招聘官:【王先生 研发经理】
+2024-04-24 11:16:04.786 [main] INFO  boss.Boss - 投递【Java】关键词第【6】页
+2024-04-24 11:16:07.084 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 11:16:07.391 [main] INFO  boss.Boss - 忽略Java工程师, 15-18K
+2024-04-24 11:16:13.569 [main] INFO  boss.Boss - 投递【千寻】公司，【高级java工程师 15-30K·14薪 杭州】职位，招聘官:【崔先生 HR】
+2024-04-24 11:16:30.745 [main] INFO  boss.Boss - 投递【孝道科技】公司，【高级Java研发 15-30K 杭州】职位，招聘官:【范先生 招聘者】
+2024-04-24 11:16:47.818 [main] INFO  boss.Boss - 投递【沃趣科技】公司，【网站后端Java开发工程师 15-25K 杭州】职位，招聘官:【罗春 招聘者】
+2024-04-24 11:17:04.550 [main] INFO  boss.Boss - 投递【早到】公司，【Java高级开发 16-24K 杭州】职位，招聘官:【张朕 高级开发】
+2024-04-24 11:17:15.621 [main] INFO  boss.Boss - 投递【Java】关键词第【7】页
+2024-04-24 11:17:20.014 [main] INFO  boss.Boss - 忽略Java, 16-19K
+2024-04-24 11:17:20.257 [main] INFO  boss.Boss - 忽略中高级Java开发, 15-20K
+2024-04-24 11:17:20.676 [main] INFO  boss.Boss - 忽略Java开发工程师-TX, 14-17K·13薪
+2024-04-24 11:17:20.735 [main] INFO  boss.Boss - 忽略中级Java工程师（Base滨江）, 14-20K·13薪
+2024-04-24 11:17:21.270 [main] INFO  boss.Boss - 忽略java开发工程师（外派杭银理财）, 14-17K
+2024-04-24 11:17:21.502 [main] INFO  boss.Boss - 忽略Java, 14-18K·13薪
+2024-04-24 11:17:27.059 [main] INFO  boss.Boss - 投递【靖安科技】公司，【Java 技术专家 15-30K·13薪 杭州】职位，招聘官:【朱先生 CTO】
+2024-04-24 11:17:43.797 [main] INFO  boss.Boss - 投递【讯盟科技】公司，【资深Java开发工程师 18-30K·14薪 杭州】职位，招聘官:【董先生 技术专家】
+2024-04-24 11:18:01.023 [main] INFO  boss.Boss - 投递【布咕游戏】公司，【游戏java开发工程师 15-25K·13薪 杭州】职位，招聘官:【欧女士 HR】
+2024-04-24 11:18:17.938 [main] INFO  boss.Boss - 投递【獴哥健康】公司，【资深JAVA开发工程师 15-25K·13薪 杭州】职位，招聘官:【羊冰超 后端负责人】
+2024-04-24 11:18:34.546 [main] INFO  boss.Boss - 投递【杭州贝瀛科技有限公司】公司，【对日中高级JAVA开发(SE) 15-25K 杭州】职位，招聘官:【董敏慧 日本恒生人事部】
+2024-04-24 11:18:45.619 [main] INFO  boss.Boss - 投递【Java】关键词第【8】页
+2024-04-24 11:18:50.903 [main] INFO  boss.Boss - 忽略java开发, 14-18K
+2024-04-24 11:18:57.375 [main] INFO  boss.Boss - 投递【杭州微易科技】公司，【Java技术专家 15-25K 杭州】职位，招聘官:【江先生 高级java技术专家】
+2024-04-24 11:19:14.608 [main] INFO  boss.Boss - 投递【宇泛智能】公司，【java专家工程师 18-30K 杭州】职位，招聘官:【陈女士 高级招聘HR】
+2024-04-24 11:19:25.655 [main] INFO  boss.Boss - 投递【Java】关键词第【9】页
+2024-04-24 11:19:29.173 [main] INFO  boss.Boss - 忽略中级java开发工程师, 15-16K
+2024-04-24 11:19:30.105 [main] INFO  boss.Boss - 【Java】关键词第【9】页无岗位,目前已连续【1】页无新岗位...
+2024-04-24 11:19:30.106 [main] INFO  boss.Boss - 投递【Java】关键词第【10】页
+2024-04-24 11:19:33.008 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-16K
+2024-04-24 11:19:33.421 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 11:19:33.480 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 11:19:33.960 [main] INFO  boss.Boss - 【Java】关键词第【10】页无岗位,目前已连续【2】页无新岗位...
+2024-04-24 11:19:33.961 [main] INFO  boss.Boss - 投递【Java】关键词第【11】页
+2024-04-24 11:19:36.939 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-16K
+2024-04-24 11:19:37.348 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 11:19:37.407 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 11:19:37.893 [main] INFO  boss.Boss - 【Java】关键词第【11】页无岗位,目前已连续【3】页无新岗位...
+2024-04-24 11:19:37.893 [main] INFO  boss.Boss - 投递【Java】关键词第【12】页
+2024-04-24 11:19:43.857 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-16K
+2024-04-24 11:19:44.261 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 11:19:44.318 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 11:19:44.772 [main] INFO  boss.Boss - 【Java】关键词第【12】页无岗位,目前已连续【4】页无新岗位...
+2024-04-24 11:19:44.772 [main] INFO  boss.Boss - 投递【Java】关键词第【13】页
+2024-04-24 11:19:48.323 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-16K
+2024-04-24 11:19:48.750 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 11:19:48.807 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 11:19:49.266 [main] INFO  boss.Boss - 【Java】关键词已经连续【5】页无岗位，结束该关键词的投递...
+2024-04-24 11:19:49.267 [main] INFO  boss.Boss - 新发起聊天公司如下:
+【杭州酒工哥, Java, 杭州·余杭区·仓前, 15-25K, 3-5年·本科, 李女士:人事】
+【橙子科技, 高级Java开发工程师, 杭州·余杭区·五常, 15-26K·13薪, 3-5年·本科, 王少川:CEO】
+【质心物联, 高级java开发工程师, 杭州·余杭区·仓前, 18-35K, 3-5年·本科, 胡梦云:人事专员】
+【图南益, java研发工程师, 杭州·萧山区·党山, 15-25K, 1-3年·本科, 陈宜明:副总经理】
+【基本起源, Java工程师, 杭州·余杭区·仓前, 15-25K, 3-5年·本科, 刘女士:人事】
+【莱宸科技, JAVA后端工程师, 杭州·西湖区·古荡, 15-25K·13薪, 3-5年·本科, 王哲:架构师】
+【新蓝传媒, java开发工程师, 杭州·萧山区·宁围, 15-28K·14薪, 3-5年·本科, 俞妮娜:总监助理】
+【闪布科技, Java开发工程师, 杭州·滨江区·西兴, 15-25K·14薪, 3-5年·本科, 段宏熙:人力资源总监HRD】
+【翰丰投资, Java, 杭州·西湖区·翠苑, 15-25K, 3-5年·本科, 任健:募资总监】
+【火灿科技, Java, 杭州·滨江区·长河, 15-25K, 3-5年·本科, 吴美玲:Hr】
+【矩阵数据, Java开发工程师, 杭州·余杭区·仓前, 18-25K, 3-5年·本科, 薛海昌:招聘者】
+【杭州慧巨变, Java, 杭州·滨江区·西兴, 15-25K, 3-5年·本科, 张春来:招聘者】
+【宁达科技, java开发工程师, 杭州·滨江区·浦沿, 15-25K·13薪, 3-5年·本科, 柴女士:招聘者】
+【香檀, Java, 杭州·滨江区·长河, 18-35K·16薪, 3-5年·本科, 方蕾:招聘专员】
+【白豪斯出海, Java PHP 程序员（远程岗）, 杭州·滨江区·长河, 18-22K, 3-5年·本科, 张婷:招聘者】
+【源彤智能, Java开发工程师, 杭州·滨江区·长河, 15-30K, 3-5年·本科, 徐伟波:人事】
+【复杂美科技, Java开发工程师, 杭州·西湖区·文三路, 18-35K·13薪, 3-5年·本科, 吴思进:创始人兼CEO】
+【杭州首融银链电商科技, java开发工程师, 杭州·萧山区·西兴, 16-24K, 3-5年·本科, 殷女士:人事经理】
+【南讯软件, Java, 杭州, 15-25K·13薪, 3-5年·本科, 艾奕凡:项目经理】
+【嘉建科技, Java高级开发工程师, 杭州·滨江区·长河, 16-25K, 3-5年·本科, 毛先生:招聘者】
+【华智云服, Java, 杭州, 15-22K, 3-5年·本科, 姜中原:人力资源总监】
+【杭州狂热科技有限公司, Java, 杭州·西湖区·文三路, 15-30K, 3-5年·本科, 刘勇:招聘者】
+【如程, JAVA开发工程师, 杭州·余杭区·仓前, 15-22K, 3-5年·本科, 黄女士:HR】
+【魔厨科技, 高级java工程师, 杭州·西湖区·文三路, 16-22K, 3-5年·本科, 李卓林:cto】
+【延阳, Java开发工程师, 杭州·滨江区·西兴, 18-21K·13薪, 3-5年·本科, 赵云飞:总经理】
+【云娇燕, Java开发工程师, 杭州·拱墅区·新天地, 15-30K, 3-5年·本科, 陈君飞:招聘者】
+【华峰智链, Java, 杭州·上城区·钱江新城, 15-25K, 3-5年·本科, 王栋:招聘者】
+【津禾生物科技, JAVA高级工程师, 杭州, 15-25K, 3-5年·本科, 周洁:HR】
+【杭州城市大脑, Java, 杭州·西湖区·转塘, 15-25K·15薪, 3-5年·本科, 马红涛:Java研发工程师】
+【杭州栗仁网络科技, java高级开发工程师, 杭州·滨江区·浦沿, 15-30K·13薪, 3-5年·本科, 李怡汶:HR经理】
+【海禾润金融, Java, 杭州·西湖区·转塘, 18-25K, 3-5年·本科, 赵恒冬:招聘者】
+【萝泊科技, 高级Java开发工程师, 杭州·上城区·钱江新城, 15-30K, 3-5年·本科, 吴倩:招聘者】
+【金戈多能源, Java开发工程师, 杭州·滨江区·长河, 18-25K, 3-5年·本科, 张女士:人事/行政】
+【佑他科技, Java, 杭州·余杭区·仓前, 15-25K, 3-5年·本科, 刘静:招聘经理】
+【优传声, Java开发工程师, 杭州·上城区·湖滨, 16-25K·13薪, 3-5年·本科, 严先生:人事】
+【西湖新基建, JAVA开发工程师, 杭州, 16-22K, 3-5年·本科, 黄女士:综合管理部】
+【远图, Java开发工程师, 杭州·西湖区·三墩, 15-25K, 3-5年·本科, 郑先生:技术经理】
+【玖阖网络科技, 高级Java工程师, 杭州·西湖区·文教, 15-25K, 3-5年·本科, 朱侃:产品经理】
+【九问数字科技, 高级Java开发工程师, 杭州·萧山区·北干, 15-30K, 3-5年·本科, 吴肖:研发技术总监】
+【飓卓科技, 高级Java开发工程师, 杭州·拱墅区·三塘, 15-22K, 3-5年·本科, 叶敏俊:hr】
+【微医养, Java, 杭州·萧山区·北干, 14-25K, 3-5年·本科, 王彪:主管】
+【小麦助教, Java后端工程师, 杭州·西湖区·高新文教区, 15-25K, 3-5年·本科, 柏壑:招聘者】
+【墨趣科技, Java, 杭州·滨江区·长河, 15-25K, 3-5年·本科, 赖斌辉:部门经理】
+【上海创识天沪信息..., java开发工程师, 杭州·上城区·四季青, 15-30K·13薪, 3-5年·本科, 吴桢林:技术总监】
+【云团科技, Java开发工程师, 杭州·滨江区·长河, 15-25K, 3-5年·本科, 张先生:经理】
+【超材四维, 高级Java工程师, 杭州·临平区·东湖, 15-30K, 3-5年·本科, 赵先生:招聘者】
+【中研今科, 高级java开发工程师, 杭州·萧山区·钱江世纪城, 14-22K, 3-5年·本科, 邹先生:CTO】
+【爱梵塔, Java, 杭州·萧山区·北干, 14-28K·13薪, 3-5年·本科, 麻线伟:项目经理】
+【文鳐科技, Java, 杭州·余杭区·未来科技城, 16-30K·13薪, 3-5年·本科, 徐少林:公司职员】
+【链金云上, Java开发工程师, 杭州·西湖区·黄龙, 15-25K, 3-5年·本科, 刘帅:项目总监】
+【启盈信息科技, Java开发, 杭州·余杭区·五常, 15-30K·13薪, 3-5年·本科, 单群:hr】
+【振瀚科技, java工程师, 杭州·余杭区·仓前, 15-25K·13薪, 3-5年·本科, 鲁馨怡:行政前台】
+【优迈科思, Java, 杭州·西湖区·转塘, 18-25K·14薪, 3-5年·本科, 周运建:高级研发工程师】
+【杰士达科技, Java开发工程师, 杭州·上城区·四季青, 14-28K, 3-5年·本科, 刘恒:人事经理】
+【数钥科技, java开发工程师, 杭州·余杭区·西溪, 15-28K, 3-5年·本科, 丁忠立:资深Java开发】
+【厌氧科技, JAVA 后端开发工程师, 杭州·滨江区·长河, 15-30K·16薪, 3-5年·本科, 张女士:人力资源】
+【杭州图尔兹信息技..., Java开发工程师, 杭州·拱墅区·万达广场, 15-30K·16薪, 3-5年·本科, 练先生:研发工程师】
+【思湃德, Java, 杭州·萧山区·宁围, 15-30K, 3-5年·本科, 方亚华:总经理】
+【杭州产链数字科技, 高级java开发工程师, 杭州·滨江区·长河, 15-22K·16薪, 3-5年·本科, 赵臣臣:项目经理】
+【格像科技, Java高级开发工程师, 杭州·西湖区·古荡, 15-30K, 3-5年·本科, 赵洪亮:工程总监】
+【微洱, Java, 杭州·余杭区·仓前, 15-30K, 3-5年·本科, 董军旗:研发】
+【数字浙江, 高级java开发工程师, 杭州·滨江区·长河, 15-25K, 3-5年·本科, 洪先生:招聘者】
+【成都海狸, 高级Java工程师, 杭州·拱墅区·武林, 15-25K, 3-5年·本科, 张羽:HR】
+【天翼智慧城市, 高级JAVA工程师, 杭州·余杭区·五常, 15-25K·14薪, 3-5年·本科, 于砚丽:人事】
+【超级码科技股份, Java高级开发工程师, 杭州·西湖区·西溪, 15-22K·13薪, 3-5年·本科, 陈晓亮:技术总监】
+【账王, 中级JAVA开发工程师, 杭州·西湖区·浙大紫金港, 15-25K·13薪, 3-5年·本科, 方女士:招聘助理】
+【安华信达(北京)..., 中高级Java开发工程师, 杭州·拱墅区·上塘, 14-28K, 3-5年·本科, 王先生:销售总监】
+【两氢一氧, Java, 杭州·余杭区·仓前, 15-30K, 3-5年·本科, 王江南:研发】
+【首秀网络, 高级java开发工程师, 杭州·西湖区·古荡, 16-30K, 3-5年·本科, 宋科伟:招聘者】
+【一喂顺风车, 高级Java开发工程师, 杭州·余杭区·仓前, 18-25K, 3-5年·本科, 王女士:HR】
+【实在智能, 高级JAVA开发工程师, 杭州·余杭区·仓前, 18-36K, 3-5年·本科, 高扬:COO】
+【企加云CRM, 产品研发集成工程师 Java, 杭州·滨江区·滨江区政府, 15-30K, 3-5年·本科, 周警伟:技术总监】
+【公交云, java高级研发工程师, 杭州·滨江区·长河, 15-30K, 3-5年·本科, 王先生:研发经理】
+【千寻, 高级java工程师, 杭州·滨江区·西兴, 15-30K·14薪, 3-5年·本科, 崔先生:HR】
+【孝道科技, 高级Java研发, 杭州·拱墅区·万达广场, 15-30K, 3-5年·本科, 范先生:招聘者】
+【沃趣科技, 网站后端Java开发工程师, 杭州·滨江区·长河, 15-25K, 3-5年·本科, 罗春:招聘者】
+【早到, Java高级开发, 杭州·萧山区·钱江世纪城, 16-24K, 3-5年·本科, 张朕:高级开发】
+【靖安科技, Java 技术专家, 杭州·余杭区·仓前, 15-30K·13薪, 3-5年·本科, 朱先生:CTO】
+【讯盟科技, 资深Java开发工程师, 杭州·西湖区·西溪, 18-30K·14薪, 3-5年·本科, 董先生:技术专家】
+【布咕游戏, 游戏java开发工程师, 杭州·拱墅区·拱宸桥, 15-25K·13薪, 3-5年·本科, 欧女士:HR】
+【獴哥健康, 资深JAVA开发工程师, 杭州·余杭区·仓前, 15-25K·13薪, 3-5年·本科, 羊冰超:后端负责人】
+【杭州贝瀛科技有限公司, 对日中高级JAVA开发(SE), 杭州·滨江区·长河, 15-25K, 3-5年·本科, 董敏慧:日本恒生人事部】
+【杭州微易科技, Java技术专家, 杭州·西湖区·文二路, 15-25K, 3-5年·本科, 江先生:高级java技术专家】
+【宇泛智能, java专家工程师, 杭州·余杭区·仓前, 18-30K, 3-5年·本科, 陈女士:高级招聘HR】
+2024-04-24 11:19:49.273 [main] INFO  boss.Boss - 共发起 84 个聊天,用时26分38秒
+2024-04-24 14:09:53.220 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 14:09:55.344 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 14:09:57.288 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 14:09:59.895 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 14:09:59.900 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 14:10:04.312 [main] INFO  boss.Boss - 忽略java中级研发工程师, 15-20K
+2024-04-24 14:10:04.779 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 14:10:05.201 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 14:10:05.410 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 14:10:05.488 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 14:10:05.790 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 14:10:06.082 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 14:10:06.082 [main] INFO  boss.Boss - 【Java】关键词第【1】页无岗位,目前已连续【1】页无新岗位...
+2024-04-24 14:10:06.082 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 14:12:12.474 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 14:12:14.148 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 14:12:15.760 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 14:12:18.388 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 14:12:20.740 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 14:12:45.397 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 14:12:47.021 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 14:12:47.788 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 14:12:50.387 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 14:12:50.392 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 14:21:36.663 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 14:21:38.263 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 14:21:39.095 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 14:21:41.680 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 14:21:41.684 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 14:21:47.982 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 14:21:48.272 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 14:21:48.716 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 14:21:49.015 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 14:21:49.081 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 14:21:50.891 [main] ERROR boss.Boss - error
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".boss\-online\-tag"}
+  (Session info: chrome=124.0.6367.62)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'zyl03', ip: '192.168.6.148', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.62, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: /var/folders/cd/gs9yyg_106b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d853abf5a2501556e93fc51019f773f1
+*** Element info: {Using=class name, value=boss-online-tag}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at boss.Boss.checkOnLine(Boss.java:396)
+	at boss.Boss.getJobs(Boss.java:279)
+	at boss.Boss.resumeSubmission(Boss.java:253)
+	at boss.Boss.main(Boss.java:59)
+2024-04-24 14:31:48.604 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 14:31:50.346 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 14:31:52.449 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 14:31:55.343 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 14:31:55.348 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 14:31:59.586 [main] INFO  boss.Boss - 忽略java中级研发工程师, 15-20K
+2024-04-24 14:31:59.659 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-18K
+2024-04-24 14:31:59.897 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 14:32:00.504 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 14:32:01.076 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 14:32:01.209 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 14:32:01.351 [main] INFO  boss.Boss - bossStatus: 
+2024-04-24 14:32:41.559 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 14:32:43.133 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 14:32:44.486 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 14:32:48.591 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 14:32:48.596 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 14:32:52.593 [main] INFO  boss.Boss - 忽略java中级研发工程师, 15-20K
+2024-04-24 14:32:52.667 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-18K
+2024-04-24 14:32:52.917 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 14:32:53.440 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 14:32:54.097 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 14:32:54.229 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 14:32:54.367 [main] INFO  boss.Boss - bossStatus: 
+2024-04-24 14:34:14.884 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 14:34:16.692 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 14:34:21.024 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 14:34:23.645 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 14:34:23.652 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 14:34:25.792 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-18K
+2024-04-24 14:34:26.050 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 14:34:26.652 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 14:34:26.878 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 14:34:27.120 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 14:34:27.199 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 14:34:27.596 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 14:34:27.662 [main] INFO  boss.Boss - bossStatus: 
+2024-04-24 14:35:02.874 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 14:35:04.625 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 14:35:05.545 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 14:35:08.244 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 14:35:08.248 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 14:35:11.737 [main] INFO  boss.Boss - 忽略java中级研发工程师, 15-20K
+2024-04-24 14:35:11.826 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-18K
+2024-04-24 14:35:12.191 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 14:35:12.778 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 14:35:13.218 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 14:35:13.349 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 14:35:13.414 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 14:35:13.607 [main] INFO  boss.Boss - bossStatus: 
+2024-04-24 14:35:22.213 [main] INFO  boss.Boss - 投递【鸭鸭股份公司】公司，【中级java开发工程师 15-30K·14薪 杭州】职位，招聘官:【唐女士 资深招聘专家】
+2024-04-24 14:35:59.274 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 14:36:05.778 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 14:36:06.038 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 14:36:06.322 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K
+2024-04-24 14:36:07.149 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 14:36:07.225 [main] INFO  boss.Boss - bossStatus: 
+2024-04-24 14:40:50.134 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 14:40:51.910 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 14:40:53.329 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 14:40:56.000 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 14:40:56.005 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 14:41:02.590 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-18K
+2024-04-24 14:41:02.810 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 14:41:03.596 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 14:41:03.818 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 14:41:04.013 [main] INFO  boss.Boss - bossStatus: 
+2024-04-24 14:41:13.656 [main] INFO  boss.Boss - 投递【杭州一牧数智科技】公司，【高级Java工程师 15-25K·13薪 杭州】职位，招聘官:【汪先生 研发总监】
+2024-04-24 14:41:36.029 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 14:41:37.867 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 14:41:37.936 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 14:41:38.254 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 14:41:39.279 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 14:41:39.343 [main] INFO  boss.Boss - 忽略高级java 工程师, 15-20K
+2024-04-24 14:41:39.530 [main] INFO  boss.Boss - bossStatus: 
+2024-04-24 14:42:01.158 [main] INFO  boss.Boss - 投递【国虹国澳】公司，【java高级开发工程师 15-25K 杭州】职位，招聘官:【陈女士 人力资源】
+2024-04-24 14:47:51.731 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 14:47:54.049 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 14:47:55.459 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 14:47:58.288 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 14:47:58.294 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 14:48:02.618 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 14:48:02.841 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 14:48:03.231 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 14:48:03.307 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 14:48:03.621 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 14:48:18.424 [main] INFO  boss.Boss - 【Java】关键词第【1】页无岗位,目前已连续【1】页无新岗位...
+2024-04-24 14:48:18.425 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 14:48:21.507 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 14:48:21.636 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 14:48:22.377 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 14:48:22.629 [main] INFO  boss.Boss - 忽略高级java 工程师, 15-20K
+2024-04-24 14:48:39.495 [main] INFO  boss.Boss - 忽略bossStatus: 5月内活跃
+2024-04-24 14:48:49.107 [main] INFO  boss.Boss - 【Java】关键词第【2】页无岗位,目前已连续【2】页无新岗位...
+2024-04-24 14:48:49.110 [main] INFO  boss.Boss - 投递【Java】关键词第【3】页
+2024-04-24 14:48:53.268 [main] INFO  boss.Boss - 忽略Java, 15-20K·14薪
+2024-04-24 14:48:53.452 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 14:48:53.945 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 14:48:54.200 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 14:48:55.883 [main] INFO  boss.Boss - 忽略bossStatus: 本月活跃
+2024-04-24 14:49:14.917 [main] INFO  boss.Boss - 【Java】关键词第【3】页无岗位,目前已连续【3】页无新岗位...
+2024-04-24 14:49:14.918 [main] INFO  boss.Boss - 投递【Java】关键词第【4】页
+2024-04-24 14:49:18.681 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 14:49:18.942 [main] INFO  boss.Boss - 忽略java工程师, 15-20K
+2024-04-24 14:49:19.120 [main] INFO  boss.Boss - 忽略Java开发工程师(J10453), 15-18K
+2024-04-24 14:49:19.188 [main] INFO  boss.Boss - 忽略java开发, 15-20K·13薪
+2024-04-24 14:49:19.427 [main] INFO  boss.Boss - 忽略中高级Java开发, 15-20K
+2024-04-24 14:49:19.726 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-16K
+2024-04-24 14:49:19.844 [main] INFO  boss.Boss - 忽略Java开发工程师, 15-20K
+2024-04-24 14:49:20.358 [main] INFO  boss.Boss - 忽略JAVA开发工程师, 15-20K
+2024-04-24 14:49:22.870 [main] INFO  boss.Boss - 忽略bossStatus: 2月内活跃
+2024-04-24 14:49:39.270 [main] INFO  boss.Boss - 忽略bossStatus: 5月内活跃
+2024-04-24 14:49:40.344 [main] INFO  boss.Boss - 【Java】关键词第【4】页无岗位,目前已连续【4】页无新岗位...
+2024-04-24 14:49:40.345 [main] INFO  boss.Boss - 投递【Java】关键词第【5】页
+2024-04-24 14:49:41.763 [main] INFO  boss.Boss - 忽略Java开发工程师-TX, 14-17K·13薪
+2024-04-24 14:49:41.821 [main] INFO  boss.Boss - 忽略Java, 15-20K·15薪
+2024-04-24 14:49:42.149 [main] INFO  boss.Boss - 忽略java开发工程师（外派杭银理财）, 14-17K
+2024-04-24 14:49:42.271 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 14:49:42.408 [main] INFO  boss.Boss - 忽略java, 16-18K
+2024-04-24 14:49:43.392 [main] INFO  boss.Boss - 忽略Java, 15-18K·14薪
+2024-04-24 14:49:46.633 [main] INFO  boss.Boss - 【Java】关键词已经连续【5】页无岗位，结束该关键词的投递...
+2024-04-24 14:49:46.635 [main] INFO  boss.Boss - 未发起新的聊天...
+2024-04-24 14:49:46.645 [main] INFO  boss.Boss - 共发起 0 个聊天,用时1分52秒
+2024-04-24 14:55:07.109 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 14:55:09.027 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 14:55:09.864 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 14:55:12.425 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 14:55:12.428 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 14:55:14.695 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 14:55:14.978 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 14:55:15.498 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 14:55:15.579 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 14:55:15.807 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 14:55:27.316 [main] INFO  boss.Boss - 【Java】关键词第【1】页无岗位,目前已连续【1】页无新岗位...
+2024-04-24 14:55:27.317 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 14:55:29.007 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 14:55:29.076 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 14:55:29.816 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 14:55:30.213 [main] INFO  boss.Boss - 忽略高级java 工程师, 15-20K
+2024-04-24 14:55:30.341 [main] INFO  boss.Boss - 忽略JAVA开发工程师, 16-20K
+2024-04-24 14:56:31.375 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 14:56:33.356 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 14:56:34.132 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 14:56:36.662 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 14:56:36.667 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 14:56:40.182 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 14:56:40.454 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 14:56:40.983 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 14:56:41.054 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 14:56:41.206 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 14:56:57.168 [main] INFO  boss.Boss - 【Java】关键词第【1】页无岗位,目前已连续【1】页无新岗位...
+2024-04-24 14:56:57.169 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 14:56:59.173 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 14:56:59.372 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 14:57:00.465 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 14:57:49.168 [main] INFO  boss.Boss - 【Java】关键词第【2】页无岗位,目前已连续【2】页无新岗位...
+2024-04-24 14:57:49.169 [main] INFO  boss.Boss - 投递【Java】关键词第【3】页
+2024-04-24 14:57:51.351 [main] INFO  boss.Boss - 忽略高级java 工程师, 15-20K
+2024-04-24 14:57:51.659 [main] INFO  boss.Boss - 忽略JAVA开发工程师, 16-20K
+2024-04-24 14:57:52.766 [main] INFO  boss.Boss - 忽略Java, 15-20K·14薪
+2024-04-24 14:57:52.948 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 14:58:16.353 [main] INFO  boss.Boss - 【Java】关键词第【3】页无岗位,目前已连续【3】页无新岗位...
+2024-04-24 14:58:16.354 [main] INFO  boss.Boss - 投递【Java】关键词第【4】页
+2024-04-24 14:58:18.563 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 14:58:18.873 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 14:58:19.134 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 14:58:19.520 [main] INFO  boss.Boss - 忽略Java开发工程师-TX, 14-17K·13薪
+2024-04-24 14:58:19.580 [main] INFO  boss.Boss - 忽略java工程师, 15-20K
+2024-04-24 14:58:19.699 [main] INFO  boss.Boss - 忽略Java开发工程师(J10453), 15-18K
+2024-04-24 14:58:19.764 [main] INFO  boss.Boss - 忽略java开发, 15-20K·13薪
+2024-04-24 14:58:20.002 [main] INFO  boss.Boss - 忽略中高级Java开发, 15-20K
+2024-04-24 14:58:20.124 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-16K
+2024-04-24 14:58:20.192 [main] INFO  boss.Boss - 【Java】关键词第【4】页无岗位,目前已连续【4】页无新岗位...
+2024-04-24 14:58:20.192 [main] INFO  boss.Boss - 投递【Java】关键词第【5】页
+2024-04-24 14:58:21.970 [main] INFO  boss.Boss - 忽略JAVA开发工程师, 15-20K
+2024-04-24 14:58:22.057 [main] INFO  boss.Boss - 忽略Java, 15-20K·15薪
+2024-04-24 14:58:22.476 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 14:58:22.545 [main] INFO  boss.Boss - 忽略java, 16-18K
+2024-04-24 14:58:23.179 [main] INFO  boss.Boss - 忽略Java, 15-18K·14薪
+2024-04-24 14:58:23.490 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 14:58:23.615 [main] INFO  boss.Boss - 【Java】关键词已经连续【5】页无岗位，结束该关键词的投递...
+2024-04-24 14:58:23.616 [main] INFO  boss.Boss - 未发起新的聊天...
+2024-04-24 14:58:23.619 [main] INFO  boss.Boss - 共发起 0 个聊天,用时1分50秒
+2024-04-24 15:02:52.816 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 15:02:54.660 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 15:02:55.515 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 15:02:58.121 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 15:02:58.124 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 15:03:03.256 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 15:03:03.337 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 15:03:04.061 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 15:03:04.138 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 15:03:04.421 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 15:03:21.621 [main] INFO  boss.Boss - 【Java】关键词第【1】页无岗位,目前已连续【1】页无新岗位...
+2024-04-24 15:03:21.623 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 15:03:28.165 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 15:03:28.234 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 15:03:29.594 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:04:17.560 [main] INFO  boss.Boss - 【Java】关键词第【2】页无岗位,目前已连续【2】页无新岗位...
+2024-04-24 15:04:17.561 [main] INFO  boss.Boss - 投递【Java】关键词第【3】页
+2024-04-24 15:04:20.833 [main] INFO  boss.Boss - 忽略高级java 工程师, 15-20K
+2024-04-24 15:04:21.139 [main] INFO  boss.Boss - 忽略JAVA开发工程师, 16-20K
+2024-04-24 15:04:21.943 [main] INFO  boss.Boss - 忽略Java, 15-20K·14薪
+2024-04-24 15:04:22.186 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:04:33.924 [main] ERROR boss.Boss - 找不到boss状态
+2024-04-24 15:04:44.722 [main] INFO  boss.Boss - 【Java】关键词第【3】页无岗位,目前已连续【3】页无新岗位...
+2024-04-24 15:04:44.723 [main] INFO  boss.Boss - 投递【Java】关键词第【4】页
+2024-04-24 15:04:47.798 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 15:04:48.091 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:04:48.391 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 15:04:48.782 [main] INFO  boss.Boss - 忽略java工程师, 15-20K
+2024-04-24 15:04:48.847 [main] INFO  boss.Boss - 忽略Java开发工程师(J10453), 15-18K
+2024-04-24 15:04:48.909 [main] INFO  boss.Boss - 忽略java开发, 15-20K·13薪
+2024-04-24 15:04:49.374 [main] INFO  boss.Boss - 忽略中高级Java开发, 15-20K
+2024-04-24 15:04:49.587 [main] INFO  boss.Boss - 【Java】关键词第【4】页无岗位,目前已连续【4】页无新岗位...
+2024-04-24 15:04:49.588 [main] INFO  boss.Boss - 投递【Java】关键词第【5】页
+2024-04-24 15:04:50.942 [main] INFO  boss.Boss - 忽略JAVA开发工程师, 15-20K
+2024-04-24 15:04:51.006 [main] INFO  boss.Boss - 忽略Java, 15-20K·15薪
+2024-04-24 15:04:51.150 [main] INFO  boss.Boss - 忽略java, 16-18K
+2024-04-24 15:04:51.273 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:04:51.334 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-16K
+2024-04-24 15:04:52.058 [main] INFO  boss.Boss - 忽略Java, 15-18K·14薪
+2024-04-24 15:04:52.241 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 15:04:52.485 [main] INFO  boss.Boss - 【Java】关键词已经连续【5】页无岗位，结束该关键词的投递...
+2024-04-24 15:04:52.486 [main] INFO  boss.Boss - 未发起新的聊天...
+2024-04-24 15:04:52.489 [main] INFO  boss.Boss - 共发起 0 个聊天,用时1分57秒
+2024-04-24 15:05:05.051 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 15:05:06.767 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 15:05:09.730 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 15:05:13.024 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 15:05:13.027 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 15:05:15.660 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 15:05:16.014 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 15:05:16.465 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 15:05:16.530 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 15:05:16.726 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 15:05:24.470 [main] INFO  boss.Boss - 【Java】关键词第【1】页无岗位,目前已连续【1】页无新岗位...
+2024-04-24 15:05:24.471 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 15:05:29.648 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 15:05:29.715 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 15:05:31.087 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:06:28.098 [main] INFO  boss.Boss - 【Java】关键词第【2】页无岗位,目前已连续【2】页无新岗位...
+2024-04-24 15:06:28.100 [main] INFO  boss.Boss - 投递【Java】关键词第【3】页
+2024-04-24 15:06:34.273 [main] INFO  boss.Boss - 忽略高级java 工程师, 15-20K
+2024-04-24 15:06:34.596 [main] INFO  boss.Boss - 忽略JAVA开发工程师, 16-20K
+2024-04-24 15:06:35.505 [main] INFO  boss.Boss - 忽略Java, 15-20K·14薪
+2024-04-24 15:06:35.690 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:06:35.957 [main] INFO  boss.Boss - 忽略java工程师, 15-20K
+2024-04-24 15:06:55.099 [main] INFO  boss.Boss - 【Java】关键词第【3】页无岗位,目前已连续【3】页无新岗位...
+2024-04-24 15:06:55.100 [main] INFO  boss.Boss - 投递【Java】关键词第【4】页
+2024-04-24 15:06:56.792 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 15:06:57.076 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:06:57.320 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 15:06:57.788 [main] INFO  boss.Boss - 忽略Java开发工程师(J10453), 15-18K
+2024-04-24 15:06:57.849 [main] INFO  boss.Boss - 忽略java开发, 15-20K·13薪
+2024-04-24 15:06:58.262 [main] INFO  boss.Boss - 忽略中高级Java开发, 15-20K
+2024-04-24 15:06:58.547 [main] INFO  boss.Boss - 【Java】关键词第【4】页无岗位,目前已连续【4】页无新岗位...
+2024-04-24 15:06:58.547 [main] INFO  boss.Boss - 投递【Java】关键词第【5】页
+2024-04-24 15:07:00.716 [main] INFO  boss.Boss - 忽略JAVA开发工程师, 15-20K
+2024-04-24 15:07:00.775 [main] INFO  boss.Boss - 忽略Java, 15-20K·15薪
+2024-04-24 15:07:00.956 [main] INFO  boss.Boss - 忽略java, 16-18K
+2024-04-24 15:07:01.104 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:07:01.242 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-16K
+2024-04-24 15:07:01.962 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 15:07:02.034 [main] INFO  boss.Boss - 忽略Java, 15-18K·14薪
+2024-04-24 15:07:02.415 [main] INFO  boss.Boss - 【Java】关键词第【5】页无岗位,目前已连续【5】页无新岗位...
+2024-04-24 15:07:02.415 [main] INFO  boss.Boss - 投递【Java】关键词第【6】页
+2024-04-24 15:07:04.798 [main] INFO  boss.Boss - 忽略java开发, 15-20K
+2024-04-24 15:07:05.317 [main] INFO  boss.Boss - 忽略Java工程师, 15-18K
+2024-04-24 15:07:05.382 [main] INFO  boss.Boss - 忽略Java开发工程师, 14-20K
+2024-04-24 15:07:05.458 [main] INFO  boss.Boss - 忽略Java, 15-18K
+2024-04-24 15:07:05.654 [main] INFO  boss.Boss - 忽略java开发工程师（外派杭银理财）, 14-17K
+2024-04-24 15:07:05.883 [main] INFO  boss.Boss - 忽略Java开发工程师-TX, 14-17K·13薪
+2024-04-24 15:07:06.191 [main] INFO  boss.Boss - 忽略中级Java工程师（Base滨江）, 14-20K·13薪
+2024-04-24 15:07:06.537 [main] INFO  boss.Boss - 忽略Java, 15-19K
+2024-04-24 15:07:10.213 [main] INFO  boss.Boss - 【Java】关键词第【6】页无岗位,目前已连续【6】页无新岗位...
+2024-04-24 15:07:10.214 [main] INFO  boss.Boss - 投递【Java】关键词第【7】页
+2024-04-24 15:07:14.920 [main] INFO  boss.Boss - 忽略中级java开发工程师, 15-16K
+2024-04-24 15:07:14.920 [main] INFO  boss.Boss - 【Java】关键词第【7】页无岗位,目前已连续【7】页无新岗位...
+2024-04-24 15:07:14.920 [main] INFO  boss.Boss - 投递【Java】关键词第【8】页
+2024-04-24 15:07:18.891 [main] INFO  boss.Boss - 忽略java开发, 14-18K
+2024-04-24 15:07:19.017 [main] INFO  boss.Boss - 忽略Java, 14-18K·13薪
+2024-04-24 15:07:19.663 [main] INFO  boss.Boss - 【Java】关键词第【8】页无岗位,目前已连续【8】页无新岗位...
+2024-04-24 15:07:19.663 [main] INFO  boss.Boss - 投递【Java】关键词第【9】页
+2024-04-24 15:07:25.686 [main] INFO  boss.Boss - 忽略Java, 16-19K
+2024-04-24 15:07:25.934 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-16K
+2024-04-24 15:07:25.995 [main] INFO  boss.Boss - 忽略java开发, 14-15K
+2024-04-24 15:07:26.823 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 15:07:27.279 [main] INFO  boss.Boss - 【Java】关键词第【9】页无岗位,目前已连续【9】页无新岗位...
+2024-04-24 15:07:27.279 [main] INFO  boss.Boss - 投递【Java】关键词第【10】页
+2024-04-24 15:07:32.172 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 15:07:32.603 [main] INFO  boss.Boss - 【Java】关键词第【10】页无岗位,目前已连续【10】页无新岗位...
+2024-04-24 15:07:32.603 [main] INFO  boss.Boss - 投递【Java】关键词第【11】页
+2024-04-24 15:07:41.581 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 15:07:41.997 [main] INFO  boss.Boss - 【Java】关键词第【11】页无岗位,目前已连续【11】页无新岗位...
+2024-04-24 15:07:41.997 [main] INFO  boss.Boss - 投递【Java】关键词第【12】页
+2024-04-24 15:07:45.085 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 15:07:45.498 [main] INFO  boss.Boss - 【Java】关键词第【12】页无岗位,目前已连续【12】页无新岗位...
+2024-04-24 15:07:45.498 [main] INFO  boss.Boss - 投递【Java】关键词第【13】页
+2024-04-24 15:07:51.261 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 15:07:51.673 [main] INFO  boss.Boss - 【Java】关键词已经连续【13】页无岗位，结束该关键词的投递...
+2024-04-24 15:07:51.673 [main] INFO  boss.Boss - 未发起新的聊天...
+2024-04-24 15:07:51.676 [main] INFO  boss.Boss - 共发起 0 个聊天,用时2分44秒
+2024-04-24 15:18:56.706 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 15:18:58.888 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 15:18:59.683 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 15:19:02.297 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 15:19:02.301 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 15:19:05.941 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 15:19:06.008 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 15:19:06.382 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 15:19:06.798 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 15:19:06.865 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 15:19:07.078 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 15:19:10.893 [main] INFO  boss.Boss - 【Java】关键词第【1】页无岗位,目前已连续【1】页无新岗位...
+2024-04-24 15:19:10.894 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 15:19:13.052 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 15:19:13.966 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:20:15.644 [main] INFO  boss.Boss - 【Java】关键词第【2】页无岗位,目前已连续【2】页无新岗位...
+2024-04-24 15:20:15.644 [main] INFO  boss.Boss - 投递【Java】关键词第【3】页
+2024-04-24 15:20:19.138 [main] INFO  boss.Boss - 忽略JAVA开发工程师, 16-20K
+2024-04-24 15:20:19.690 [main] INFO  boss.Boss - 忽略高级java 工程师, 15-20K
+2024-04-24 15:20:20.234 [main] INFO  boss.Boss - 忽略Java, 15-20K·14薪
+2024-04-24 15:20:20.420 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:20:45.819 [main] INFO  boss.Boss - 【Java】关键词第【3】页无岗位,目前已连续【3】页无新岗位...
+2024-04-24 15:20:45.821 [main] INFO  boss.Boss - 投递【Java】关键词第【4】页
+2024-04-24 15:20:47.983 [main] INFO  boss.Boss - 忽略Java开发工程师-TX, 14-17K·13薪
+2024-04-24 15:20:48.257 [main] INFO  boss.Boss - 忽略java工程师, 15-20K
+2024-04-24 15:20:48.388 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 15:20:48.784 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:20:49.343 [main] INFO  boss.Boss - 忽略Java开发工程师(J10453), 15-18K
+2024-04-24 15:20:49.597 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 15:20:53.760 [main] INFO  boss.Boss - 【Java】关键词第【4】页无岗位,目前已连续【4】页无新岗位...
+2024-04-24 15:20:53.761 [main] INFO  boss.Boss - 投递【Java】关键词第【5】页
+2024-04-24 15:20:59.600 [main] INFO  boss.Boss - 忽略java开发, 15-20K·13薪
+2024-04-24 15:20:59.890 [main] INFO  boss.Boss - 忽略中高级Java开发, 15-20K
+2024-04-24 15:21:00.197 [main] INFO  boss.Boss - 忽略java, 16-18K
+2024-04-24 15:21:00.557 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-16K
+2024-04-24 15:21:00.738 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 15:21:00.804 [main] INFO  boss.Boss - 忽略Java, 15-18K·14薪
+2024-04-24 15:21:00.926 [main] INFO  boss.Boss - 忽略Java, 15-20K·15薪
+2024-04-24 15:21:01.054 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:21:01.362 [main] INFO  boss.Boss - 忽略JAVA开发工程师, 15-20K
+2024-04-24 15:21:01.362 [main] INFO  boss.Boss - 【Java】关键词第【5】页无岗位,目前已连续【5】页无新岗位...
+2024-04-24 15:21:01.362 [main] INFO  boss.Boss - 投递【Java】关键词第【6】页
+2024-04-24 15:21:02.582 [main] INFO  boss.Boss - 忽略java开发, 15-20K
+2024-04-24 15:21:02.824 [main] INFO  boss.Boss - 忽略Java工程师, 15-18K
+2024-04-24 15:21:03.104 [main] INFO  boss.Boss - 忽略Java, 15-18K
+2024-04-24 15:21:03.655 [main] INFO  boss.Boss - 忽略Java开发工程师, 14-20K
+2024-04-24 15:21:03.960 [main] INFO  boss.Boss - 忽略中级Java工程师（Base滨江）, 14-20K·13薪
+2024-04-24 15:21:04.205 [main] INFO  boss.Boss - 忽略Java, 15-19K
+2024-04-24 15:21:04.205 [main] INFO  boss.Boss - 【Java】关键词第【6】页无岗位,目前已连续【6】页无新岗位...
+2024-04-24 15:21:04.205 [main] INFO  boss.Boss - 投递【Java】关键词第【7】页
+2024-04-24 15:21:08.487 [main] INFO  boss.Boss - 忽略java开发工程师（外派杭银理财）, 14-17K
+2024-04-24 15:21:08.487 [main] INFO  boss.Boss - 【Java】关键词第【7】页无岗位,目前已连续【7】页无新岗位...
+2024-04-24 15:21:08.487 [main] INFO  boss.Boss - 投递【Java】关键词第【8】页
+2024-04-24 15:21:10.284 [main] INFO  boss.Boss - 忽略中级java开发工程师, 15-16K
+2024-04-24 15:21:10.584 [main] INFO  boss.Boss - 忽略java开发, 14-18K
+2024-04-24 15:21:11.056 [main] INFO  boss.Boss - 忽略Java, 14-18K·13薪
+2024-04-24 15:21:11.292 [main] INFO  boss.Boss - 【Java】关键词第【8】页无岗位,目前已连续【8】页无新岗位...
+2024-04-24 15:21:11.292 [main] INFO  boss.Boss - 投递【Java】关键词第【9】页
+2024-04-24 15:21:14.476 [main] INFO  boss.Boss - 忽略Java, 16-19K
+2024-04-24 15:21:14.541 [main] INFO  boss.Boss - 忽略java开发, 14-15K
+2024-04-24 15:21:14.665 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-16K
+2024-04-24 15:21:15.813 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 15:21:15.954 [main] INFO  boss.Boss - 【Java】关键词第【9】页无岗位,目前已连续【9】页无新岗位...
+2024-04-24 15:21:15.954 [main] INFO  boss.Boss - 投递【Java】关键词第【10】页
+2024-04-24 15:21:18.772 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 15:21:19.075 [main] INFO  boss.Boss - 【Java】关键词第【10】页无岗位,目前已连续【10】页无新岗位...
+2024-04-24 15:21:19.075 [main] INFO  boss.Boss - 投递【Java】关键词第【11】页
+2024-04-24 15:21:21.517 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 15:21:21.812 [main] INFO  boss.Boss - 【Java】关键词第【11】页无岗位,目前已连续【11】页无新岗位...
+2024-04-24 15:21:21.813 [main] INFO  boss.Boss - 投递【Java】关键词第【12】页
+2024-04-24 15:21:24.712 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 15:21:25.007 [main] INFO  boss.Boss - 【Java】关键词第【12】页无岗位,目前已连续【12】页无新岗位...
+2024-04-24 15:21:25.007 [main] INFO  boss.Boss - 投递【Java】关键词第【13】页
+2024-04-24 15:21:28.041 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 15:21:28.334 [main] INFO  boss.Boss - 【Java】关键词已经连续【13】页无岗位，结束该关键词的投递...
+2024-04-24 15:21:28.335 [main] INFO  boss.Boss - 未发起新的聊天...
+2024-04-24 15:21:28.337 [main] INFO  boss.Boss - 共发起 0 个聊天,用时2分29秒
+2024-04-24 15:49:38.960 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 15:49:40.968 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 15:49:41.750 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 15:49:44.324 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 15:49:44.329 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 15:49:49.787 [main] INFO  boss.Boss - 忽略中级Java开发工程师, 15-19K·13薪
+2024-04-24 15:49:50.303 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 15:49:51.016 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 15:49:51.083 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 15:49:51.308 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 15:49:54.178 [main] INFO  boss.Boss - 【Java】关键词第【1】页无岗位,目前已连续【1】页无新岗位...
+2024-04-24 15:49:54.178 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 15:49:56.007 [main] INFO  boss.Boss - 忽略后端java开发工程师, 15-18K
+2024-04-24 15:49:56.161 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 15:49:56.431 [main] INFO  boss.Boss - 忽略资深java开发工程师, 14-20K
+2024-04-24 15:49:56.626 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 15:49:56.757 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 15:49:57.009 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:50:56.565 [main] INFO  boss.Boss - 【Java】关键词第【2】页无岗位,目前已连续【2】页无新岗位...
+2024-04-24 15:50:56.566 [main] INFO  boss.Boss - 投递【Java】关键词第【3】页
+2024-04-24 15:51:00.599 [main] INFO  boss.Boss - 忽略高级java 工程师, 15-20K
+2024-04-24 15:51:59.988 [main] INFO  boss.Boss - 【Java】关键词第【3】页无岗位,目前已连续【3】页无新岗位...
+2024-04-24 15:51:59.990 [main] INFO  boss.Boss - 投递【Java】关键词第【4】页
+2024-04-24 15:52:04.123 [main] INFO  boss.Boss - 忽略Java, 15-20K·14薪
+2024-04-24 15:52:04.242 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:52:04.442 [main] INFO  boss.Boss - 忽略java工程师, 15-20K
+2024-04-24 15:52:04.568 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 15:52:04.955 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:52:05.423 [main] INFO  boss.Boss - 忽略Java开发工程师(J10453), 15-18K
+2024-04-24 15:52:08.037 [main] INFO  boss.Boss - 【Java】关键词第【4】页无岗位,目前已连续【4】页无新岗位...
+2024-04-24 15:52:08.037 [main] INFO  boss.Boss - 投递【Java】关键词第【5】页
+2024-04-24 15:52:11.812 [main] INFO  boss.Boss - 忽略JAVA中高级开发, 14-20K
+2024-04-24 15:52:11.932 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 15:52:12.055 [main] INFO  boss.Boss - 忽略java开发, 15-20K·13薪
+2024-04-24 15:52:12.411 [main] INFO  boss.Boss - 忽略中高级Java开发, 15-20K
+2024-04-24 15:52:12.473 [main] INFO  boss.Boss - 忽略java, 16-18K
+2024-04-24 15:52:12.595 [main] INFO  boss.Boss - 忽略java中级开发工程师, 15-18K·13薪
+2024-04-24 15:52:12.958 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 15:52:13.135 [main] INFO  boss.Boss - 忽略Java, 15-18K·14薪
+2024-04-24 15:52:13.343 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 15:52:13.359 [main] INFO  boss.Boss - 【Java】关键词第【5】页无岗位,目前已连续【5】页无新岗位...
+2024-04-24 15:52:13.359 [main] INFO  boss.Boss - 投递【Java】关键词第【6】页
+2024-04-24 15:52:19.271 [main] INFO  boss.Boss - 忽略Java, 15-20K·15薪
+2024-04-24 15:52:19.391 [main] INFO  boss.Boss - 忽略JAVA开发工程师, 15-20K
+2024-04-24 15:52:19.722 [main] INFO  boss.Boss - 忽略java开发, 15-20K
+2024-04-24 15:52:19.797 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-16K
+2024-04-24 15:52:19.921 [main] INFO  boss.Boss - 忽略Java工程师, 15-18K
+2024-04-24 15:52:20.299 [main] INFO  boss.Boss - 忽略Java, 15-18K
+2024-04-24 15:52:20.382 [main] INFO  boss.Boss - 忽略Java开发工程师-TX, 14-17K·13薪
+2024-04-24 15:52:20.783 [main] INFO  boss.Boss - 忽略java开发工程师（外派杭银理财）, 14-17K
+2024-04-24 15:52:21.094 [main] INFO  boss.Boss - 忽略杭州银行中高级java, 14-17K
+2024-04-24 15:52:21.094 [main] INFO  boss.Boss - 【Java】关键词第【6】页无岗位,目前已连续【6】页无新岗位...
+2024-04-24 15:52:21.094 [main] INFO  boss.Boss - 投递【Java】关键词第【7】页
+2024-04-24 15:52:23.618 [main] INFO  boss.Boss - 忽略Java开发工程师, 14-20K
+2024-04-24 15:52:24.089 [main] INFO  boss.Boss - 忽略Java, 15-19K
+2024-04-24 15:52:24.926 [main] INFO  boss.Boss - 【Java】关键词第【7】页无岗位,目前已连续【7】页无新岗位...
+2024-04-24 15:52:24.926 [main] INFO  boss.Boss - 投递【Java】关键词第【8】页
+2024-04-24 15:52:27.546 [main] INFO  boss.Boss - 忽略中级Java工程师（Base滨江）, 14-20K·13薪
+2024-04-24 15:52:29.352 [main] INFO  boss.Boss - 忽略Java开发（金融行业）, 14-15K
+2024-04-24 15:52:30.048 [main] INFO  boss.Boss - 忽略Java中级开发工程师, 15-17K
+2024-04-24 15:52:30.166 [main] INFO  boss.Boss - 忽略中级java开发工程师, 15-16K
+2024-04-24 15:52:30.293 [main] INFO  boss.Boss - 【Java】关键词第【8】页无岗位,目前已连续【8】页无新岗位...
+2024-04-24 15:52:30.293 [main] INFO  boss.Boss - 投递【Java】关键词第【9】页
+2024-04-24 15:52:31.808 [main] INFO  boss.Boss - 忽略java开发, 14-18K
+2024-04-24 15:52:32.129 [main] INFO  boss.Boss - 忽略中级Java开发工程师, 14-16K·13薪
+2024-04-24 15:52:32.682 [main] INFO  boss.Boss - 忽略Java, 16-19K
+2024-04-24 15:52:32.917 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-16K
+2024-04-24 15:52:33.505 [main] INFO  boss.Boss - 【Java】关键词第【9】页无岗位,目前已连续【9】页无新岗位...
+2024-04-24 15:52:33.505 [main] INFO  boss.Boss - 投递【Java】关键词第【10】页
+2024-04-24 15:52:40.397 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 15:52:42.829 [main] INFO  boss.Boss - 【Java】关键词第【10】页无岗位,目前已连续【10】页无新岗位...
+2024-04-24 15:52:42.851 [main] INFO  boss.Boss - 投递【Java】关键词第【11】页
+2024-04-24 15:52:45.475 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 15:52:47.118 [main] INFO  boss.Boss - 【Java】关键词第【11】页无岗位,目前已连续【11】页无新岗位...
+2024-04-24 15:52:47.119 [main] INFO  boss.Boss - 投递【Java】关键词第【12】页
+2024-04-24 15:52:50.451 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 15:52:52.088 [main] INFO  boss.Boss - 【Java】关键词第【12】页无岗位,目前已连续【12】页无新岗位...
+2024-04-24 15:52:52.088 [main] INFO  boss.Boss - 投递【Java】关键词第【13】页
+2024-04-24 15:52:56.589 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 15:52:58.244 [main] INFO  boss.Boss - 【Java】关键词已经连续【13】页无岗位，结束该关键词的投递...
+2024-04-24 15:52:58.245 [main] INFO  boss.Boss - 未发起新的聊天...
+2024-04-24 15:52:58.247 [main] INFO  boss.Boss - 共发起 0 个聊天,用时3分17秒
+2024-04-24 16:05:33.671 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 16:05:35.453 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 16:05:36.244 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 16:05:38.872 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 16:05:38.876 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 16:05:42.619 [main] INFO  boss.Boss - 忽略中级Java开发工程师, 15-19K·13薪
+2024-04-24 16:05:43.012 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 16:05:43.771 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 16:05:43.921 [main] INFO  boss.Boss - 忽略后端java开发工程师, 15-18K
+2024-04-24 16:05:44.144 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 16:05:44.222 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 16:05:44.520 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 16:05:47.692 [main] INFO  boss.Boss - 【Java】关键词第【1】页无岗位,目前已连续【1】页无新岗位...
+2024-04-24 16:05:47.693 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 16:05:49.176 [main] INFO  boss.Boss - 忽略资深java开发工程师, 14-20K
+2024-04-24 16:05:49.612 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 16:05:49.938 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:05:50.002 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 16:06:32.387 [main] INFO  boss.Boss - 【Java】关键词第【2】页无岗位,目前已连续【2】页无新岗位...
+2024-04-24 16:06:32.388 [main] INFO  boss.Boss - 投递【Java】关键词第【3】页
+2024-04-24 16:06:35.517 [main] INFO  boss.Boss - 忽略高级java 工程师, 15-20K
+2024-04-24 16:07:37.759 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 16:07:39.417 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 16:07:40.282 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 16:07:42.974 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 16:07:42.979 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 16:10:35.265 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 16:10:37.470 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 16:10:38.242 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 16:10:40.749 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 16:10:40.753 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 16:10:43.520 [main] INFO  boss.Boss - 忽略中级Java开发工程师, 15-19K·13薪
+2024-04-24 16:10:43.753 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 16:10:44.281 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 16:10:44.437 [main] INFO  boss.Boss - 忽略java开发, 13-17K
+2024-04-24 16:10:44.575 [main] INFO  boss.Boss - 忽略资深java开发工程师, 14-20K
+2024-04-24 16:10:44.668 [main] INFO  boss.Boss - 忽略Java工程师, 13-18K·13薪
+2024-04-24 16:10:44.736 [main] INFO  boss.Boss - 忽略后端java开发工程师, 15-18K
+2024-04-24 16:10:45.080 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 16:10:50.245 [main] INFO  boss.Boss - 【Java】关键词第【1】页无岗位,目前已连续【1】页无新岗位...
+2024-04-24 16:10:50.245 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 16:10:51.016 [main] INFO  boss.Boss - 忽略java开发工程师, 15-20K
+2024-04-24 16:10:51.149 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 16:10:51.483 [main] INFO  boss.Boss - 忽略java工程师, 13-20K·13薪
+2024-04-24 16:10:51.551 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:10:51.616 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 16:10:51.812 [main] INFO  boss.Boss - 忽略高级Java研发工程师, 13-20K·15薪
+2024-04-24 16:10:52.000 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 16:11:47.166 [main] INFO  boss.Boss - 【Java】关键词第【2】页无岗位,目前已连续【2】页无新岗位...
+2024-04-24 16:11:47.167 [main] INFO  boss.Boss - 投递【Java】关键词第【3】页
+2024-04-24 16:11:50.964 [main] INFO  boss.Boss - 忽略高级java 工程师, 15-20K
+2024-04-24 16:12:44.101 [main] INFO  boss.Boss - 【Java】关键词第【3】页无岗位,目前已连续【3】页无新岗位...
+2024-04-24 16:12:44.103 [main] INFO  boss.Boss - 投递【Java】关键词第【4】页
+2024-04-24 16:12:45.777 [main] INFO  boss.Boss - 忽略Java中级开发工程师, 13-20K·14薪
+2024-04-24 16:12:45.838 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:12:45.988 [main] INFO  boss.Boss - 忽略java开发, 13-20K
+2024-04-24 16:12:46.121 [main] INFO  boss.Boss - 忽略中级java工程师, 13-18K·13薪
+2024-04-24 16:12:46.184 [main] INFO  boss.Boss - 忽略java工程师, 15-20K
+2024-04-24 16:12:46.254 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 16:12:46.317 [main] INFO  boss.Boss - 忽略Java, 15-20K·14薪
+2024-04-24 16:12:46.565 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:12:46.816 [main] INFO  boss.Boss - 忽略高级java开发工程师, 13-20K
+2024-04-24 16:12:47.163 [main] INFO  boss.Boss - 忽略java开发工程师, 13-18K
+2024-04-24 16:12:47.298 [main] INFO  boss.Boss - 忽略JAVA中高级开发, 14-20K
+2024-04-24 16:12:47.430 [main] INFO  boss.Boss - 忽略Java后台开发, 13-20K·13薪
+2024-04-24 16:12:47.575 [main] INFO  boss.Boss - 忽略Java开发工程师(J10453), 15-18K
+2024-04-24 16:12:58.370 [main] INFO  boss.Boss - 【Java】关键词第【4】页无岗位,目前已连续【4】页无新岗位...
+2024-04-24 16:12:58.370 [main] INFO  boss.Boss - 投递【Java】关键词第【5】页
+2024-04-24 16:13:03.932 [main] INFO  boss.Boss - 忽略java开发工程师, 13-15K·13薪
+2024-04-24 16:13:03.992 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 16:13:04.066 [main] INFO  boss.Boss - 忽略杭州Java开发, 13-16K
+2024-04-24 16:13:04.161 [main] INFO  boss.Boss - 忽略java开发, 15-20K·13薪
+2024-04-24 16:13:04.225 [main] INFO  boss.Boss - 忽略java中级开发工程师, 15-18K·13薪
+2024-04-24 16:13:04.424 [main] INFO  boss.Boss - 忽略Java, 13-20K·16薪
+2024-04-24 16:13:04.486 [main] INFO  boss.Boss - 忽略中高级Java开发, 15-20K
+2024-04-24 16:13:04.732 [main] INFO  boss.Boss - 忽略Java开发工程师-TX, 14-17K·13薪
+2024-04-24 16:13:05.217 [main] INFO  boss.Boss - 忽略java, 16-18K
+2024-04-24 16:13:05.292 [main] INFO  boss.Boss - 忽略Java, 15-18K·14薪
+2024-04-24 16:13:05.359 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 16:13:05.430 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:13:05.752 [main] INFO  boss.Boss - 忽略Java, 15-20K·15薪
+2024-04-24 16:13:05.811 [main] INFO  boss.Boss - 忽略JAVA开发工程师, 15-20K
+2024-04-24 16:13:11.122 [main] INFO  boss.Boss - 【Java】关键词第【5】页无岗位,目前已连续【5】页无新岗位...
+2024-04-24 16:13:11.123 [main] INFO  boss.Boss - 投递【Java】关键词第【6】页
+2024-04-24 16:13:12.019 [main] INFO  boss.Boss - 忽略Java-估值, 13-16K
+2024-04-24 16:13:12.321 [main] INFO  boss.Boss - 忽略中级java工程师, 13-20K
+2024-04-24 16:13:12.381 [main] INFO  boss.Boss - 忽略java开发, 15-20K
+2024-04-24 16:13:12.441 [main] INFO  boss.Boss - 忽略Java工程师, 15-18K
+2024-04-24 16:13:12.501 [main] INFO  boss.Boss - 忽略Java高级软件工程师, 13-17K
+2024-04-24 16:13:12.630 [main] INFO  boss.Boss - 忽略Java, 15-18K
+2024-04-24 16:13:12.691 [main] INFO  boss.Boss - 忽略Java开发工程师, 13-20K·13薪
+2024-04-24 16:13:13.053 [main] INFO  boss.Boss - 忽略java C++高级开发工程师, 13-16K·13薪
+2024-04-24 16:13:13.367 [main] INFO  boss.Boss - 忽略java开发工程师（外派杭银理财）, 14-17K
+2024-04-24 16:13:13.494 [main] INFO  boss.Boss - 忽略高级java开发工程师, 13-18K·13薪
+2024-04-24 16:13:13.557 [main] INFO  boss.Boss - 忽略杭州银行中高级java, 14-17K
+2024-04-24 16:13:13.625 [main] INFO  boss.Boss - 忽略java开发, 13-17K
+2024-04-24 16:13:17.066 [main] INFO  boss.Boss - 【Java】关键词第【6】页无岗位,目前已连续【6】页无新岗位...
+2024-04-24 16:13:17.067 [main] INFO  boss.Boss - 投递【Java】关键词第【7】页
+2024-04-24 16:13:18.366 [main] INFO  boss.Boss - 忽略Java开发工程师, 14-20K
+2024-04-24 16:13:18.426 [main] INFO  boss.Boss - 忽略Java后端开发, 13-20K
+2024-04-24 16:13:18.646 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-16K
+2024-04-24 16:13:19.015 [main] INFO  boss.Boss - 忽略Java, 15-19K
+2024-04-24 16:13:19.192 [main] INFO  boss.Boss - 忽略Java开发工程师, 13-20K·13薪
+2024-04-24 16:13:19.627 [main] INFO  boss.Boss - 忽略中级Java工程师（Base滨江）, 14-20K·13薪
+2024-04-24 16:13:19.690 [main] INFO  boss.Boss - 忽略Java开发（金融行业）, 14-15K
+2024-04-24 16:13:20.176 [main] INFO  boss.Boss - 【Java】关键词第【7】页无岗位,目前已连续【7】页无新岗位...
+2024-04-24 16:13:20.177 [main] INFO  boss.Boss - 投递【Java】关键词第【8】页
+2024-04-24 16:13:21.682 [main] INFO  boss.Boss - 忽略JAVA开发（HX）, 13-15K·13薪
+2024-04-24 16:13:22.045 [main] INFO  boss.Boss - 忽略java工程师, 13-18K·13薪
+2024-04-24 16:13:22.284 [main] INFO  boss.Boss - 忽略java开发, 13-18K·13薪
+2024-04-24 16:13:22.347 [main] INFO  boss.Boss - 忽略java开发工程师（金融）, 13-15K
+2024-04-24 16:13:22.409 [main] INFO  boss.Boss - 忽略Java中级开发工程师, 15-17K
+2024-04-24 16:13:22.603 [main] INFO  boss.Boss - 忽略java开发工程师, 13-18K
+2024-04-24 16:13:22.922 [main] INFO  boss.Boss - 忽略Java开发工程师, 13-18K
+2024-04-24 16:13:22.981 [main] INFO  boss.Boss - 忽略中级java开发工程师, 15-16K
+2024-04-24 16:13:23.171 [main] INFO  boss.Boss - 【Java】关键词第【8】页无岗位,目前已连续【8】页无新岗位...
+2024-04-24 16:13:23.171 [main] INFO  boss.Boss - 投递【Java】关键词第【9】页
+2024-04-24 16:13:26.131 [main] INFO  boss.Boss - 忽略中级Java开发工程师, 14-16K·13薪
+2024-04-24 16:13:26.259 [main] INFO  boss.Boss - 忽略java开发, 14-18K
+2024-04-24 16:13:26.856 [main] INFO  boss.Boss - 忽略Java开发工程师, 13-17K
+2024-04-24 16:13:26.976 [main] INFO  boss.Boss - 忽略Java, 13-17K·13薪
+2024-04-24 16:13:27.097 [main] INFO  boss.Boss - 忽略Java, 16-19K
+2024-04-24 16:13:27.458 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-16K
+2024-04-24 16:13:27.758 [main] INFO  boss.Boss - 忽略中级java开发工程师, 13-16K
+2024-04-24 16:13:27.817 [main] INFO  boss.Boss - 【Java】关键词第【9】页无岗位,目前已连续【9】页无新岗位...
+2024-04-24 16:13:27.817 [main] INFO  boss.Boss - 投递【Java】关键词第【10】页
+2024-04-24 16:13:28.837 [main] INFO  boss.Boss - 忽略java开发工程师, 13-16K·13薪
+2024-04-24 16:13:28.898 [main] INFO  boss.Boss - 忽略java开发工程师(中高级), 13-16K·13薪
+2024-04-24 16:13:28.959 [main] INFO  boss.Boss - 忽略Java开发工程师, 13-17K·13薪
+2024-04-24 16:13:29.019 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 16:13:30.462 [main] INFO  boss.Boss - 【Java】关键词第【10】页无岗位,目前已连续【10】页无新岗位...
+2024-04-24 16:13:30.462 [main] INFO  boss.Boss - 投递【Java】关键词第【11】页
+2024-04-24 16:13:33.580 [main] INFO  boss.Boss - 忽略java开发工程师, 13-16K·13薪
+2024-04-24 16:13:33.669 [main] INFO  boss.Boss - 忽略java开发工程师(中高级), 13-16K·13薪
+2024-04-24 16:13:33.736 [main] INFO  boss.Boss - 忽略Java开发工程师, 13-17K·13薪
+2024-04-24 16:13:33.799 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 16:13:35.177 [main] INFO  boss.Boss - 【Java】关键词第【11】页无岗位,目前已连续【11】页无新岗位...
+2024-04-24 16:13:35.177 [main] INFO  boss.Boss - 投递【Java】关键词第【12】页
+2024-04-24 16:13:38.028 [main] INFO  boss.Boss - 忽略java开发工程师, 13-16K·13薪
+2024-04-24 16:13:38.087 [main] INFO  boss.Boss - 忽略java开发工程师(中高级), 13-16K·13薪
+2024-04-24 16:13:38.152 [main] INFO  boss.Boss - 忽略Java开发工程师, 13-17K·13薪
+2024-04-24 16:13:38.213 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 16:13:39.576 [main] INFO  boss.Boss - 【Java】关键词第【12】页无岗位,目前已连续【12】页无新岗位...
+2024-04-24 16:13:39.576 [main] INFO  boss.Boss - 投递【Java】关键词第【13】页
+2024-04-24 16:13:40.502 [main] INFO  boss.Boss - 忽略java开发工程师, 13-16K·13薪
+2024-04-24 16:13:40.561 [main] INFO  boss.Boss - 忽略java开发工程师(中高级), 13-16K·13薪
+2024-04-24 16:13:40.623 [main] INFO  boss.Boss - 忽略Java开发工程师, 13-17K·13薪
+2024-04-24 16:13:40.688 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 16:13:42.078 [main] INFO  boss.Boss - 【Java】关键词已经连续【13】页无岗位，结束该关键词的投递...
+2024-04-24 16:13:42.079 [main] INFO  boss.Boss - 未发起新的聊天...
+2024-04-24 16:13:42.086 [main] INFO  boss.Boss - 共发起 0 个聊天,用时3分4秒
+2024-04-24 16:18:00.102 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 16:18:01.591 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 16:18:02.346 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 16:18:05.020 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 16:18:05.025 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 16:18:07.112 [main] INFO  boss.Boss - 忽略资深Java开发工程师, 15-20K·14薪
+2024-04-24 16:18:07.260 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 16:18:07.561 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 16:18:07.922 [main] INFO  boss.Boss - 忽略java开发, 13-17K
+2024-04-24 16:18:08.060 [main] INFO  boss.Boss - 忽略java开发工程师, 15-18K
+2024-04-24 16:18:08.370 [main] INFO  boss.Boss - 忽略高级Java开发工程师, 14-19K
+2024-04-24 16:18:08.505 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 16:18:20.689 [main] INFO  boss.Boss - 投递【浙江力得】公司，【医疗软件java开发 15-30K·13薪 杭州】职位，招聘官:【柴女士 人事】,在线：【在线】
+2024-04-24 16:18:33.670 [main] DEBUG boss.Boss - 忽略bossStatus: 3日内活跃
+2024-04-24 16:18:33.671 [main] ERROR boss.Boss - 找不到boss状态
+2024-04-24 16:18:36.172 [main] DEBUG boss.Boss - 忽略bossStatus: 今日活跃
+2024-04-24 16:18:36.172 [main] ERROR boss.Boss - 找不到boss状态
+2024-04-24 16:18:47.856 [main] DEBUG boss.Boss - 忽略bossStatus: 4月内活跃
+2024-04-24 16:18:47.857 [main] ERROR boss.Boss - 找不到boss状态
+2024-04-24 16:18:51.434 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 16:18:55.202 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 16:18:55.428 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:18:55.623 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 16:18:55.815 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 16:18:55.884 [main] INFO  boss.Boss - 忽略高级Java研发工程师, 13-20K·15薪
+2024-04-24 16:18:56.219 [main] INFO  boss.Boss - 忽略java C++高级开发工程师, 13-16K·13薪
+2024-04-24 16:18:56.281 [main] INFO  boss.Boss - 忽略Java高级开发工程师, 15-18K·13薪
+2024-04-24 16:19:40.379 [main] INFO  boss.Boss - 投递【医贝云服】公司，【java开发工程师 14-28K 杭州】职位，招聘官:【吴晓鹏 招聘者】,在线：【刚刚活跃】
+2024-04-24 16:20:07.425 [main] INFO  boss.Boss - 投递【Java】关键词第【3】页
+2024-04-24 16:20:10.548 [main] INFO  boss.Boss - 忽略Java中级开发工程师, 13-20K·14薪
+2024-04-24 16:20:10.611 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:20:10.796 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:20:11.048 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 16:20:43.634 [main] INFO  boss.Boss - 【Java】关键词第【3】页无岗位,目前已连续【1】页无新岗位...
+2024-04-24 16:20:43.635 [main] INFO  boss.Boss - 投递【Java】关键词第【4】页
+2024-04-24 16:20:46.441 [main] INFO  boss.Boss - 忽略Java, 15-20K·14薪
+2024-04-24 16:20:46.505 [main] INFO  boss.Boss - 忽略Java开发工程师, 13-16K
+2024-04-24 16:20:46.818 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:20:47.016 [main] INFO  boss.Boss - 忽略高级java开发工程师, 13-20K
+2024-04-24 16:20:47.385 [main] INFO  boss.Boss - 忽略Java, 15-20K·14薪
+2024-04-24 16:20:47.765 [main] INFO  boss.Boss - 忽略Java后台开发, 13-20K·13薪
+2024-04-24 16:20:47.955 [main] INFO  boss.Boss - 忽略Java开发工程师(J10453), 15-18K
+2024-04-24 16:21:12.454 [main] INFO  boss.Boss - 【Java】关键词第【4】页无岗位,目前已连续【2】页无新岗位...
+2024-04-24 16:21:12.455 [main] INFO  boss.Boss - 投递【Java】关键词第【5】页
+2024-04-24 16:21:15.308 [main] INFO  boss.Boss - 忽略java开发, 15-20K·13薪
+2024-04-24 16:21:15.418 [main] INFO  boss.Boss - 忽略Java, 15-20K·13薪
+2024-04-24 16:21:15.481 [main] INFO  boss.Boss - 忽略java开发工程师, 13-15K·13薪
+2024-04-24 16:21:15.677 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:21:15.941 [main] INFO  boss.Boss - 忽略Java, 13-20K·16薪
+2024-04-24 16:21:16.423 [main] INFO  boss.Boss - 忽略java开发, 13-20K
+2024-04-24 16:21:16.706 [main] INFO  boss.Boss - 忽略Java-估值, 13-16K
+2024-04-24 16:21:16.768 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 16:21:17.025 [main] INFO  boss.Boss - 忽略Java, 15-18K·14薪
+2024-04-24 16:21:49.036 [main] INFO  boss.Boss - 【Java】关键词第【5】页无岗位,目前已连续【3】页无新岗位...
+2024-04-24 16:21:49.038 [main] INFO  boss.Boss - 投递【Java】关键词第【6】页
+2024-04-24 16:21:50.019 [main] INFO  boss.Boss - 忽略java, 16-18K
+2024-04-24 16:21:50.313 [main] INFO  boss.Boss - 忽略Java, 15-20K·15薪
+2024-04-24 16:21:50.372 [main] INFO  boss.Boss - 忽略java开发, 13-15K·13薪
+2024-04-24 16:21:50.873 [main] INFO  boss.Boss - 忽略java开发, 15-20K
+2024-04-24 16:21:50.932 [main] INFO  boss.Boss - 忽略杭州银行中高级java, 14-17K
+2024-04-24 16:21:51.056 [main] INFO  boss.Boss - 忽略Java高级软件工程师, 13-17K
+2024-04-24 16:21:51.244 [main] INFO  boss.Boss - 忽略Java, 15-18K
+2024-04-24 16:21:51.304 [main] INFO  boss.Boss - 忽略Java开发-短期4个月, 13-16K
+2024-04-24 16:21:51.423 [main] INFO  boss.Boss - 忽略java开发, 13-17K
+2024-04-24 16:22:08.916 [main] INFO  boss.Boss - 【Java】关键词第【6】页无岗位,目前已连续【4】页无新岗位...
+2024-04-24 16:22:08.918 [main] INFO  boss.Boss - 投递【Java】关键词第【7】页
+2024-04-24 16:22:10.129 [main] INFO  boss.Boss - 忽略java开发工程师（外派杭银理财）, 14-17K
+2024-04-24 16:22:10.563 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-16K
+2024-04-24 16:22:10.930 [main] INFO  boss.Boss - 忽略Java, 15-19K
+2024-04-24 16:22:11.651 [main] INFO  boss.Boss - 忽略Java开发工程师-TX, 14-17K·13薪
+2024-04-24 16:22:15.184 [main] INFO  boss.Boss - 【Java】关键词第【7】页无岗位,目前已连续【5】页无新岗位...
+2024-04-24 16:22:15.185 [main] INFO  boss.Boss - 投递【Java】关键词第【8】页
+2024-04-24 16:22:20.601 [main] INFO  boss.Boss - 忽略Java, 14-18K·13薪
+2024-04-24 16:22:20.738 [main] INFO  boss.Boss - 忽略java工程师, 13-18K·13薪
+2024-04-24 16:22:20.802 [main] INFO  boss.Boss - 忽略JAVA开发（HX）, 13-15K·13薪
+2024-04-24 16:22:20.991 [main] INFO  boss.Boss - 忽略java开发工程师, 13-18K
+2024-04-24 16:22:21.370 [main] INFO  boss.Boss - 忽略Java开发工程师, 13-18K
+2024-04-24 16:22:21.430 [main] INFO  boss.Boss - 忽略java开发, 13-18K·13薪
+2024-04-24 16:22:21.489 [main] INFO  boss.Boss - 忽略中级java开发工程师, 15-16K
+2024-04-24 16:22:21.550 [main] INFO  boss.Boss - 忽略java开发工程师（金融）, 13-15K
+2024-04-24 16:22:21.788 [main] INFO  boss.Boss - 忽略java开发, 14-18K
+2024-04-24 16:22:24.704 [main] INFO  boss.Boss - 【Java】关键词第【8】页无岗位,目前已连续【6】页无新岗位...
+2024-04-24 16:22:24.705 [main] INFO  boss.Boss - 投递【Java】关键词第【9】页
+2024-04-24 16:22:26.593 [main] INFO  boss.Boss - 忽略Java, 14-18K·13薪
+2024-04-24 16:22:27.200 [main] INFO  boss.Boss - 忽略Java, 13-17K·13薪
+2024-04-24 16:22:27.260 [main] INFO  boss.Boss - 忽略Java, 16-19K
+2024-04-24 16:22:27.856 [main] INFO  boss.Boss - 忽略中级java开发工程师, 13-16K
+2024-04-24 16:22:27.917 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-16K
+2024-04-24 16:22:28.220 [main] INFO  boss.Boss - 【Java】关键词第【9】页无岗位,目前已连续【7】页无新岗位...
+2024-04-24 16:22:28.220 [main] INFO  boss.Boss - 投递【Java】关键词第【10】页
+2024-04-24 16:22:31.230 [main] INFO  boss.Boss - 忽略java开发工程师(中高级), 13-16K·13薪
+2024-04-24 16:22:31.464 [main] INFO  boss.Boss - 忽略java开发工程师, 13-16K·13薪
+2024-04-24 16:22:31.532 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 16:22:32.176 [main] INFO  boss.Boss - 忽略java, 13-15K
+2024-04-24 16:22:32.659 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 16:22:32.968 [main] INFO  boss.Boss - 【Java】关键词第【10】页无岗位,目前已连续【8】页无新岗位...
+2024-04-24 16:22:32.968 [main] INFO  boss.Boss - 投递【Java】关键词第【11】页
+2024-04-24 16:22:40.220 [main] INFO  boss.Boss - 忽略java开发工程师(中高级), 13-16K·13薪
+2024-04-24 16:22:40.425 [main] INFO  boss.Boss - 忽略java开发工程师, 13-16K·13薪
+2024-04-24 16:22:40.486 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 16:22:41.115 [main] INFO  boss.Boss - 忽略java, 13-15K
+2024-04-24 16:22:41.624 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 16:22:41.919 [main] INFO  boss.Boss - 【Java】关键词第【11】页无岗位,目前已连续【9】页无新岗位...
+2024-04-24 16:22:41.920 [main] INFO  boss.Boss - 投递【Java】关键词第【12】页
+2024-04-24 16:22:43.731 [main] INFO  boss.Boss - 忽略java开发工程师(中高级), 13-16K·13薪
+2024-04-24 16:22:43.944 [main] INFO  boss.Boss - 忽略java开发工程师, 13-16K·13薪
+2024-04-24 16:22:44.004 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 16:22:44.642 [main] INFO  boss.Boss - 忽略java, 13-15K
+2024-04-24 16:22:45.123 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 16:22:45.435 [main] INFO  boss.Boss - 【Java】关键词第【12】页无岗位,目前已连续【10】页无新岗位...
+2024-04-24 16:22:45.436 [main] INFO  boss.Boss - 投递【Java】关键词第【13】页
+2024-04-24 16:22:47.316 [main] INFO  boss.Boss - 忽略java开发工程师(中高级), 13-16K·13薪
+2024-04-24 16:22:47.541 [main] INFO  boss.Boss - 忽略java开发工程师, 13-16K·13薪
+2024-04-24 16:22:47.607 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 16:22:48.218 [main] INFO  boss.Boss - 忽略java, 13-15K
+2024-04-24 16:22:48.695 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 16:22:48.992 [main] INFO  boss.Boss - 【Java】关键词第【13】页无岗位,目前已连续【11】页无新岗位...
+2024-04-24 16:22:48.993 [main] INFO  boss.Boss - 投递【Java】关键词第【14】页
+2024-04-24 16:22:54.403 [main] INFO  boss.Boss - 忽略java开发工程师(中高级), 13-16K·13薪
+2024-04-24 16:22:54.638 [main] INFO  boss.Boss - 忽略java开发工程师, 13-16K·13薪
+2024-04-24 16:22:54.696 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 16:22:55.306 [main] INFO  boss.Boss - 忽略java, 13-15K
+2024-04-24 16:22:55.783 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 16:22:56.083 [main] INFO  boss.Boss - 【Java】关键词第【14】页无岗位,目前已连续【12】页无新岗位...
+2024-04-24 16:22:56.083 [main] INFO  boss.Boss - 投递【Java】关键词第【15】页
+2024-04-24 16:22:58.145 [main] INFO  boss.Boss - 忽略java开发工程师(中高级), 13-16K·13薪
+2024-04-24 16:22:58.378 [main] INFO  boss.Boss - 忽略java开发工程师, 13-16K·13薪
+2024-04-24 16:22:58.437 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 16:22:59.064 [main] INFO  boss.Boss - 忽略java, 13-15K
+2024-04-24 16:22:59.541 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 16:22:59.836 [main] INFO  boss.Boss - 【Java】关键词已经连续【13】页无岗位，结束该关键词的投递...
+2024-04-24 16:22:59.837 [main] INFO  boss.Boss - 新发起聊天公司如下:
+【浙江力得, 医疗软件java开发, 杭州·萧山区·城厢, 15-30K·13薪, 3-5年·大专, 柴女士:人事】
+【医贝云服, java开发工程师, 杭州·余杭区·五常, 14-28K, 3-5年·大专, 吴晓鹏:招聘者】
+2024-04-24 16:22:59.842 [main] INFO  boss.Boss - 共发起 2 个聊天,用时4分58秒
+2024-04-24 16:28:15.517 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 16:28:17.563 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 16:28:18.359 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 16:28:20.958 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 16:28:20.964 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 16:28:22.980 [main] INFO  boss.Boss - 忽略资深Java开发工程师, 15-20K·14薪
+2024-04-24 16:28:23.140 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-24 16:28:23.286 [main] INFO  boss.Boss - 忽略java开发工程师, 15-18K
+2024-04-24 16:28:23.357 [main] INFO  boss.Boss - 忽略java开发, 13-17K
+2024-04-24 16:28:23.730 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-24 16:28:24.011 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-20K·13薪
+2024-04-24 16:28:24.077 [main] INFO  boss.Boss - 忽略高级Java开发工程师, 14-19K
+2024-04-24 16:28:26.081 [main] DEBUG boss.Boss - 忽略bossStatus: 3日内活跃
+2024-04-24 16:28:26.082 [main] ERROR boss.Boss - 找不到boss状态
+2024-04-24 16:28:40.049 [main] INFO  boss.Boss - 【Java】关键词第【1】页无岗位,目前已连续【1】页无新岗位...
+2024-04-24 16:28:40.050 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-24 16:28:44.906 [main] INFO  boss.Boss - 忽略Java, 15-16K
+2024-04-24 16:28:44.971 [main] INFO  boss.Boss - 忽略java C++高级开发工程师, 13-16K·13薪
+2024-04-24 16:28:45.099 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:28:45.185 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-24 16:28:45.249 [main] INFO  boss.Boss - 忽略java高级工程师, 15-20K
+2024-04-24 16:28:45.599 [main] INFO  boss.Boss - 忽略高级Java研发工程师, 13-20K·15薪
+2024-04-24 16:28:45.852 [main] INFO  boss.Boss - 忽略Java高级开发工程师, 15-18K·13薪
+2024-04-24 16:28:46.228 [main] INFO  boss.Boss - 忽略Java高级软件工程师, 13-17K
+2024-04-24 16:28:49.934 [main] DEBUG boss.Boss - 忽略bossStatus: 4月内活跃
+2024-04-24 16:28:49.935 [main] ERROR boss.Boss - 找不到boss状态
+2024-04-24 16:29:26.541 [main] DEBUG boss.Boss - 忽略bossStatus: 今日活跃
+2024-04-24 16:29:26.543 [main] ERROR boss.Boss - 找不到boss状态
+2024-04-24 16:29:44.117 [main] INFO  boss.Boss - 【Java】关键词第【2】页无岗位,目前已连续【2】页无新岗位...
+2024-04-24 16:29:44.118 [main] INFO  boss.Boss - 投递【Java】关键词第【3】页
+2024-04-24 16:31:07.939 [main] INFO  boss.Boss - 【Java】关键词第【3】页无岗位,目前已连续【3】页无新岗位...
+2024-04-24 16:31:07.941 [main] INFO  boss.Boss - 投递【Java】关键词第【4】页
+2024-04-24 16:31:10.128 [main] INFO  boss.Boss - 忽略Java中级开发工程师, 13-20K·14薪
+2024-04-24 16:31:10.314 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:31:10.390 [main] INFO  boss.Boss - 忽略java开发, 13-20K
+2024-04-24 16:31:10.514 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:31:10.705 [main] INFO  boss.Boss - 忽略Java, 15-20K·14薪
+2024-04-24 16:31:10.887 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 16:31:10.954 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:31:53.305 [main] INFO  boss.Boss - 【Java】关键词第【4】页无岗位,目前已连续【4】页无新岗位...
+2024-04-24 16:31:53.306 [main] INFO  boss.Boss - 投递【Java】关键词第【5】页
+2024-04-24 16:31:55.047 [main] INFO  boss.Boss - 忽略高级java开发工程师, 13-20K
+2024-04-24 16:31:55.137 [main] INFO  boss.Boss - 忽略Java开发工程师, 13-16K
+2024-04-24 16:31:55.198 [main] INFO  boss.Boss - 忽略中/高级java开发工程师, 13-17K
+2024-04-24 16:31:55.338 [main] INFO  boss.Boss - 忽略java开发工程师, 13-18K
+2024-04-24 16:31:55.746 [main] INFO  boss.Boss - 忽略Java后台开发, 13-20K·13薪
+2024-04-24 16:31:55.871 [main] INFO  boss.Boss - 忽略Java开发工程师(J10453), 15-18K
+2024-04-24 16:31:55.945 [main] INFO  boss.Boss - 忽略Java, 15-20K·13薪
+2024-04-24 16:31:56.157 [main] INFO  boss.Boss - 忽略Java, 13-20K·16薪
+2024-04-24 16:31:56.280 [main] INFO  boss.Boss - 忽略java开发, 15-20K·13薪
+2024-04-24 16:31:56.593 [main] INFO  boss.Boss - 忽略Java开发工程师, 15-20K
+2024-04-24 16:32:02.538 [main] INFO  boss.Boss - 【Java】关键词第【5】页无岗位,目前已连续【5】页无新岗位...
+2024-04-24 16:32:02.539 [main] INFO  boss.Boss - 投递【Java】关键词第【6】页
+2024-04-24 16:32:04.589 [main] INFO  boss.Boss - 忽略java, 16-18K
+2024-04-24 16:32:04.676 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-24 16:32:04.738 [main] INFO  boss.Boss - 忽略Java, 15-20K
+2024-04-24 16:32:04.874 [main] INFO  boss.Boss - 忽略Java, 15-18K·14薪
+2024-04-24 16:32:05.082 [main] INFO  boss.Boss - 忽略Java开发工程师-TX, 14-17K·13薪
+2024-04-24 16:32:05.284 [main] INFO  boss.Boss - 忽略Java, 15-20K·15薪
+2024-04-24 16:32:05.350 [main] INFO  boss.Boss - 忽略Java开发-短期4个月, 13-16K
+2024-04-24 16:32:05.542 [main] INFO  boss.Boss - 忽略JAVA开发（HX）, 13-15K·13薪
+2024-04-24 16:32:05.727 [main] INFO  boss.Boss - 忽略Java, 15-18K
+2024-04-24 16:32:05.931 [main] INFO  boss.Boss - 忽略杭州Java, 13-15K·13薪
+2024-04-24 16:32:05.991 [main] INFO  boss.Boss - 忽略java开发, 13-17K
+2024-04-24 16:32:06.050 [main] INFO  boss.Boss - 忽略高级java开发工程师, 15-16K
+2024-04-24 16:32:06.174 [main] INFO  boss.Boss - 忽略java开发工程师（外派杭银理财）, 14-17K
+2024-04-24 16:32:06.174 [main] INFO  boss.Boss - 【Java】关键词第【6】页无岗位,目前已连续【6】页无新岗位...
+2024-04-24 16:32:06.174 [main] INFO  boss.Boss - 投递【Java】关键词第【7】页
+2024-04-24 16:32:11.452 [main] INFO  boss.Boss - 忽略Java, 15-19K
+2024-04-24 16:32:12.108 [main] INFO  boss.Boss - 忽略Java-估值, 13-16K
+2024-04-24 16:32:12.465 [main] INFO  boss.Boss - 忽略java开发工程师, 13-15K·13薪
+2024-04-24 16:32:12.524 [main] INFO  boss.Boss - 【Java】关键词第【7】页无岗位,目前已连续【7】页无新岗位...
+2024-04-24 16:32:12.524 [main] INFO  boss.Boss - 投递【Java】关键词第【8】页
+2024-04-24 16:32:14.925 [main] INFO  boss.Boss - 忽略java工程师, 13-18K·13薪
+2024-04-24 16:32:14.985 [main] INFO  boss.Boss - 忽略java开发, 13-15K·13薪
+2024-04-24 16:32:15.171 [main] INFO  boss.Boss - 忽略Java, 14-18K·13薪
+2024-04-24 16:32:15.374 [main] INFO  boss.Boss - 忽略java开发工程师, 13-18K
+2024-04-24 16:32:15.691 [main] INFO  boss.Boss - 忽略Java开发工程师, 13-18K
+2024-04-24 16:32:15.810 [main] INFO  boss.Boss - 忽略java开发工程师（金融）, 13-15K
+2024-04-24 16:32:15.869 [main] INFO  boss.Boss - 忽略java开发, 13-18K·13薪
+2024-04-24 16:32:15.933 [main] INFO  boss.Boss - 忽略中级java开发工程师, 15-16K
+2024-04-24 16:32:16.230 [main] INFO  boss.Boss - 忽略java开发, 14-18K
+2024-04-24 16:32:16.289 [main] INFO  boss.Boss - 【Java】关键词第【8】页无岗位,目前已连续【8】页无新岗位...
+2024-04-24 16:32:16.289 [main] INFO  boss.Boss - 投递【Java】关键词第【9】页
+2024-04-24 16:32:17.645 [main] INFO  boss.Boss - 忽略Java, 14-18K·13薪
+2024-04-24 16:32:18.393 [main] INFO  boss.Boss - 忽略Java, 13-17K·13薪
+2024-04-24 16:32:18.452 [main] INFO  boss.Boss - 忽略Java, 16-19K
+2024-04-24 16:32:18.939 [main] INFO  boss.Boss - 忽略中级java开发工程师, 14-16K
+2024-04-24 16:32:19.056 [main] INFO  boss.Boss - 忽略中级java开发工程师, 13-16K
+2024-04-24 16:32:19.295 [main] INFO  boss.Boss - 忽略java开发工程师(中高级), 13-16K·13薪
+2024-04-24 16:32:19.376 [main] INFO  boss.Boss - 忽略java开发工程师, 13-16K·13薪
+2024-04-24 16:32:19.376 [main] INFO  boss.Boss - 【Java】关键词第【9】页无岗位,目前已连续【9】页无新岗位...
+2024-04-24 16:32:19.376 [main] INFO  boss.Boss - 投递【Java】关键词第【10】页
+2024-04-24 16:32:21.487 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 16:32:21.759 [main] INFO  boss.Boss - 忽略java, 13-15K
+2024-04-24 16:32:22.918 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 16:32:23.100 [main] INFO  boss.Boss - 【Java】关键词第【10】页无岗位,目前已连续【10】页无新岗位...
+2024-04-24 16:32:23.101 [main] INFO  boss.Boss - 投递【Java】关键词第【11】页
+2024-04-24 16:32:25.102 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 16:32:25.351 [main] INFO  boss.Boss - 忽略java, 13-15K
+2024-04-24 16:32:26.487 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 16:32:26.665 [main] INFO  boss.Boss - 【Java】关键词第【11】页无岗位,目前已连续【11】页无新岗位...
+2024-04-24 16:32:26.665 [main] INFO  boss.Boss - 投递【Java】关键词第【12】页
+2024-04-24 16:32:29.569 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 16:32:29.810 [main] INFO  boss.Boss - 忽略java, 13-15K
+2024-04-24 16:32:30.942 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 16:32:31.121 [main] INFO  boss.Boss - 【Java】关键词第【12】页无岗位,目前已连续【12】页无新岗位...
+2024-04-24 16:32:31.121 [main] INFO  boss.Boss - 投递【Java】关键词第【13】页
+2024-04-24 16:32:32.871 [main] INFO  boss.Boss - 忽略中级Java（统招本科）, 14-17K
+2024-04-24 16:32:33.130 [main] INFO  boss.Boss - 忽略java, 13-15K
+2024-04-24 16:32:34.245 [main] INFO  boss.Boss - 忽略Java, 14-15K
+2024-04-24 16:32:34.420 [main] INFO  boss.Boss - 【Java】关键词已经连续【13】页无岗位，结束该关键词的投递...
+2024-04-24 16:32:34.420 [main] INFO  boss.Boss - 未发起新的聊天...
+2024-04-24 16:32:34.422 [main] INFO  boss.Boss - 共发起 0 个聊天,用时4分16秒
+2024-04-24 16:35:24.696 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 16:35:26.198 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 16:35:27.037 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 16:35:29.636 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 16:35:29.641 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 16:35:40.124 [main] INFO  boss.Boss - 投递【湖北润富科技有限公司】公司，【Java工程师 15-25K·15薪 杭州】职位，招聘官:【王彪 人事经理】,在线：【在线】
+2024-04-24 16:35:56.696 [main] INFO  boss.Boss - 投递【特斯联】公司，【java后端开发 18-28K 杭州】职位，招聘官:【梁女士 人事】,在线：【在线】
+2024-04-24 16:36:12.758 [main] INFO  boss.Boss - 投递【灵犀出行】公司，【高级java后端开发 20-25K 杭州】职位，招聘官:【方女士 hr】,在线：【在线】
+2024-04-24 16:37:00.326 [main] ERROR boss.Boss - 发送消息失败:Expected condition failed: waiting for presence of element located by: By.xpath: //p[@class='base-info fl']/span[not(@class)] (tried for 30 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //p[@class='base-info fl']/span[not(@class)] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at boss.Boss.getJobs(Boss.java:352)
+	at boss.Boss.resumeSubmission(Boss.java:256)
+	at boss.Boss.main(Boss.java:62)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='base-info fl']/span[not(@class)]"}
+  (Session info: chrome=124.0.6367.62)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'zyl03', ip: '192.168.6.148', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.62, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: /var/folders/cd/gs9yyg_106b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63575}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: de7a3f8f8964a58a910eaea27aed3fad
+*** Element info: {Using=xpath, value=//p[@class='base-info fl']/span[not(@class)]}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 3 common frames omitted
+2024-04-24 16:37:18.003 [main] INFO  boss.Boss - 投递【浙江大华】公司，【Java开发工程师 15-25K·15薪 杭州】职位，招聘官:【杨先生 技术主管】,在线：【刚刚活跃】
+2024-04-24 16:37:35.147 [main] INFO  boss.Boss - 投递【新致软件】公司，【Java开发工程师 15-23K 杭州】职位，招聘官:【沈女士 HR】,在线：【在线】
+2024-04-24 16:37:51.371 [main] INFO  boss.Boss - 投递【每日互动】公司，【java开发工程师 15-30K·14薪 杭州】职位，招聘官:【纪女士 HR】,在线：【在线】
+2024-04-24 16:38:07.738 [main] INFO  boss.Boss - 投递【绿城科技集团】公司，【Java开发工程师 15-25K·15薪 杭州】职位，招聘官:【张先生 人事招聘专员】,在线：【在线】
+2024-04-24 16:38:25.277 [main] INFO  boss.Boss - 投递【子不语】公司，【java工程师 13-22K 杭州】职位，招聘官:【胡志远 招聘专员】,在线：【在线】
+2024-04-24 16:38:43.451 [main] INFO  boss.Boss - 投递【有赞】公司，【Java开发工程师-社交电商 18-28K·14薪 杭州】职位，招聘官:【许涛 业务架构师】,在线：【在线】
+2024-04-24 16:39:00.494 [main] INFO  boss.Boss - 投递【曹操出行】公司，【java开发工程师-基础平台 15-30K·14薪 杭州】职位，招聘官:【吴女士 招聘专员】,在线：【在线】
+2024-04-24 16:39:18.415 [main] INFO  boss.Boss - 投递【神州信息】公司，【Java (J15669) 15-25K 杭州】职位，招聘官:【李女士 招聘经理】,在线：【在线】
+2024-04-24 16:47:06.405 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 16:47:08.695 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 16:47:30.454 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-24 16:47:31.713 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-24 16:47:32.511 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-24 16:47:35.090 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-24 16:47:35.095 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-24 16:47:43.971 [main] INFO  boss.Boss - 今日沟通人数已达上限，请明天再试
+2024-04-24 16:47:43.972 [main] INFO  boss.Boss - 未发起新的聊天...
+2024-04-24 16:47:43.982 [main] INFO  boss.Boss - 共发起 0 个聊天,用时0分12秒

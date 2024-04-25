@@ -1,0 +1,354 @@
+
+
+2024-04-22 20:31:44.233 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 20:35:59.544 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 20:49:43.455 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 20:49:45.190 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-22 20:49:47.255 [main] ERROR boss.Boss - cookie失效，尝试扫码登录...
+2024-04-22 20:49:47.692 [main] INFO  boss.Boss - 等待登陆..
+2024-04-22 20:50:52.453 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 20:50:53.901 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-22 20:50:54.588 [main] ERROR boss.Boss - cookie失效，尝试扫码登录...
+2024-04-22 20:50:54.972 [main] INFO  boss.Boss - 等待登陆..
+2024-04-22 20:53:04.166 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 20:53:05.621 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-22 20:53:06.375 [main] ERROR boss.Boss - cookie失效，尝试扫码登录...
+2024-04-22 20:53:06.731 [main] INFO  boss.Boss - 等待登陆..
+2024-04-22 20:55:05.415 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 20:55:06.845 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-22 20:55:07.580 [main] ERROR boss.Boss - cookie失效，尝试扫码登录...
+2024-04-22 20:55:07.972 [main] INFO  boss.Boss - 等待登陆..
+2024-04-22 20:55:35.293 [main] INFO  boss.Boss - 登录..
+2024-04-22 20:55:35.302 [main] INFO  boss.Boss - 登录...
+2024-04-22 20:55:35.312 [main] INFO  boss.Boss - 登录成功！保存cookie...
+2024-04-22 20:55:37.325 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-22 20:55:37.329 [main] INFO  boss.Boss - 投递【大模型工程师】关键词第【1】页
+2024-04-22 20:55:55.110 [main] INFO  boss.Boss - 投递【海尔消费金融公司】公司，【模型平台研发工程师 20-35K 上海】职位，招聘官:【王女士 招聘】
+2024-04-22 21:01:01.617 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 21:01:03.030 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-22 21:01:03.823 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-22 21:01:06.468 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-22 21:01:06.472 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-22 21:01:16.030 [main] INFO  boss.Boss - 投递【在途商旅】公司，【JAVA开发工程师（酒店住宿） 18-25K 上海】职位，招聘官:【卞瑶 招聘专员】
+2024-04-22 21:01:25.418 [main] INFO  boss.Boss - 投递【众和众】公司，【java（外企医药行业） 18-25K 上海】职位，招聘官:【单女士 HR】
+2024-04-22 21:03:24.428 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 21:03:25.824 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-22 21:03:26.665 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-22 21:03:29.248 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-22 21:03:29.251 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-22 21:03:40.539 [main] INFO  boss.Boss - 投递【领鞅科技】公司，【中级软件工程师（JAVA） 15-25K 杭州】职位，招聘官:【陈女士 HRBP】
+2024-04-22 21:03:46.425 [main] INFO  boss.Boss - 投递【青蓝致远】公司，【Java开发工程师(中华保险) 13-20K 杭州】职位，招聘官:【罗女士 招聘经理】
+2024-04-22 21:04:30.771 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 21:04:32.173 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-22 21:04:32.941 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-22 21:04:35.596 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-22 21:04:35.600 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-22 21:04:47.344 [main] INFO  boss.Boss - 投递【领鞅科技】公司，【中级软件工程师（java后端工程师） 15-25K 杭州】职位，招聘官:【郑女士 HRBP】
+2024-04-22 21:06:45.009 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 21:06:46.396 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-22 21:06:47.162 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-22 21:06:49.753 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-22 21:06:49.757 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-22 21:07:00.256 [main] INFO  boss.Boss - 投递【凯歌】公司，【高级java服务端 18-25K·13薪 杭州】职位，招聘官:【詹永美 HR】
+2024-04-22 21:07:09.728 [main] INFO  boss.Boss - 投递【云来】公司，【JAVA广告技术 15-30K 杭州】职位，招聘官:【潘女士 人事经理】
+2024-04-22 21:07:16.061 [main] INFO  boss.Boss - 投递【咯拉树】公司，【中级java开发工程师 14-24K·14薪 杭州】职位，招聘官:【张先生 招聘主管】
+2024-04-22 21:07:23.167 [main] INFO  boss.Boss - 投递【杭州谷音科技有限公司】公司，【java开发 18-26K·15薪 杭州】职位，招聘官:【张女士 人力资源专家】
+2024-04-22 21:07:29.564 [main] INFO  boss.Boss - 投递【雅拓信息】公司，【中高级Java开发工程师（自研） 15-28K 杭州】职位，招聘官:【王女士 资深招聘】
+2024-04-22 21:07:36.831 [main] INFO  boss.Boss - 投递【晶朝数字】公司，【Java工程师-银行 15-23K 杭州】职位，招聘官:【侯女士 人事】
+2024-04-22 21:07:44.897 [main] INFO  boss.Boss - 投递【果粉智能科技】公司，【高级java软件工程师 18-25K·13薪 杭州】职位，招聘官:【姜俊 CEO/创始人】
+2024-04-22 21:07:50.960 [main] INFO  boss.Boss - 投递【吉辰新能源】公司，【java开发岗 15-25K 杭州】职位，招聘官:【陈女士 HR】
+2024-04-22 21:07:57.872 [main] INFO  boss.Boss - 投递【凯实生物】公司，【高级上位机开发工程师（Java） 15-25K 杭州】职位，招聘官:【张然美 软件平台总监】
+2024-04-22 21:08:03.827 [main] INFO  boss.Boss - 投递【帆立科技】公司，【java开发工程师 15-25K 杭州】职位，招聘官:【方女士 人事经理】
+2024-04-22 21:08:09.736 [main] INFO  boss.Boss - 投递【一点万物】公司，【高级JAVA开发工程师 15-30K·16薪 杭州】职位，招聘官:【舒先生 HR Manager】
+2024-04-22 21:08:17.801 [main] INFO  boss.Boss - 投递【杭州华数智屏信息技术】公司，【Java开发工程师 16-30K·15薪 杭州】职位，招聘官:【吕女士 HRG】
+2024-04-22 21:08:23.761 [main] INFO  boss.Boss - 投递【摸象大数据】公司，【java开发工程师( 企业微信，企微生态方向) 18-24K·16薪 杭州】职位，招聘官:【伏巧琳 人事总监】
+2024-04-22 21:08:33.475 [main] INFO  boss.Boss - 投递【杭州锦语文化传媒】公司，【Java高级工程师 15-20K 杭州】职位，招聘官:【张女士 人事主管】
+2024-04-22 21:08:39.873 [main] INFO  boss.Boss - 投递【潮流网络杭州分公司】公司，【JAVA开发工程师 15-22K 杭州】职位，招聘官:【俞女士 HR】
+2024-04-22 21:08:48.299 [main] INFO  boss.Boss - 投递【友加和科技】公司，【中级java工程师 15-25K·13薪 杭州】职位，招聘官:【沈昕翊 人事】
+
+2024-04-22 21:23:07.618 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-22 21:23:08.462 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-22 21:23:11.103 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-22 21:23:11.106 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-22 21:23:24.295 [main] INFO  boss.Boss - 投递【缘分网络】公司，【高级java开发工程师 18-30K·14薪 杭州】职位，招聘官:【刘琼琼 人力资源HRBP】
+2024-04-22 21:23:30.516 [main] INFO  boss.Boss - 投递【古点科技】公司，【Java开发工程师 15-25K·13薪 杭州】职位，招聘官:【曹先生 人资HR】
+2024-04-22 21:23:37.504 [main] INFO  boss.Boss - 投递【要务科技】公司，【Java开发工程师 15-25K·15薪 杭州】职位，招聘官:【张女士 招聘】
+2024-04-22 21:23:43.887 [main] INFO  boss.Boss - 投递【云倍特】公司，【中级java开发工程师 15-20K 杭州】职位，招聘官:【王先生 总经理】
+2024-04-22 21:23:50.242 [main] INFO  boss.Boss - 投递【源诚科技】公司，【Java开发工程师 15-23K·13薪 杭州】职位，招聘官:【李佳 HRD】
+2024-04-22 21:23:56.593 [main] INFO  boss.Boss - 投递【深图智能】公司，【高级java开发工程师 15-20K·13薪 杭州】职位，招聘官:【姬女士 HRBP】
+2024-04-22 21:24:07.187 [main] INFO  boss.Boss - 投递【上海敦题】公司，【java开发 15-25K 杭州】职位，招聘官:【倪凯旋 人力资源】
+2024-04-22 21:24:13.919 [main] INFO  boss.Boss - 投递【小拉科技】公司，【Java开发 15-30K 杭州】职位，招聘官:【李家军 经理】
+2024-04-22 21:24:19.885 [main] INFO  boss.Boss - 投递【潮流网络杭州分公司】公司，【JAVA开发工程师 15-25K 杭州】职位，招聘官:【韩女士 hr】
+2024-04-22 21:24:26.518 [main] INFO  boss.Boss - 投递【杭州谱链】公司，【资深java开发工程师/主管 15-23K·13薪 杭州】职位，招聘官:【沈女士 HR】
+2024-04-22 21:24:32.885 [main] INFO  boss.Boss - 投递【领鞅科技】公司，【中级软件工程师（java后端工程师） 15-25K 杭州】职位，招聘官:【马宇栋 技术负责人】
+2024-04-22 21:24:48.220 [main] INFO  boss.Boss - 投递【博路信息】公司，【JAVA程序员 11-22K 杭州】职位，招聘官:【黄女士 行政专员】
+2024-04-22 21:24:55.016 [main] INFO  boss.Boss - 投递【千疆科技】公司，【高级java开发 16-20K·13薪 杭州】职位，招聘官:【李怀志 招聘者】
+2024-04-22 21:25:04.026 [main] INFO  boss.Boss - 投递【杭州好达威机电】公司，【Java开发工程师 15-30K 杭州】职位，招聘官:【张先生 HRD】
+2024-04-22 21:25:12.205 [main] INFO  boss.Boss - 投递【MinutesTech时乘】公司，【java开发工程师 15-25K 杭州】职位，招聘官:【周敏 General Manager】
+2024-04-22 21:25:19.107 [main] INFO  boss.Boss - 投递【艾草信息】公司，【后端工程师JAVA 13-25K 杭州】职位，招聘官:【黄女士 hrbp】
+2024-04-22 21:25:25.801 [main] INFO  boss.Boss - 投递【上海杏和】公司，【Java高级研发工程师（杭州） 14-28K·14薪 杭州】职位，招聘官:【葛女士 人事经理】
+2024-04-22 21:25:33.111 [main] INFO  boss.Boss - 投递【砾阳软件】公司，【中高级Java开发-外派杭州银行 15-18K 杭州】职位，招聘官:【刘飞 招聘主管】
+2024-04-22 21:25:39.431 [main] INFO  boss.Boss - 投递【数字浙江】公司，【java高级开发工程师 15-25K 杭州】职位，招聘官:【刘祥涌 招聘者】
+2024-04-22 21:25:45.379 [main] INFO  boss.Boss - 投递【邦睿科技】公司，【Java开发工程师-杭州 15-25K 杭州】职位，招聘官:【关女士 人事经理】
+2024-04-22 21:25:51.747 [main] INFO  boss.Boss - 投递【迈睿机器人】公司，【Java开发工程师 3-5年 本科 15-30K 15-30K 杭州】职位，招聘官:【王女士 HR】
+2024-04-22 21:25:59.364 [main] INFO  boss.Boss - 投递【浙江浩物网络科技】公司，【java工程师 15-30K·13薪 杭州】职位，招聘官:【王先生 技术经理】
+2024-04-22 21:26:06.450 [main] INFO  boss.Boss - 投递【中联出行】公司，【高级java开发 15-20K 杭州】职位，招聘官:【吴先生 人力招聘】
+2024-04-22 21:26:13.855 [main] INFO  boss.Boss - 投递【未斯】公司，【Java服务端开发工程师 16-20K 杭州】职位，招聘官:【李先生 架构师】
+2024-04-22 21:26:20.211 [main] INFO  boss.Boss - 投递【星临科技】公司，【高级后端工程师（Java） 15-30K·13薪 杭州】职位，招聘官:【胡雅婷 招聘者】
+2024-04-22 21:26:28.292 [main] INFO  boss.Boss - 投递【卧兔网络】公司，【高级java开发工程师 18-25K 杭州】职位，招聘官:【杨涛 联合创始人】
+2024-04-22 21:26:34.612 [main] INFO  boss.Boss - 投递【杭州云钞】公司，【Java工程师-浙商hz 15-20K 杭州】职位，招聘官:【李女士 招聘HR】
+2024-04-22 21:26:35.675 [main] INFO  boss.Boss - 投递【Java】关键词第【2】页
+2024-04-22 21:26:47.488 [main] INFO  boss.Boss - 投递【原初数据】公司，【资深java开发工程师 15-25K 杭州】职位，招聘官:【李江敏 研发总监】
+2024-04-22 21:26:56.919 [main] INFO  boss.Boss - 投递【职正科技】公司，【Java中级开发工程师 15-25K 杭州】职位，招聘官:【朱女士 资深招聘经理】
+2024-04-22 21:27:07.355 [main] INFO  boss.Boss - 投递【火山口】公司，【JAVA开发工程师 12-20K 杭州】职位，招聘官:【沈丹青 HR】
+2024-04-22 21:27:17.327 [main] INFO  boss.Boss - 投递【蓝象科技】公司，【java 15-20K·13薪 杭州】职位，招聘官:【刘先生 招聘者】
+2024-04-22 21:27:23.685 [main] INFO  boss.Boss - 投递【杭州思韬瑞科技】公司，【Java 15-30K·16薪 杭州】职位，招聘官:【袁楠 高级技术专家】
+2024-04-22 21:27:33.619 [main] INFO  boss.Boss - 投递【鹏信科技】公司，【java开发高级工程师 16-24K·13薪 杭州】职位，招聘官:【李女士 人事专员】
+2024-04-22 21:27:39.557 [main] INFO  boss.Boss - 投递【大麦物联】公司，【后端JAVA开发工程师 12-20K·13薪 杭州】职位，招聘官:【楚先生 经理】
+2024-04-22 21:27:46.674 [main] INFO  boss.Boss - 投递【喔影网络】公司，【高级Java开发工程师 13-26K 杭州】职位，招聘官:【钱女士 招聘专员】
+2024-04-22 21:27:53.948 [main] INFO  boss.Boss - 投递【来回科技】公司，【高级java开发 15-20K 杭州】职位，招聘官:【瞿婵 HR】
+2024-04-22 21:28:01.388 [main] INFO  boss.Boss - 投递【爱拼团】公司，【电商java开发 18-22K 杭州】职位，招聘官:【宗新洪 ceo】
+2024-04-22 21:28:10.285 [main] INFO  boss.Boss - 投递【远望信息】公司，【java开发工程师 11-22K·14薪 杭州】职位，招聘官:【任女士 HR】
+2024-04-22 21:28:20.285 [main] INFO  boss.Boss - 投递【浙江智港通科技】公司，【java 15-20K·16薪 杭州】职位，招聘官:【李女士 人力资源】
+2024-04-22 21:28:26.631 [main] INFO  boss.Boss - 投递【杭州魔点科技有限公司】公司，【Java开发工程师 14-22K 杭州】职位，招聘官:【赵利春 招聘专员】
+2024-04-22 21:28:32.978 [main] INFO  boss.Boss - 投递【数游科技】公司，【高级Java研发工程师 16-30K·14薪 杭州】职位，招聘官:【郭先生 技术经理】
+2024-04-22 21:28:39.155 [main] INFO  boss.Boss - 投递【宽拓科技】公司，【JAVA开发工程师（指令） 15-25K·13薪 杭州】职位，招聘官:【王希婷 HRBP】
+2024-04-22 21:28:45.531 [main] INFO  boss.Boss - 投递【跃燃科技】公司，【Java 15-20K 杭州】职位，招聘官:【孙先生 招聘者】
+2024-04-22 21:28:51.475 [main] INFO  boss.Boss - 投递【异盾】公司，【Java 15-25K·13薪 杭州】职位，招聘官:【王先生 供应链技术TL】
+2024-04-22 21:28:58.978 [main] INFO  boss.Boss - 投递【壹点灵】公司，【Java 18-35K 杭州】职位，招聘官:【黄先生 后端研发】
+2024-04-22 21:29:06.125 [main] INFO  boss.Boss - 投递【杭州慕比特】公司，【高级java研发工程师 15-25K 杭州】职位，招聘官:【许红纳 经理】
+2024-04-22 21:29:12.450 [main] INFO  boss.Boss - 投递【心识宇宙】公司，【高级Java开发工程师(Q8456) 18-30K·16薪 杭州】职位，招聘官:【徐女士 人事总监】
+2024-04-22 21:29:19.203 [main] INFO  boss.Boss - 投递【杭州斯唯福科技】公司，【高级java开发 15-22K 杭州】职位，招聘官:【朱昌 招聘者】
+2024-04-22 21:29:25.464 [main] INFO  boss.Boss - 投递【共道科技】公司，【Java 15-30K·15薪 杭州】职位，招聘官:【杨永华 开发】
+2024-04-22 21:29:56.837 [main] INFO  boss.Boss - 出现异常访问，请手动过验证后再继续投递...
+2024-04-22 21:29:56.838 [main] INFO  boss.Boss - 新发起聊天公司如下:
+【缘分网络, 高级java开发工程师, 杭州·西湖区·古荡, 18-30K·14薪, 3-5年·本科, 刘琼琼:人力资源HRBP】
+【古点科技, Java开发工程师, 杭州·余杭区·五常, 15-25K·13薪, 1-3年·本科, 曹先生:人资HR】
+【要务科技, Java开发工程师, 杭州·余杭区·仓前, 15-25K·15薪, 3-5年·本科, 张女士:招聘】
+【云倍特, 中级java开发工程师, 杭州·滨江区·长河, 15-20K, 3-5年·本科, 王先生:总经理】
+【源诚科技, Java开发工程师, 杭州·西湖区·文二路, 15-23K·13薪, 3-5年·本科, 李佳:HRD】
+【深图智能, 高级java开发工程师, 杭州·余杭区·仓前, 15-20K·13薪, 3-5年·本科, 姬女士:HRBP】
+【上海敦题, java开发, 杭州·拱墅区·拱宸桥, 15-25K, 3-5年·本科, 倪凯旋:人力资源】
+【小拉科技, Java开发, 杭州·滨江区·长河, 15-30K, 3-5年·本科, 李家军:经理】
+【潮流网络杭州分公司, JAVA开发工程师, 杭州·西湖区·黄龙, 15-25K, 3-5年·本科, 韩女士:hr】
+【杭州谱链, 资深java开发工程师/主管, 杭州·西湖区·西溪, 15-23K·13薪, 3-5年·本科, 沈女士:HR】
+【领鞅科技, 中级软件工程师（java后端工程师）, 杭州·萧山区·市心北路, 15-25K, 3-5年·本科, 马宇栋:技术负责人】
+【博路信息, JAVA程序员, 杭州·西湖区·文三路, 11-22K, 3-5年·本科, 黄女士:行政专员】
+【千疆科技, 高级java开发, 杭州·滨江区·长河, 16-20K·13薪, 3-5年·本科, 李怀志:招聘者】
+【杭州好达威机电, Java开发工程师, 杭州·萧山区·新街, 15-30K, 3-5年·本科, 张先生:HRD】
+【MinutesTech时乘, java开发工程师, 杭州·滨江区·西兴, 15-25K, 3-5年·本科, 周敏:General Manager】
+【艾草信息, 后端工程师JAVA, 杭州·滨江区·长河, 13-25K, 3-5年·本科, 黄女士:hrbp】
+【上海杏和, Java高级研发工程师（杭州）, 杭州, 14-28K·14薪, 1-3年·本科, 葛女士:人事经理】
+【砾阳软件, 中高级Java开发-外派杭州银行, 杭州·拱墅区·拱宸桥, 15-18K, 3-5年·本科, 刘飞:招聘主管】
+【数字浙江, java高级开发工程师, 杭州·滨江区·长河, 15-25K, 3-5年·本科, 刘祥涌:招聘者】
+【邦睿科技, Java开发工程师-杭州, 杭州·萧山区·钱江世纪城, 15-25K, 3-5年·本科, 关女士:人事经理】
+【迈睿机器人, Java开发工程师 3-5年 本科 15-30K, 杭州·萧山区·闻堰, 15-30K, 3-5年·本科, 王女士:HR】
+【浙江浩物网络科技, java工程师, 杭州·滨江区·长河, 15-30K·13薪, 3-5年·本科, 王先生:技术经理】
+【中联出行, 高级java开发, 杭州·萧山区·西兴, 15-20K, 3-5年·本科, 吴先生:人力招聘】
+【未斯, Java服务端开发工程师, 杭州·余杭区·仓前, 16-20K, 3-5年·本科, 李先生:架构师】
+【星临科技, 高级后端工程师（Java）, 杭州, 15-30K·13薪, 3-5年·本科, 胡雅婷:招聘者】
+【卧兔网络, 高级java开发工程师, 杭州·滨江区·长河, 18-25K, 3-5年·本科, 杨涛:联合创始人】
+【杭州云钞, Java工程师-浙商hz, 杭州·萧山区·西兴, 15-20K, 3-5年·本科, 李女士:招聘HR】
+【原初数据, 资深java开发工程师, 杭州·西湖区·西溪, 15-25K, 3-5年·本科, 李江敏:研发总监】
+【职正科技, Java中级开发工程师, 杭州·西湖区·西溪, 15-25K, 3-5年·本科, 朱女士:资深招聘经理】
+【火山口, JAVA开发工程师, 杭州·萧山区·闻堰, 12-20K, 3-5年·本科, 沈丹青:HR】
+【蓝象科技, java, 杭州·余杭区·西溪, 15-20K·13薪, 3-5年·本科, 刘先生:招聘者】
+【杭州思韬瑞科技, Java, 杭州·西湖区·高新文教区, 15-30K·16薪, 1-3年·本科, 袁楠:高级技术专家】
+【鹏信科技, java开发高级工程师, 杭州·余杭区·五常, 16-24K·13薪, 3-5年·本科, 李女士:人事专员】
+【大麦物联, 后端JAVA开发工程师, 杭州·滨江区·滨江区政府, 12-20K·13薪, 3-5年·本科, 楚先生:经理】
+【喔影网络, 高级Java开发工程师, 杭州·余杭区·仓前, 13-26K, 3-5年·本科, 钱女士:招聘专员】
+【来回科技, 高级java开发, 杭州·滨江区·长河, 15-20K, 3-5年·本科, 瞿婵:HR】
+【爱拼团, 电商java开发, 杭州·余杭区·未来科技城, 18-22K, 3-5年·本科, 宗新洪:ceo】
+【远望信息, java开发工程师, 杭州·滨江区·西兴, 11-22K·14薪, 3-5年·本科, 任女士:HR】
+【浙江智港通科技, java, 杭州, 15-20K·16薪, 3-5年·本科, 李女士:人力资源】
+【杭州魔点科技有限公司, Java开发工程师, 杭州·余杭区·仓前, 14-22K, 3-5年·本科, 赵利春:招聘专员】
+【数游科技, 高级Java研发工程师, 杭州·拱墅区·城西银泰城, 16-30K·14薪, 3-5年·本科, 郭先生:技术经理】
+【宽拓科技, JAVA开发工程师（指令）, 杭州·拱墅区·建国路, 15-25K·13薪, 3-5年·本科, 王希婷:HRBP】
+【跃燃科技, Java, 杭州·萧山区·钱江世纪城, 15-20K, 3-5年·本科, 孙先生:招聘者】
+【异盾, Java, 杭州·西湖区·西溪, 15-25K·13薪, 3-5年·本科, 王先生:供应链技术TL】
+【壹点灵, Java, 杭州, 18-35K, 3-5年·本科, 黄先生:后端研发】
+【杭州慕比特, 高级java研发工程师, 杭州·余杭区·仓前, 15-25K, 3-5年·本科, 许红纳:经理】
+【心识宇宙, 高级Java开发工程师(Q8456), 杭州·余杭区·仓前, 18-30K·16薪, 1-3年·本科, 徐女士:人事总监】
+【杭州斯唯福科技, 高级java开发, 杭州·上城区·秋涛路沿线, 15-22K, 3-5年·本科, 朱昌:招聘者】
+【共道科技, Java, 杭州·余杭区·五常, 15-30K·15薪, 3-5年·本科, 杨永华:开发】
+
+
+2024-04-22 21:35:19.182 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 21:35:20.627 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-22 21:35:21.469 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-22 21:35:24.079 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-22 21:35:24.082 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-22 21:35:40.452 [main] INFO  boss.Boss - 投递【杭州虾条科技有限公司】公司，【高级java开发工程师 14-18K 杭州】职位，招聘官:【杨平 人事】
+2024-04-22 21:35:46.417 [main] INFO  boss.Boss - 投递【杭州云钞】公司，【中级java开发工程师 15-18K 杭州】职位，招聘官:【项先生 项目经理】
+2024-04-22 21:43:59.422 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 21:44:00.856 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-22 21:44:01.654 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-22 21:44:04.226 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-22 21:44:04.229 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-22 21:44:20.506 [main] INFO  boss.Boss - 投递【图南电子】公司，【Java软件工程师 11-22K·14薪 杭州】职位，招聘官:【章惠来 研发总监】
+2024-04-22 21:44:27.357 [main] INFO  boss.Boss - 投递【杭州云钞】公司，【中高级Java开发程序员zs 13-20K 杭州】职位，招聘官:【焦浩 项目经理】
+2024-04-22 21:44:40.978 [main] INFO  boss.Boss - 投递【浙江海亮科技有限公司】公司，【java 15-20K·13薪 杭州】职位，招聘官:【葛文乐 Java】
+2024-04-22 21:44:48.105 [main] INFO  boss.Boss - 投递【安铂科技】公司，【高级java工程师 15-22K 杭州】职位，招聘官:【禹敬轩 架构师】
+2024-04-22 21:44:55.432 [main] INFO  boss.Boss - 投递【百聆科技】公司，【资深java后端工程师 15-30K 杭州】职位，招聘官:【薛亮 技术专家】
+2024-04-22 21:45:01.909 [main] INFO  boss.Boss - 投递【深圳破浪科技】公司，【JAVA开发工程师 15-25K·13薪 杭州】职位，招聘官:【刘女士 招聘经理】
+2024-04-22 21:45:11.369 [main] INFO  boss.Boss - 投递【创邻科技】公司，【JAVA开发工程师-图数据库方向 15-25K·14薪 杭州】职位，招聘官:【杨女士 HRBP】
+2024-04-22 21:45:21.570 [main] INFO  boss.Boss - 投递【杭州天柚】公司，【高级java开发 15-18K·13薪 杭州】职位，招聘官:【李能 招聘者】
+2024-04-22 21:45:27.987 [main] INFO  boss.Boss - 投递【一雨尘微】公司，【中级java开发工程师 14-20K·13薪 杭州】职位，招聘官:【方先生 招聘专员】
+2024-04-22 21:45:35.458 [main] INFO  boss.Boss - 投递【曼孚科技】公司，【高级Java开发工程师-杭州 15-30K·16薪 杭州】职位，招聘官:【吴先生 技术总监】
+2024-04-22 21:45:43.690 [main] INFO  boss.Boss - 投递【杭州城市大脑有限公司】公司，【Java 14-22K·13薪 杭州】职位，招聘官:【周梦倩 HRBP】
+2024-04-22 21:45:53.436 [main] INFO  boss.Boss - 投递【未斯】公司，【Java 15-30K 杭州】职位，招聘官:【林先生 技术总监】
+2024-04-22 21:45:59.839 [main] INFO  boss.Boss - 投递【吉利集团的蓝科技】公司，【高级Java/资深Java/技术专家 15-30K 杭州】职位，招聘官:【雷斌辉 招聘者】
+2024-04-22 21:46:13.926 [main] INFO  boss.Boss - 投递【鲜品冻源】公司，【java高级开发工程师 15-25K 杭州】职位，招聘官:【王先生 产品经理】
+2024-04-22 21:46:24.082 [main] INFO  boss.Boss - 投递【数新网络】公司，【Java 15-30K·13薪 杭州】职位，招聘官:【李会朋 技术leader】
+2024-04-22 21:46:28.959 [main] INFO  boss.Boss - 今日沟通人数已达上限，请明天再试
+2024-04-22 21:46:28.960 [main] INFO  boss.Boss - 新发起聊天公司如下:
+【图南电子, Java软件工程师, 杭州, 11-22K·14薪, 3-5年·本科, 章惠来:研发总监】
+【杭州云钞, 中高级Java开发程序员zs, 杭州·萧山区·西兴, 13-20K, 3-5年·本科, 焦浩:项目经理】
+【浙江海亮科技有限公司, java, 杭州·滨江区·长河, 15-20K·13薪, 3-5年·本科, 葛文乐:Java】
+【安铂科技, 高级java工程师, 杭州·拱墅区·三塘, 15-22K, 3-5年·本科, 禹敬轩:架构师】
+【百聆科技, 资深java后端工程师, 杭州·余杭区·仓前, 15-30K, 3-5年·本科, 薛亮:技术专家】
+【深圳破浪科技, JAVA开发工程师, 杭州·余杭区·仓前, 15-25K·13薪, 3-5年·本科, 刘女士:招聘经理】
+【创邻科技, JAVA开发工程师-图数据库方向, 杭州·西湖区·西溪, 15-25K·14薪, 1-3年·本科, 杨女士:HRBP】
+【杭州天柚, 高级java开发, 杭州, 15-18K·13薪, 3-5年·本科, 李能:招聘者】
+【一雨尘微, 中级java开发工程师, 杭州·上城区·四季青, 14-20K·13薪, 3-5年·本科, 方先生:招聘专员】
+【曼孚科技, 高级Java开发工程师-杭州, 杭州, 15-30K·16薪, 3-5年·本科, 吴先生:技术总监】
+【杭州城市大脑有限公司, Java, 杭州·拱墅区·拱宸桥, 14-22K·13薪, 3-5年·本科, 周梦倩:HRBP】
+【未斯, Java, 杭州·余杭区·仓前, 15-30K, 3-5年·本科, 林先生:技术总监】
+【吉利集团的蓝科技, 高级Java/资深Java/技术专家, 杭州, 15-30K, 3-5年·本科, 雷斌辉:招聘者】
+【鲜品冻源, java高级开发工程师, 杭州·拱墅区·新天地, 15-25K, 3-5年·本科, 王先生:产品经理】
+【数新网络, Java, 杭州·余杭区·仓前, 15-30K·13薪, 3-5年·本科, 李会朋:技术leader】
+2024-04-22 21:46:28.965 [main] INFO  boss.Boss - 共发起 15 个聊天,用时2分28秒
+2024-04-22 22:13:51.204 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:13:52.724 [main] INFO  lagou.Lagou - 正在打开拉勾...
+2024-04-22 22:13:53.733 [main] INFO  lagou.Lagou - 拉勾正在登录...
+2024-04-22 22:13:53.770 [main] INFO  lagou.Lagou - cookie失效，尝试扫码登录...
+2024-04-22 22:13:54.450 [main] INFO  lagou.Lagou - 等待扫码..
+2024-04-22 22:14:15.804 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/lagou/cookie.json
+2024-04-22 22:14:20.537 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-22 22:14:36.645 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-22 22:14:41.659 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 1 次)
+2024-04-22 22:14:46.670 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 1 次)
+2024-04-22 22:14:56.676 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 2 次)
+2024-04-22 22:15:01.686 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 2 次)
+2024-04-22 22:15:06.696 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 2 次)
+2024-04-22 22:15:16.705 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 3 次)
+2024-04-22 22:15:21.717 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 3 次)
+2024-04-22 22:15:26.727 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 3 次)
+2024-04-22 22:15:36.734 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 4 次)
+2024-04-22 22:15:41.743 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 4 次)
+2024-04-22 22:15:46.755 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 4 次)
+2024-04-22 22:15:56.763 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 5 次)
+2024-04-22 22:16:00.829 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:16:02.287 [main] INFO  lagou.Lagou - 正在打开拉勾...
+2024-04-22 22:16:07.821 [main] INFO  lagou.Lagou - 拉勾正在登录...
+2024-04-22 22:16:07.900 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/lagou/cookie.json
+2024-04-22 22:16:09.575 [main] INFO  lagou.Lagou - cookie有效，准备投递...
+2024-04-22 22:16:13.024 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-22 22:16:29.140 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-22 22:16:34.153 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 1 次)
+2024-04-22 22:16:39.167 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 1 次)
+2024-04-22 22:16:49.175 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 2 次)
+2024-04-22 22:16:54.185 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 2 次)
+2024-04-22 22:16:59.195 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 2 次)
+2024-04-22 22:17:09.203 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 3 次)
+2024-04-22 22:17:12.157 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:17:13.718 [main] INFO  lagou.Lagou - 正在打开拉勾...
+2024-04-22 22:17:15.011 [main] INFO  lagou.Lagou - 拉勾正在登录...
+2024-04-22 22:17:15.273 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/lagou/cookie.json
+2024-04-22 22:17:16.975 [main] INFO  lagou.Lagou - cookie有效，准备投递...
+2024-04-22 22:20:07.760 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-22 22:20:14.857 [main] INFO  lagou.Lagou - 投递: 软件开发工程师 java c c++...,职位: 软件开发工程师 java c c++...,公司: 南湖院,职位信息: 杭州/经验3-5年/硕士及以上/后端工程师/全职,公司信息: 软件开发工程师 java c c++...
+20k-25k,薪资: 20k-25k,福利: 人工智能服务
+2024-04-22 22:20:24.831 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-22 22:20:29.845 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 1 次)
+2024-04-22 22:20:34.866 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 1 次)
+2024-04-22 22:20:44.873 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 2 次)
+2024-04-22 22:20:49.881 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 2 次)
+2024-04-22 22:20:54.897 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 2 次)
+2024-04-22 22:21:04.906 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 3 次)
+2024-04-22 22:21:09.915 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 3 次)
+2024-04-22 22:21:14.931 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 3 次)
+2024-04-22 22:21:24.938 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 4 次)
+2024-04-22 22:26:58.163 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:27:20.458 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:27:29.288 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:31:05.217 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:32:43.138 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:32:50.916 [main] INFO  lagou.Lagou - 正在打开拉勾...
+2024-04-22 22:32:51.380 [main] INFO  lagou.Lagou - 拉勾正在登录...
+2024-04-22 22:32:51.812 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/lagou/cookie.json
+2024-04-22 22:32:52.947 [main] INFO  lagou.Lagou - cookie有效，准备投递...
+2024-04-22 22:32:56.142 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-22 22:33:03.204 [main] ERROR lagou.Lagou - 获取职位信息失败
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"span.name__36WTQ"}
+  (Session info: chrome=124.0.6367.62)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'zyl03', ip: '192.168.6.148', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.62, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: /var/folders/cd/gs9yyg_106b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49419}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 778eabb4fba3d1a71beff753741c1364
+*** Element info: {Using=css selector, value=span.name__36WTQ}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at lagou.Lagou.submit(Lagou.java:111)
+	at lagou.Lagou.lambda$main$0(Lagou.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at lagou.Lagou.main(Lagou.java:39)
+2024-04-22 22:33:03.274 [main] INFO  lagou.Lagou - 投递: Java开发工程师,职位: Java开发工程师,公司: 上海赛伯乐投资有限公司,职位信息: 杭州/经验3-5年/硕士及以上/全职,公司信息: 上海赛伯乐投资有限公司,薪资: 15k-23k,福利: 五险一金,周末双休,有转正机会
+2024-04-22 22:33:11.698 [main] ERROR lagou.Lagou - 这个岗位没有推荐职位...
+2024-04-22 22:33:12.893 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-22 22:33:20.076 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-22 22:33:36.206 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-22 22:33:41.230 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 1 次)
+2024-04-22 22:33:46.258 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 1 次)
+2024-04-22 22:33:48.422 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:33:50.558 [main] INFO  lagou.Lagou - 正在打开拉勾...
+2024-04-22 22:33:51.176 [main] INFO  lagou.Lagou - 拉勾正在登录...
+2024-04-22 22:33:51.733 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/lagou/cookie.json
+2024-04-22 22:33:53.562 [main] INFO  lagou.Lagou - cookie有效，准备投递...
+2024-04-22 22:33:56.793 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-22 22:34:12.935 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-22 22:34:17.951 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 1 次)
+2024-04-22 22:34:22.972 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 1 次)
+2024-04-22 22:34:32.984 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 2 次)
+2024-04-22 22:34:37.996 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 2 次)
+2024-04-22 22:34:43.014 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 2 次)
+2024-04-22 22:34:53.030 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 3 次)
+2024-04-22 22:34:58.043 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 3 次)
+2024-04-22 22:36:09.520 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 3 次)
+2024-04-22 22:36:19.529 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 4 次)
+2024-04-22 22:36:24.548 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 4 次)
+2024-04-22 22:36:50.015 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:36:51.936 [main] INFO  lagou.Lagou - 正在打开拉勾...
+2024-04-22 22:36:52.885 [main] INFO  lagou.Lagou - 拉勾正在登录...
+2024-04-22 22:36:52.966 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/lagou/cookie.json
+2024-04-22 22:37:09.859 [main] INFO  lagou.Lagou - cookie失效，尝试扫码登录...
+2024-04-22 22:37:10.034 [main] INFO  lagou.Lagou - 等待扫码..
+2024-04-22 22:37:10.070 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/lagou/cookie.json
+2024-04-22 22:37:27.428 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:37:29.328 [main] INFO  lagou.Lagou - 正在打开拉勾...
+2024-04-22 22:37:29.931 [main] INFO  lagou.Lagou - 拉勾正在登录...
+2024-04-22 22:37:30.010 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/lagou/cookie.json
+2024-04-22 22:40:00.749 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:40:02.763 [main] INFO  lagou.Lagou - 正在打开拉勾...
+2024-04-22 22:40:03.152 [main] INFO  lagou.Lagou - 拉勾正在登录...
+2024-04-22 22:42:15.981 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:42:23.190 [main] INFO  lagou.Lagou - 正在打开拉勾...
+2024-04-22 22:42:23.635 [main] INFO  lagou.Lagou - 拉勾正在登录...
+2024-04-22 22:42:28.581 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:42:29.855 [main] INFO  lagou.Lagou - 正在打开拉勾...
+2024-04-22 22:42:30.840 [main] INFO  lagou.Lagou - 拉勾正在登录...
+2024-04-22 22:49:06.935 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-22 22:49:08.354 [main] INFO  lagou.Lagou - 正在打开拉勾...

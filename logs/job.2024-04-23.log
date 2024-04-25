@@ -1,0 +1,217 @@
+2024-04-23 12:27:51.940 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-23 12:27:53.343 [main] INFO  lagou.Lagou - 正在打开拉勾...
+2024-04-23 12:27:54.399 [main] INFO  lagou.Lagou - 拉勾正在登录...
+2024-04-23 12:27:54.425 [main] INFO  lagou.Lagou - cookie失效，尝试扫码登录...
+2024-04-23 12:27:54.888 [main] INFO  lagou.Lagou - 等待扫码..
+2024-04-23 12:28:07.708 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/lagou/cookie.json
+2024-04-23 12:28:16.652 [main] DEBUG lagou.Lagou - 第1页，第1个岗位
+2024-04-23 12:28:16.661 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-23 12:28:32.750 [main] DEBUG lagou.Lagou - 第1页，第2个岗位
+2024-04-23 12:28:32.754 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-23 12:28:37.767 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 1 次)
+2024-04-23 12:28:42.782 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 1 次)
+2024-04-23 12:28:52.791 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 2 次)
+2024-04-23 12:28:57.802 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 2 次)
+2024-04-23 12:29:02.815 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 2 次)
+2024-04-23 12:29:12.821 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 3 次)
+2024-04-23 12:29:17.831 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 3 次)
+2024-04-23 12:29:22.843 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 3 次)
+2024-04-23 12:29:32.850 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 4 次)
+2024-04-23 12:29:37.861 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 4 次)
+2024-04-23 12:29:42.872 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 4 次)
+2024-04-23 12:29:52.881 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 5 次)
+2024-04-23 12:29:57.893 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 5 次)
+2024-04-23 12:30:02.904 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 5 次)
+2024-04-23 12:30:12.913 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 6 次)
+2024-04-23 12:30:17.924 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 6 次)
+2024-04-23 12:30:22.938 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 6 次)
+2024-04-23 12:30:32.946 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 7 次)
+2024-04-23 12:30:37.954 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 7 次)
+2024-04-23 12:30:42.966 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 7 次)
+2024-04-23 12:30:52.974 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 8 次)
+2024-04-23 12:30:57.986 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 8 次)
+2024-04-23 12:31:02.998 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 8 次)
+2024-04-23 12:31:13.006 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 9 次)
+2024-04-23 12:31:18.018 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 9 次)
+2024-04-23 12:31:23.031 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 9 次)
+2024-04-23 12:31:33.038 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 10 次)
+2024-04-23 12:31:38.048 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 10 次)
+2024-04-23 12:31:43.060 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 10 次)
+2024-04-23 12:31:53.064 [main] ERROR lagou.Lagou - 已尝试 10 次，已达最大重试次数，少侠请重新来过！
+2024-04-23 12:31:53.064 [main] INFO  lagou.Lagou - 已投递 0 次，正在退出...
+2024-04-23 12:31:53.253 [main] DEBUG lagou.Lagou - 第1页，第3个岗位
+2024-04-23 12:31:53.253 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-23 12:31:58.254 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 1 次)
+2024-04-23 12:32:03.259 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 1 次)
+2024-04-23 12:32:13.264 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 2 次)
+2024-04-23 12:32:18.269 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 2 次)
+2024-04-23 12:32:23.270 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 2 次)
+2024-04-23 12:32:33.275 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 3 次)
+2024-04-23 12:32:38.281 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 3 次)
+2024-04-23 12:32:43.286 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 3 次)
+2024-04-23 12:32:53.291 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 4 次)
+2024-04-23 12:32:58.296 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 4 次)
+2024-04-23 12:33:03.301 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 4 次)
+2024-04-23 12:33:13.306 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 5 次)
+2024-04-23 12:33:18.311 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 5 次)
+2024-04-23 12:33:23.316 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 5 次)
+2024-04-23 12:33:33.321 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 6 次)
+2024-04-23 12:33:38.322 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 6 次)
+2024-04-23 12:33:43.328 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 6 次)
+2024-04-23 12:33:53.333 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 7 次)
+2024-04-23 12:33:58.338 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 7 次)
+2024-04-23 12:34:03.340 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 7 次)
+2024-04-23 12:34:13.345 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 8 次)
+2024-04-23 12:34:18.351 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 8 次)
+2024-04-23 12:34:23.357 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 8 次)
+2024-04-23 12:34:33.359 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 9 次)
+2024-04-23 12:34:38.363 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 9 次)
+2024-04-23 12:34:43.365 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 9 次)
+2024-04-23 12:34:53.370 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 10 次)
+2024-04-23 12:34:58.375 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 10 次)
+2024-04-23 12:35:03.377 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 10 次)
+2024-04-23 12:35:13.382 [main] ERROR lagou.Lagou - 已尝试 10 次，已达最大重试次数，少侠请重新来过！
+2024-04-23 12:35:13.383 [main] INFO  lagou.Lagou - 已投递 0 次，正在退出...
+2024-04-23 12:35:13.384 [main] DEBUG lagou.Lagou - 第1页，第4个岗位
+2024-04-23 12:35:13.385 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-23 12:35:18.390 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 1 次)
+2024-04-23 12:35:23.392 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 1 次)
+2024-04-23 12:35:33.398 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 2 次)
+2024-04-23 12:35:38.404 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 2 次)
+2024-04-23 12:35:43.407 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 2 次)
+2024-04-23 12:35:53.418 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 3 次)
+2024-04-23 12:35:58.425 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 3 次)
+2024-04-23 12:36:03.445 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 3 次)
+2024-04-23 12:36:13.464 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 4 次)
+2024-04-23 12:36:18.479 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 4 次)
+2024-04-23 12:36:23.492 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 4 次)
+2024-04-23 12:36:33.498 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 5 次)
+2024-04-23 12:36:38.510 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 5 次)
+2024-04-23 12:36:43.518 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 5 次)
+2024-04-23 12:36:53.529 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 6 次)
+2024-04-23 12:36:58.539 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 6 次)
+2024-04-23 12:37:03.551 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 6 次)
+2024-04-23 12:37:13.557 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 7 次)
+2024-04-23 12:37:18.562 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 7 次)
+2024-04-23 12:37:23.573 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 7 次)
+2024-04-23 12:37:33.581 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 8 次)
+2024-04-23 12:37:38.590 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 8 次)
+2024-04-23 12:37:43.598 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 8 次)
+2024-04-23 12:37:53.600 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 9 次)
+2024-04-23 12:37:58.610 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 9 次)
+2024-04-23 12:38:03.614 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 9 次)
+2024-04-23 12:38:13.623 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 10 次)
+2024-04-23 12:38:18.627 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 10 次)
+2024-04-23 12:38:23.638 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 10 次)
+2024-04-23 12:38:33.647 [main] ERROR lagou.Lagou - 已尝试 10 次，已达最大重试次数，少侠请重新来过！
+2024-04-23 12:38:33.647 [main] INFO  lagou.Lagou - 已投递 0 次，正在退出...
+2024-04-23 12:38:33.647 [main] DEBUG lagou.Lagou - 第1页，第5个岗位
+2024-04-23 12:38:33.648 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-23 12:38:38.656 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 1 次)
+2024-04-23 12:38:43.667 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 1 次)
+2024-04-23 12:38:53.672 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 2 次)
+2024-04-23 12:38:58.680 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 2 次)
+2024-04-23 12:39:03.689 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 2 次)
+2024-04-23 12:39:13.698 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 3 次)
+2024-04-23 12:39:18.709 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 3 次)
+2024-04-23 12:39:23.717 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 3 次)
+2024-04-23 12:39:33.724 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 4 次)
+2024-04-23 12:39:38.729 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 4 次)
+2024-04-23 12:39:43.737 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 4 次)
+2024-04-23 12:39:53.743 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 5 次)
+2024-04-23 12:39:58.754 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 5 次)
+2024-04-23 12:40:03.764 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 5 次)
+2024-04-23 12:40:13.774 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 6 次)
+2024-04-23 12:40:18.785 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 6 次)
+2024-04-23 12:40:23.796 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 6 次)
+2024-04-23 12:40:33.806 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 7 次)
+2024-04-23 12:40:38.809 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 7 次)
+2024-04-23 12:40:43.820 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 7 次)
+2024-04-23 12:40:53.820 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 8 次)
+2024-04-23 12:41:23.677 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 8 次)
+2024-04-23 12:41:28.683 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 8 次)
+2024-04-23 12:41:38.685 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 9 次)
+2024-04-23 12:41:43.693 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 9 次)
+2024-04-23 12:41:48.699 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 9 次)
+2024-04-23 12:41:58.706 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 10 次)
+2024-04-23 12:42:03.714 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 10 次)
+2024-04-23 12:55:27.165 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 10 次)
+2024-04-23 12:55:37.174 [main] ERROR lagou.Lagou - 已尝试 10 次，已达最大重试次数，少侠请重新来过！
+2024-04-23 12:55:37.175 [main] INFO  lagou.Lagou - 已投递 0 次，正在退出...
+2024-04-23 12:55:37.176 [main] DEBUG lagou.Lagou - 第1页，第6个岗位
+2024-04-23 12:55:37.176 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-23 12:55:42.185 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 1 次)
+2024-04-23 12:55:47.196 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 1 次)
+2024-04-23 12:55:57.200 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 2 次)
+2024-04-23 12:56:02.202 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 2 次)
+2024-04-23 12:56:07.213 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 2 次)
+2024-04-23 13:11:42.271 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 3 次)
+2024-04-23 13:11:47.279 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 3 次)
+2024-04-23 13:11:52.284 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 3 次)
+2024-04-23 13:12:02.293 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 4 次)
+2024-04-23 13:12:07.302 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 4 次)
+2024-04-23 13:12:12.308 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 4 次)
+2024-04-23 13:12:22.314 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 5 次)
+2024-04-23 13:27:39.766 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 5 次)
+2024-04-23 13:27:44.782 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 5 次)
+2024-04-23 13:27:54.797 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 6 次)
+2024-04-23 13:27:59.811 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 6 次)
+2024-04-23 13:28:04.824 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 6 次)
+2024-04-23 13:28:14.838 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 7 次)
+2024-04-23 13:28:19.850 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 7 次)
+2024-04-23 13:29:26.567 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 7 次)
+2024-04-23 13:29:36.569 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 8 次)
+2024-04-23 13:29:41.580 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 8 次)
+2024-04-23 13:29:46.583 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 8 次)
+2024-04-23 13:29:56.587 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 9 次)
+2024-04-23 13:30:01.597 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 9 次)
+2024-04-23 13:30:06.599 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 9 次)
+2024-04-23 13:30:21.491 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 10 次)
+2024-04-23 13:30:26.502 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 10 次)
+2024-04-23 13:30:31.504 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 10 次)
+2024-04-23 13:30:41.514 [main] ERROR lagou.Lagou - 已尝试 10 次，已达最大重试次数，少侠请重新来过！
+2024-04-23 13:30:41.515 [main] INFO  lagou.Lagou - 已投递 0 次，正在退出...
+2024-04-23 13:30:41.516 [main] DEBUG lagou.Lagou - 第1页，第7个岗位
+2024-04-23 13:30:41.516 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 1 次)
+2024-04-23 13:30:46.525 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 1 次)
+2024-04-23 13:30:51.530 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 1 次)
+2024-04-23 13:31:01.536 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 2 次)
+2024-04-23 13:46:31.605 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 2 次)
+2024-04-23 13:46:36.607 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 2 次)
+2024-04-23 13:46:46.618 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 3 次)
+2024-04-23 13:46:51.629 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 3 次)
+2024-04-23 13:46:56.635 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 3 次)
+2024-04-23 13:47:06.642 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 4 次)
+2024-04-23 13:47:11.648 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 4 次)
+2024-04-23 13:47:16.656 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 4 次)
+2024-04-23 13:56:09.149 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 5 次)
+2024-04-23 13:56:14.155 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 5 次)
+2024-04-23 13:56:19.161 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 5 次)
+2024-04-23 13:56:29.166 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 6 次)
+2024-04-23 13:56:34.171 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 6 次)
+2024-04-23 13:56:39.171 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 6 次)
+2024-04-23 13:56:49.177 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 7 次)
+2024-04-23 13:56:54.178 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 7 次)
+2024-04-23 13:56:59.183 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 7 次)
+2024-04-23 13:57:09.188 [main] ERROR lagou.Lagou - element.click() 点击失败，正在尝试重新点击...(正在尝试：第 8 次)
+2024-04-23 13:57:14.194 [main] ERROR lagou.Lagou - get(i).click() 重试失败，尝试使用Actions点击...(正在尝试：第 8 次)
+2024-04-23 13:57:19.199 [main] ERROR lagou.Lagou - 使用Actions点击也失败，等待10秒后再次尝试...(正在尝试：第 8 次)
+2024-04-23 16:05:16.783 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-23 16:05:18.492 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-23 16:05:19.365 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-23 16:05:21.749 [main] ERROR boss.Boss - cookie失效，尝试扫码登录...
+2024-04-23 16:05:22.075 [main] INFO  boss.Boss - 等待登陆..
+2024-04-23 16:07:55.778 [main] INFO  utils.SeleniumUtil - 当前操作系统为【mac os x】
+2024-04-23 16:07:57.415 [main] INFO  boss.Boss - 打开Boss直聘网站中...
+2024-04-23 16:07:58.846 [main] INFO  utils.SeleniumUtil - Cookie已保存到文件：./src/main/java/boss/cookie.json
+2024-04-23 16:08:01.441 [main] INFO  boss.Boss - cookie有效，已登录...
+2024-04-23 16:08:01.444 [main] INFO  boss.Boss - 投递【Java】关键词第【1】页
+2024-04-23 16:08:04.158 [main] INFO  boss.Boss - 忽略高级java开发, 15-17K
+2024-04-23 16:08:04.683 [main] INFO  boss.Boss - 忽略高级java研发工程师, 15-18K
+2024-04-23 16:08:04.849 [main] INFO  boss.Boss - 忽略Java, 15-20K·14薪
+2024-04-23 16:08:04.923 [main] INFO  boss.Boss - 忽略Java, 14-20K
+2024-04-23 16:08:04.992 [main] INFO  boss.Boss - 忽略Java开发工程师2, 15-20K
+2024-04-23 16:08:05.059 [main] INFO  boss.Boss - 忽略高级java开发, 14-19K
+2024-04-23 16:08:09.399 [main] INFO  boss.Boss - 今日沟通人数已达上限，请明天再试
+2024-04-23 16:08:09.400 [main] INFO  boss.Boss - 未发起新的聊天...
+2024-04-23 16:08:09.402 [main] INFO  boss.Boss - 共发起 0 个聊天,用时0分11秒
