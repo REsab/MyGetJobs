@@ -438,6 +438,8 @@ input					 = WAIT.until(
 
 			if (contains1) {
 				// # 滚动到底部
+				CHROME_DRIVER.executeScript("arguments[0].style.fontSize = '33px';", infoPublic2);
+				CHROME_DRIVER.executeScript("arguments[0].style.color = 'red';", infoPublic2);
 				CHROME_DRIVER.executeScript("arguments[0].scrollIntoView(false);", infoPublic2);
 				SeleniumUtil.sleep(1);
 				return false;
