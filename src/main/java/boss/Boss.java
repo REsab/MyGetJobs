@@ -230,6 +230,11 @@ public class Boss {
 			WebElement infoPublic = jobCard.findElement(By.cssSelector("div.info-public"));
 			String recruiterText = infoPublic.getText();
 			String recruiterName = infoPublic.findElement(By.cssSelector("em")).getText();
+			if ( recruiterText.contains("顾问")){
+				//去掉顾问
+				continue;
+			}
+
 			if (blackRecruiters.stream().anyMatch(recruiterName::contains)) {
 				// 排除黑名单招聘人员
 				continue;
@@ -290,8 +295,15 @@ public class Boss {
 
 			WebElement btn = CHROME_DRIVER.findElement(By.cssSelector("[class*='btn btn-startchat']"));
 			if (isMsgTo && "立即沟通".equals(btn.getText())) {
+				//	设置为收藏
+				WebElement container = CHROME_DRIVER.findElement(By.className("btn-container"));
+				try {
+					WebElement doLover = container.findElement(By.className("btn-interest"));
+					doLover.click();
+				} catch (Exception e) {
+					log.warn("not find lover");
+				}
 				// 是否要沟通
-
 				if (isMsgTo) {
 					btn.click();
 				}
@@ -324,8 +336,14 @@ public class Boss {
 						}
 
 						// 输入沟通内容
-						WebElement input = WAIT.until(
-								ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='chat-input']")));
+						WebElement input=null;
+						try {
+input					 = WAIT.until(
+									ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='chat-input']")));
+						} catch (Exception e) {
+							input					 = WAIT.until(
+									ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@class='input-area']")));
+						}
 						input.click();
 						SeleniumUtil.sleepByMilliSeconds(500);
 						try {
@@ -418,7 +436,12 @@ public class Boss {
 				return true;
 			}
 
-			if (contains1) return false;
+			if (contains1) {
+				// # 滚动到底部
+				CHROME_DRIVER.executeScript("arguments[0].scrollIntoView(false);", infoPublic2);
+				SeleniumUtil.sleep(1);
+				return false;
+			}
 			log.debug("忽略bossStatus: {}", text);
 		} catch (Exception e) {
 
