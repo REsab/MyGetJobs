@@ -1,5 +1,6 @@
 package utils;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.openqa.selenium.By;
@@ -64,6 +65,8 @@ public class SeleniumUtil {
         }
         options.addArguments("--start-maximized"); //最大化窗口
 //        options.addArguments("--headless"); //使用无头模式
+
+		WebDriverManager.chromedriver().setup();
         CHROME_DRIVER = new ChromeDriver(options);
     }
 
