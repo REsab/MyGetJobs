@@ -23,8 +23,12 @@
         </rollingPolicy>
     </appender>
 
-    <root level="DEBUG">
+    <root level="Error">
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="FILE"/>
     </root>
+
+
+    <!-- 定义一个指定包的日志级别 -->
+    <logger name="boss" level="DEBUG"/>
 </configuration>

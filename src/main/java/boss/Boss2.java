@@ -1,6 +1,8 @@
 package boss;
 
 import lombok.SneakyThrows;
+import org.apache.commons.lang3.StringUtils;
+import org.bouncycastle.crypto.signers.Ed25519ctxSigner;
 import org.json.JSONObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -37,7 +39,7 @@ public class Boss2 {
 	static List<Job> returnList = new ArrayList<>();
 	static String dataPath = "./src/main/java/boss/data.json";
 	static String cookiePath = "./src/main/java/boss/cookie.json";
-	static final int noJobMaxPages = 13; // 一次性加载出来页数
+	static final int noJobMaxPages = 5; // 一次性加载出来页数
 	static int noJobPages;
 	static int lastSize;
 	static BossConfig config = BossConfig.init();
@@ -62,7 +64,6 @@ public class Boss2 {
 				int startSize = returnList.size();
 
 				try {
-					// resultSize = resumeSubmission(url );
 					CHROME_DRIVER.get("https://www.zhipin.com/web/geek/job-recommend?ka=header-job-recommend");
 					WAIT.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[class*='rec-job-list']")));
 
@@ -140,30 +141,40 @@ public class Boss2 {
 			try {
 				{
 
+					jobCard.click();
+					SeleniumUtil.sleepByMilliSeconds(500);
+
 					try {
 						WebElement jobName = jobCard.findElement(By.cssSelector("a.job-name"));
-						WebElement boosName = jobCard.findElement(By.cssSelector("span.boss-name"));
 						WebElement jobSalary = jobCard.findElement(By.cssSelector("span.job-salary"));
+						WebElement company = jobCard.findElement(By.cssSelector("span.boss-name"));
+						WebElement bossName = CHROME_DRIVER.findElement(By.xpath("//h2[@class='name']"));
 
 						String text1 = jobSalary.getText();
 						String salary = changeSalary(text1);
-						job.setCompanyTag(boosName.getText());
+						job.setRecruiter(bossName.getText());
+						job.setCompanyTag(company.getText());
 						job.setSalary(salary);
 						job.setJobName(jobName.getText());
+						job.setCompanyName(company.getText());
+
+						try {
+							WebElement area = CHROME_DRIVER.findElement(By.xpath("//p[@class='job-address-desc']"));
+							job.setJobArea(area.getText());
+						} catch (Exception e) {
+
+						}
 					} catch (Exception e) {
 						log.error("解析失败 job", e);
 					}
 
-					boolean b = checkJob(job);
-					if (!b) {
+					if (!checkJob(job)) {
 						log.info("【{}】[{}]，跳过...", job.getJobName(), job.getSalary());
 						continue;
 					}
 
 					try {
 						// 查看岗位详情
-						jobCard.click();
-						SeleniumUtil.sleepByMilliSeconds(500);
 						// job-detail-box
 						WebElement jobDetail = CHROME_DRIVER.findElement(By.cssSelector("div.job-detail-box"));
 						WebElement opBtnChat = jobDetail.findElement(By.cssSelector("a.op-btn-chat"));
@@ -217,8 +228,8 @@ public class Boss2 {
 						// 总结日志
 
 						log.info("投递【{}】公司，【{}】职位，招聘官:【{}】,在线：【{}】",
-								job.getJobName() == null ? "未知公司: " : job.getJobName(), job.getSalary(), "--",
-								job.getBossActiveTime());
+								job.getCompanyName() == null ? "未知公司: " : job.getJobName(), job.getSalary(),
+								job.getRecruiter(), job.getBossActiveTime());
 
 						returnList.add(job);
 						noJobPages = 0;
@@ -229,7 +240,7 @@ public class Boss2 {
 					}
 				}
 			} catch (Exception e) {
-				log.warn("第{}个 异常 {}", index, job);
+				log.warn("第{}个 异常 {} , error : ", index, job, e.getMessage());
 			}
 		}
 	}
@@ -241,6 +252,7 @@ public class Boss2 {
 		//-K·薪  28-55k·16薪
 		//-K 				19-23k
 		//-K·薪  28-35k·13薪
+		log.debug("changeSalary {}", text1);
 
 		text1 = text1.replace("\uE032", "1");
 		text1 = text1.replace("\uE033", "2");
@@ -262,7 +274,7 @@ public class Boss2 {
 		// text1 = text1.replace("", "9");
 		// text1 = text1.replace("\uE031", "0");
 
-
+		log.debug("text1 {}", text1);
 		return text1;
 	}
 
@@ -293,27 +305,75 @@ public class Boss2 {
 
 	private static boolean checkJob(Job job) {
 
+		boolean companyMatch = false;
+		boolean salaryMatch = false;
+		boolean jobNameMatch = false;
+		boolean jobBlackNameMatch = true;
+
+		// 公司
 		try {
-			String aa = job.getSalary();
-			if (aa == null) {
-				log.error("error getSalary2 {}",job);
+
+			String companyName = job.getCompanyName();
+			if (StringUtils.isNotBlank(companyName)) {
+
+				if (!blackCompanies.stream().anyMatch(companyName::contains)) {
+					log.debug("blackCompanies,, {}", companyName);
+					companyMatch = true;
+				}
 			}
-			String substring = aa.substring(0, aa.indexOf("K"));
+		} catch (Exception e) {
+			log.error("error company :{}", e);
+		}
+
+		// 工资
+		try {
+			String salary = job.getSalary();
+			if (salary == null) {
+				log.error("error getSalary2 {}", job);
+			}
+			String substring = salary.substring(0, salary.indexOf("K"));
 			String[] split = substring.split("-");
 			Integer minSalary = Integer.valueOf(split[0]);
 			Integer maxSalary = Integer.valueOf(split[1]);
-			if (minSalary < config.getMinSalary()) {
-				return false;
-			}
-			if (maxSalary > config.getMaxSalary()) {
-				return true;
+			if (minSalary > config.getMinSalary() && maxSalary > config.getMaxSalary()) {
+				salaryMatch = true;
+			} else {
+				log.debug("getMinSalary,, {}", salary);
 			}
 		} catch (Exception e) {
 			log.error("e", e);
 			log.error("error getSalary", job.getSalary());
 		}
-		log.info("忽略{}, {}", job.getJobName(), job.getSalary());
-		return false;
+
+		// 工作名称
+		List<String> jobNames = new ArrayList<>();
+		jobNames.add("java");
+		jobNames.add("Java");
+		jobNames.add("JAVA");
+		jobNames.add("开发");
+		jobNames.add("研发");
+		if (jobNames.stream().anyMatch(a -> job.getJobName().contains(a))) {
+			jobNameMatch = true;
+		} else {
+			log.debug("jobNameNoMatch {}", job.getJobName());
+		}
+
+		List<String> jobNames1 = new ArrayList<>();
+		jobNames1.add("总监");
+		jobNames1.add("客服");
+		jobNames1.add("android");
+		jobNames1.add("Android");
+		jobNames1.add("");
+
+		if (jobNames1.stream().anyMatch(a -> job.getJobName().contains(a))) {
+			jobBlackNameMatch = false;
+			log.debug("jobBlackNameMatch {}", job.getJobName());
+		}
+
+		log.debug("job check  info :{}, {} , {}, {}  ", companyMatch, jobNameMatch, salaryMatch, jobBlackNameMatch);
+		log.debug("{}, {}", job.getJobName(), job.getSalary());
+
+		return companyMatch && jobNameMatch && salaryMatch && jobBlackNameMatch;
 	}
 
 	@SneakyThrows
@@ -376,7 +436,7 @@ public class Boss2 {
 			return true;
 		} catch (Exception e) {
 		}
-
+		//
 		try {
 			// 近期活跃
 
@@ -386,7 +446,6 @@ public class Boss2 {
 			boolean contains1 = bossStatusBlackList.contains(text);
 
 			if (contains) {
-
 				job.setBossActiveTime(text);
 				return true;
 			}
@@ -401,9 +460,8 @@ public class Boss2 {
 			}
 			log.debug("忽略bossStatus: {}", text);
 		} catch (Exception e) {
-
 		}
-
+		job.setBossActiveTime("-");
 		log.error("找不到boss状态");
 		return false;
 	}
