@@ -2,7 +2,6 @@ package boss;
 
 import lombok.SneakyThrows;
 import org.apache.commons.lang3.StringUtils;
-import org.bouncycastle.crypto.signers.Ed25519ctxSigner;
 import org.json.JSONObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -33,6 +32,7 @@ public class Boss2 {
 	static List<String> blackCompanies;
 	static List<String> blackRecruiters;
 	static List<String> blackJobs;
+	static List<String> jobNamesLike = new ArrayList<>();
 
 	static List<String> bossStatusBlackList;
 	static List<String> bossStatusWhiteList;
@@ -72,7 +72,6 @@ public class Boss2 {
 					city.click();
 
 					// 执行滚动并等待一段时间让新内容加载
-
 					for (int i = 0; i < noJobMaxPages; i++) {
 						((JavascriptExecutor) CHROME_DRIVER).executeScript(
 								"window.scrollTo(0, document.body.scrollHeight);");
@@ -170,6 +169,7 @@ public class Boss2 {
 
 					if (!checkJob(job)) {
 						log.info("【{}】[{}]，跳过...", job.getJobName(), job.getSalary());
+						SeleniumUtil.sleepByMilliSeconds(1100);
 						continue;
 					}
 
@@ -185,7 +185,7 @@ public class Boss2 {
 						boolean isMsgTo = checkOnLine(job);
 						if (!isMsgTo) {
 							log.info("ignore job: " + job.getJobName() + job.getBossActiveTime());
-							SeleniumUtil.sleepByMilliSeconds(800);
+							SeleniumUtil.sleepByMilliSeconds(1300);
 							continue;
 						}
 
@@ -227,9 +227,9 @@ public class Boss2 {
 
 						// 总结日志
 
-						log.info("投递【{}】公司，【{}】职位，招聘官:【{}】,在线：【{}】",
-								job.getCompanyName() == null ? "未知公司: " : job.getJobName(), job.getSalary(),
-								job.getRecruiter(), job.getBossActiveTime());
+						log.info("投递【{}】公司，【{}】职位， 【{}】招聘官:【{}】,在线：【{}】",
+								job.getCompanyName() == null ? "未知公司: " : job.getCompanyName(), job.getJobName(),
+								job.getSalary(), job.getRecruiter(), job.getBossActiveTime());
 
 						returnList.add(job);
 						noJobPages = 0;
@@ -335,7 +335,7 @@ public class Boss2 {
 			String[] split = substring.split("-");
 			Integer minSalary = Integer.valueOf(split[0]);
 			Integer maxSalary = Integer.valueOf(split[1]);
-			if (minSalary > config.getMinSalary() && maxSalary > config.getMaxSalary()) {
+			if (minSalary >= config.getMinSalary() && maxSalary >= config.getMaxSalary()) {
 				salaryMatch = true;
 			} else {
 				log.debug("getMinSalary,, {}", salary);
@@ -346,28 +346,22 @@ public class Boss2 {
 		}
 
 		// 工作名称
-		List<String> jobNames = new ArrayList<>();
-		jobNames.add("java");
-		jobNames.add("Java");
-		jobNames.add("JAVA");
-		jobNames.add("开发");
-		jobNames.add("研发");
-		if (jobNames.stream().anyMatch(a -> job.getJobName().contains(a))) {
+
+		jobNamesLike.add("java");
+		jobNamesLike.add("Java");
+		jobNamesLike.add("JAVA");
+		jobNamesLike.add("开发");
+		jobNamesLike.add("研发");
+
+		if (jobNamesLike.stream().anyMatch(a -> job.getJobName().contains(a))) {
 			jobNameMatch = true;
 		} else {
 			log.debug("jobNameNoMatch {}", job.getJobName());
 		}
 
-		List<String> jobNames1 = new ArrayList<>();
-		jobNames1.add("总监");
-		jobNames1.add("客服");
-		jobNames1.add("android");
-		jobNames1.add("Android");
-		jobNames1.add("");
-
-		if (jobNames1.stream().anyMatch(a -> job.getJobName().contains(a))) {
+		if (blackJobs.stream().anyMatch(a -> job.getJobName().contains(a))) {
 			jobBlackNameMatch = false;
-			log.debug("jobBlackNameMatch {}", job.getJobName());
+			log.debug("blackJobs {}", job.getJobName());
 		}
 
 		log.debug("job check  info :{}, {} , {}, {}  ", companyMatch, jobNameMatch, salaryMatch, jobBlackNameMatch);

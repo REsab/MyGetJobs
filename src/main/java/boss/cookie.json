@@ -5,8 +5,8 @@
         "name": "__a",
         "isHttpOnly": false,
         "isSecure": false,
-        "expiry": 1730346256169,
-        "value": "58102672.1713790507..1713790507.25.1.25.25"
+        "expiry": 1730428174059,
+        "value": "58102672.1713790507..1713790507.28.1.28.28"
     },
     {
         "path": "/",
@@ -14,8 +14,8 @@
         "name": "bst",
         "isHttpOnly": false,
         "isSecure": true,
-        "expiry": 1730346256180,
-        "value": "V2RtkmGOD93ldgXdJqzxgfLSuw7DjXxg~~|RtkmGOD93ldgXdJqzxgfLSuw7D3UwA~~"
+        "expiry": 1730428174064,
+        "value": "V2SdoiE-b62F1gXdJqzxgfLSuw7DrVzQ~~|SdoiE-b62F1gXdJqzxgfLSuw7DzWxg~~"
     },
     {
         "path": "/",
@@ -27,11 +27,11 @@
     },
     {
         "path": "/",
-        "domain": "www.zhipin.com",
+        "domain": ".www.zhipin.com",
         "name": "ab_guid",
         "isHttpOnly": false,
-        "isSecure": false,
-        "expiry": 1730346256197,
+        "isSecure": true,
+        "expiry": 1730428174073,
         "value": "ae465411-68c5-4843-97f2-76278c3be33f"
     },
     {
@@ -47,8 +47,8 @@
         "domain": ".zhipin.com",
         "name": "__zp_stoken__",
         "isHttpOnly": false,
-        "isSecure": false,
-        "expiry": 1730346256215,
+        "isSecure": true,
+        "expiry": 1730428174091,
         "value": "0149fwqIqHEQRHBbCgR1zZMOBf05tenRVU2VWV1LDhMODVMK2esOCeFnCsk56w4fCt8Kxw4TCp2rCmFnCosKhwqXCrMOLZ8SFWsK1wrvCpMStw7XCjMWMxJzCpMOAwq9KORAXGxQQER0OEhHChsKFGhkVEBQTHxAfGBQbH0A3xITDh1dKPkk%2BOV9bXBlWaGZbaU4VbFdRR08OZRETQDY2I0RAw4PDs8ODS8ODw7PDg0vDikvDgyBHQ0RAw4HDrjMzwr5bEMOFHh%2FDgWITw4vCnBTCvjEQw5BsM8KlxYPDgSA4Qj7DiE1FJUFBRUxKQUg%2BSjJCw4fCucOUaz%2FCpsWHw4IbOkQlRkpBSkBKQUVLSk8xPkNBMz5KNEkdEh8YHT1Kw4TDiMOLw5JFPg%3D%3D"
     },
     {
@@ -65,7 +65,7 @@
         "name": "wd_guid",
         "isHttpOnly": false,
         "isSecure": true,
-        "expiry": 1730346256231,
+        "expiry": 1730428174103,
         "value": "93c3dbb1-4c19-4630-a3d6-c38b1a53ba86"
     },
     {
@@ -82,7 +82,7 @@
         "name": "_bl_uid",
         "isHttpOnly": false,
         "isSecure": true,
-        "expiry": 1730346256248,
+        "expiry": 1730428174112,
         "value": "71ldtvUza9kye9m26va3r2hm6w4I"
     },
     {
@@ -91,17 +91,8 @@
         "name": "wt2",
         "isHttpOnly": true,
         "isSecure": false,
-        "expiry": 1730346256258,
-        "value": "DAyuKwffYThBKjDUKkjKbzN4GNXaTMMFxrf0NPLJjTT_xBhwFiAHdGaUK4b6b6DVzKKjih7O605UR-XN7QusVYQ~~"
-    },
-    {
-        "path": "/",
-        "domain": ".zhipin.com",
-        "name": "zp_at",
-        "isHttpOnly": true,
-        "isSecure": false,
-        "expiry": 1730346256266,
-        "value": "ITaPMBEvEecN83F_AAkvNxsUbxwlTdx3YSC-uKhTu0k~"
+        "expiry": 1730428174116,
+        "value": "DFspQaMKl0IkRbk3kdgMdHr1ofUfNha9NfHc58bm7HOwmmn4j8Vp9fBFNpSFx8LPwOfvapU_Az8O2yQ0-XFJY7Q~~"
     },
     {
         "path": "/",
@@ -114,10 +105,19 @@
     {
         "path": "/",
         "domain": ".zhipin.com",
+        "name": "zp_at",
+        "isHttpOnly": true,
+        "isSecure": false,
+        "expiry": 1730428174124,
+        "value": "qr9fP43imIJYOTwhQfUlne2JZ25elE-ueXPRYhwZzAM~"
+    },
+    {
+        "path": "/",
+        "domain": ".zhipin.com",
         "name": "lastCity",
         "isHttpOnly": false,
         "isSecure": false,
-        "expiry": 1730346256284,
+        "expiry": 1730428174128,
         "value": "101210100"
     },
     {
@@ -126,7 +126,7 @@
         "name": "Hm_lvt_194df3105ad7148dcf2b98a91b5e727a",
         "isHttpOnly": false,
         "isSecure": false,
-        "expiry": 1730346256293,
+        "expiry": 1730428174132,
         "value": "1729560431"
     },
     {
@@ -135,7 +135,7 @@
         "name": "wbg",
         "isHttpOnly": true,
         "isSecure": false,
-        "expiry": 1730346256302,
+        "expiry": 1730428174136,
         "value": "0"
     },
     {
@@ -144,7 +144,7 @@
         "name": "historyState",
         "isHttpOnly": false,
         "isSecure": true,
-        "expiry": 1730346256309,
+        "expiry": 1730428174141,
         "value": "state"
     },
     {
@@ -153,6 +153,6 @@
         "name": "Hm_lpvt_194df3105ad7148dcf2b98a91b5e727a",
         "isHttpOnly": false,
         "isSecure": false,
-        "value": "1729666559"
+        "value": "1729743264"
     }
 ]
