@@ -317,8 +317,13 @@ public class Boss2 {
 			if (StringUtils.isNotBlank(companyName)) {
 
 				if (!blackCompanies.stream().anyMatch(companyName::contains)) {
-					log.debug("blackCompanies,, {}", companyName);
 					companyMatch = true;
+
+					log.debug("whiteCompanies,, {}", companyName);
+
+				}else {
+					log.debug("blackCompanies,, {}", companyName);
+
 				}
 			}
 		} catch (Exception e) {
