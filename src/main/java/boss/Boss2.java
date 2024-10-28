@@ -28,7 +28,6 @@ public class Boss2 {
 	private static final Logger log = LoggerFactory.getLogger(Boss2.class);
 	static Integer page = 1;
 	static String homeUrl = "https://www.zhipin.com";
-	static String baseUrl = "https://www.zhipin.com/web/geek/job?";
 	static List<String> blackCompanies;
 	static List<String> blackRecruiters;
 	static List<String> blackJobs;
@@ -43,8 +42,6 @@ public class Boss2 {
 	static int noJobPages;
 	static int lastSize;
 	static BossConfig config = BossConfig.init();
-
-	static int indexJobCard = 0;
 	static Integer resultSize = 0;
 
 	public static void main(String[] args) {
@@ -64,22 +61,8 @@ public class Boss2 {
 				int startSize = returnList.size();
 
 				try {
-					CHROME_DRIVER.get("https://www.zhipin.com/web/geek/job-recommend?ka=header-job-recommend");
-					WAIT.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[class*='rec-job-list']")));
 
-					// 选择城市
-					WebElement city = CHROME_DRIVER.findElement(By.xpath("//span[@class='text-content']"));
-					city.click();
-
-					// 执行滚动并等待一段时间让新内容加载
-					for (int i = 0; i < noJobMaxPages; i++) {
-						((JavascriptExecutor) CHROME_DRIVER).executeScript(
-								"window.scrollTo(0, document.body.scrollHeight);");
-						SeleniumUtil.sleepByMilliSeconds(1500);
-					}
-					// 返回顶部
-					((JavascriptExecutor) CHROME_DRIVER).executeScript("window.scrollTo(0, 0);");
-
+					// 找工作
 					findJobs(url);
 				} catch (Exception e) {
 					resultSize = -2;
@@ -123,6 +106,23 @@ public class Boss2 {
 	}
 
 	private static void findJobs(String url) {
+		{
+			// prepare
+			CHROME_DRIVER.get("https://www.zhipin.com/web/geek/job-recommend?ka=header-job-recommend");
+			WAIT.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[class*='rec-job-list']")));
+
+			// 选择城市
+			WebElement city = CHROME_DRIVER.findElement(By.xpath("//span[@class='text-content']"));
+			city.click();
+
+			// 执行滚动并等待一段时间让新内容加载
+			for (int i = 0; i < noJobMaxPages; i++) {
+				((JavascriptExecutor) CHROME_DRIVER).executeScript("window.scrollTo(0, document.body.scrollHeight);");
+				SeleniumUtil.sleepByMilliSeconds(1500);
+			}
+			// 返回顶部
+			((JavascriptExecutor) CHROME_DRIVER).executeScript("window.scrollTo(0, 0);");
+		}
 
 		// 执行滚动并等待一段时间让新内容加载
 		log.debug("开始访问【{}】", url);
@@ -140,9 +140,6 @@ public class Boss2 {
 			try {
 				{
 
-					jobCard.click();
-					SeleniumUtil.sleepByMilliSeconds(500);
-
 					try {
 						WebElement jobName = jobCard.findElement(By.cssSelector("a.job-name"));
 						WebElement jobSalary = jobCard.findElement(By.cssSelector("span.job-salary"));
@@ -157,29 +154,34 @@ public class Boss2 {
 						job.setJobName(jobName.getText());
 						job.setCompanyName(company.getText());
 
-						try {
-							WebElement area = CHROME_DRIVER.findElement(By.xpath("//p[@class='job-address-desc']"));
-							String address = area.getText();
-							job.setJobArea(address);
-							if (!job.getJobArea().contains("杭州")) {
-								log.debug("area : {}", address);
-								continue;
-							}
-						} catch (Exception e) {
-
+						if (!checkJob(job)) {
+							log.info("【{}】[{}]，跳过...", job.getJobName(), job.getSalary());
+							SeleniumUtil.sleepByMilliSeconds(1100);
+							continue;
 						}
 					} catch (Exception e) {
 						log.error("解析失败 job", e);
 					}
 
-					if (!checkJob(job)) {
-						log.info("【{}】[{}]，跳过...", job.getJobName(), job.getSalary());
-						SeleniumUtil.sleepByMilliSeconds(1100);
-						continue;
+					// 查看岗位详情
+					jobCard.click();
+					SeleniumUtil.sleepByMilliSeconds(500);
+
+					try {
+						// 地区
+						WebElement area = CHROME_DRIVER.findElement(By.xpath("//p[@class='job-address-desc']"));
+						String address = area.getText();
+						job.setJobArea(address);
+						if (!job.getJobArea().contains("杭州")) {
+							log.debug("area : {}", address);
+							continue;
+						}
+					} catch (Exception e) {
+						log.error("查看详情失败, {}", e);
 					}
 
 					try {
-						// 查看岗位详情
+						// 投简历，沟通
 						// job-detail-box
 						WebElement jobDetail = CHROME_DRIVER.findElement(By.cssSelector("div.job-detail-box"));
 						WebElement opBtnChat = jobDetail.findElement(By.cssSelector("a.op-btn-chat"));
@@ -198,10 +200,15 @@ public class Boss2 {
 						try {
 							log.info("立即沟通...");
 							SeleniumUtil.sleepByMilliSeconds(1500);
-
 							opBtnChat.click();
+						} catch (Exception ignore) {
+							log.debug("立即沟通失败。。。 ");
+						}
+
+						try {
+							// 留在此页
+
 							SeleniumUtil.sleepByMilliSeconds(500);
-							// 不继续沟通
 							WebElement btnMsgNoContinue = CHROME_DRIVER.findElement(
 									By.cssSelector("[class*='cancel-btn']"));
 							btnMsgNoContinue.click();
@@ -209,29 +216,7 @@ public class Boss2 {
 							log.debug("没有继续沟通按钮");
 						}
 
-						// // 输入沟通内容
-						// WebElement input = WAIT.until(
-						// 		ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='chat-input']")));
-						// input.click();
-						// SeleniumUtil.sleepByMilliSeconds(500);
-						// try {
-						// 	// 是否出现不匹配的对话框
-						// 	WebElement element11 = CHROME_DRIVER.findElement(
-						// 			By.xpath("//div[@class='dialog-container']"));
-						// 	if ("不匹配".equals(element11.getText())) {
-						// 		continue;
-						// 	}
-						// } catch (Exception e) {
-						// 	log.debug("岗位匹配，下一步发送消息...");
-						// }
-						//
-						// input.sendKeys(config.getSayHi());
-						// WebElement send = WAIT.until(
-						// 		ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@type='send']")));
-						// send.click();
-
 						// 总结日志
-
 						log.info("投递【{}】公司，【{}】职位， 【{}】招聘官:【{}】,在线：【{}】",
 								job.getCompanyName() == null ? "未知公司: " : job.getCompanyName(), job.getJobName(),
 								job.getSalary(), job.getRecruiter(), job.getBossActiveTime());
@@ -300,8 +285,6 @@ public class Boss2 {
 				.collect(Collectors.toList());
 		blackJobs = jsonObject.getJSONArray("blackJobs").toList().stream().map(Object::toString)
 				.collect(Collectors.toList());
-		// bossStatus = jsonObject.getJSONArray("bossStatus").toList().stream().map(Object::toString).collect
-		// (Collectors.toList());
 		bossStatusBlackList = jsonObject.getJSONArray("bossStatusBlackList").toList().stream().map(Object::toString)
 				.collect(Collectors.toList());
 		bossStatusWhiteList = jsonObject.getJSONArray("bossStatusWhiteList").toList().stream().map(Object::toString)
@@ -341,8 +324,8 @@ public class Boss2 {
 			}
 			String substring = salary.substring(0, salary.indexOf("K"));
 			String[] split = substring.split("-");
-			Integer minSalary = Integer.valueOf(split[0]);
-			Integer maxSalary = Integer.valueOf(split[1]);
+			int minSalary = Integer.parseInt(split[0]);
+			int maxSalary = Integer.parseInt(split[1]);
 			if (minSalary >= config.getMinSalary() && maxSalary >= config.getMaxSalary()) {
 				salaryMatch = true;
 			} else {
