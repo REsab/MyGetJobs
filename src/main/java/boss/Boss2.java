@@ -39,7 +39,7 @@ public class Boss2 {
 	static List<Job> returnList = new ArrayList<>();
 	static String dataPath = "./src/main/java/boss/data.json";
 	static String cookiePath = "./src/main/java/boss/cookie.json";
-	static final int noJobMaxPages = 5; // 一次性加载出来页数
+	static final int noJobMaxPages = 15; // 一次性加载出来页数
 	static int noJobPages;
 	static int lastSize;
 	static BossConfig config = BossConfig.init();
@@ -159,7 +159,12 @@ public class Boss2 {
 
 						try {
 							WebElement area = CHROME_DRIVER.findElement(By.xpath("//p[@class='job-address-desc']"));
-							job.setJobArea(area.getText());
+							String address = area.getText();
+							job.setJobArea(address);
+							if (!job.getJobArea().contains("杭州")) {
+								log.debug("area : {}", address);
+								continue;
+							}
 						} catch (Exception e) {
 
 						}
@@ -320,10 +325,8 @@ public class Boss2 {
 					companyMatch = true;
 
 					log.debug("whiteCompanies,, {}", companyName);
-
-				}else {
+				} else {
 					log.debug("blackCompanies,, {}", companyName);
-
 				}
 			}
 		} catch (Exception e) {
