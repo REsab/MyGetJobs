@@ -372,7 +372,8 @@ public class Boss2 {
 			log.debug("blackJobs {}", job.getJobName());
 		}
 
-		log.debug("job check  info :{}, {} , {}, {}  ", companyMatch, jobNameMatch, salaryMatch, jobBlackNameMatch);
+		log.debug("job check  info : 公司：{}, 工作：{} , {},  工资：{}  ", companyMatch, jobNameMatch, jobBlackNameMatch,
+				salaryMatch);
 		log.debug("{}, {}", job.getJobName(), job.getSalary());
 
 		return companyMatch && jobNameMatch && salaryMatch && jobBlackNameMatch;
