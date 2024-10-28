@@ -208,7 +208,7 @@ public class Boss2 {
 						try {
 							// 留在此页
 
-							SeleniumUtil.sleepByMilliSeconds(500);
+							SeleniumUtil.sleepByMilliSeconds(1500);
 							WebElement btnMsgNoContinue = CHROME_DRIVER.findElement(
 									By.cssSelector("[class*='cancel-btn']"));
 							btnMsgNoContinue.click();
