@@ -161,6 +161,7 @@ public class Boss2 {
 						}
 					} catch (Exception e) {
 						log.error("解析失败 job", e);
+						continue;
 					}
 
 					// 查看岗位详情
