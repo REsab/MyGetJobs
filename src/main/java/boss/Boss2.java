@@ -199,9 +199,9 @@ public class Boss2 {
 
 						// 打开聊天窗口
 						try {
-							log.info("立即沟通...");
 							SeleniumUtil.sleepByMilliSeconds(1500);
 							opBtnChat.click();
+							log.info("立即沟通...");
 						} catch (Exception ignore) {
 							log.debug("立即沟通失败。。。 ");
 						}
