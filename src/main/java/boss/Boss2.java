@@ -61,7 +61,7 @@ public class Boss2 {
 				int startSize = returnList.size();
 
 				try {
-					//reload data
+					// reload data
 					loadData(dataPath);
 					// 找工作
 					findJobs(url);
@@ -156,6 +156,11 @@ public class Boss2 {
 						job.setCompanyName(company.getText());
 
 						if (!checkJob(job)) {
+
+							int y = 148 * index;
+
+							((JavascriptExecutor) CHROME_DRIVER).executeScript("window.scrollTo(0,"+y+" );");
+
 							log.info("【{}】[{}]，跳过...", job.getJobName(), job.getSalary());
 							SeleniumUtil.sleepByMilliSeconds(1100);
 							continue;
@@ -291,6 +296,14 @@ public class Boss2 {
 				.collect(Collectors.toList());
 		bossStatusWhiteList = jsonObject.getJSONArray("bossStatusWhiteList").toList().stream().map(Object::toString)
 				.collect(Collectors.toList());
+
+
+		blackCompanies.remove("");
+		blackRecruiters.remove("");
+		blackJobs.remove("");
+		bossStatusBlackList.remove("");
+		bossStatusWhiteList.remove("");
+
 	}
 
 	private static boolean checkJob(Job job) {
