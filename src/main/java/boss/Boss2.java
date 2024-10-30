@@ -61,7 +61,8 @@ public class Boss2 {
 				int startSize = returnList.size();
 
 				try {
-
+					//reload data
+					loadData(dataPath);
 					// 找工作
 					findJobs(url);
 				} catch (Exception e) {
@@ -214,7 +215,7 @@ public class Boss2 {
 									By.cssSelector("[class*='cancel-btn']"));
 							btnMsgNoContinue.click();
 						} catch (Exception ignore) {
-							log.debug("没有继续沟通按钮");
+							log.debug("没有留在此页按钮");
 						}
 
 						// 总结日志
