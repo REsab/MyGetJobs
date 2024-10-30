@@ -159,10 +159,10 @@ public class Boss2 {
 
 							int y = 148 * index;
 
-							((JavascriptExecutor) CHROME_DRIVER).executeScript("window.scrollTo(0,"+y+" );");
+							((JavascriptExecutor) CHROME_DRIVER).executeScript("window.scrollTo(0," + y + " );");
 
 							log.info("【{}】[{}]，跳过...", job.getJobName(), job.getSalary());
-							SeleniumUtil.sleepByMilliSeconds(1100);
+							SeleniumUtil.sleepByMilliSeconds(800);
 							continue;
 						}
 					} catch (Exception e) {
@@ -297,13 +297,13 @@ public class Boss2 {
 		bossStatusWhiteList = jsonObject.getJSONArray("bossStatusWhiteList").toList().stream().map(Object::toString)
 				.collect(Collectors.toList());
 
-
-		blackCompanies.remove("");
-		blackRecruiters.remove("");
-		blackJobs.remove("");
-		bossStatusBlackList.remove("");
-		bossStatusWhiteList.remove("");
-
+		for (int i = 0; i < 3; i++) {
+			blackCompanies.remove("");
+			blackRecruiters.remove("");
+			blackJobs.remove("");
+			bossStatusBlackList.remove("");
+			bossStatusWhiteList.remove("");
+		}
 	}
 
 	private static boolean checkJob(Job job) {
@@ -441,6 +441,10 @@ public class Boss2 {
 		try {
 			// 近期活跃
 
+
+
+
+
 			WebElement infoPublic2 = CHROME_DRIVER.findElement(By.xpath("//span[@class='boss-active-time']"));
 			String text = infoPublic2.getText();
 			boolean contains = bossStatusWhiteList.contains(text);
@@ -452,6 +456,11 @@ public class Boss2 {
 			}
 
 			if (contains1) {
+
+
+				// 使用 JavaScript 修改 span 的文本内容
+				CHROME_DRIVER.executeScript("document.querySelector('div.job-detail-op').textContent = '"+ text+"';");
+
 				// # 滚动到底部
 				CHROME_DRIVER.executeScript("arguments[0].style.fontSize = '33px';", infoPublic2);
 				CHROME_DRIVER.executeScript("arguments[0].style.color = 'red';", infoPublic2);
