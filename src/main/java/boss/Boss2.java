@@ -9,8 +9,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import utils.Constant;
 import utils.Job;
 import utils.SeleniumUtil;
+import utils.ThreadLocalUtil;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -45,6 +47,14 @@ public class Boss2 {
 	static Integer resultSize = 0;
 
 	public static void main(String[] args) {
+
+		String browserChange = System.getProperty("user");
+		if ("user2".equals(browserChange)) {
+			ThreadLocalUtil.setBrowser(Constant.BROWSER_CHROME_CANARY);
+			cookiePath = "./src/main/java/boss/cookie3.json";
+			log.info("user2  login");
+		}
+
 		loadData(dataPath);
 		SeleniumUtil.initDriver();
 		Date start = new Date();
@@ -162,7 +172,7 @@ public class Boss2 {
 							((JavascriptExecutor) CHROME_DRIVER).executeScript("window.scrollTo(0," + y + " );");
 
 							log.info("【{}】[{}]，跳过...", job.getJobName(), job.getSalary());
-							SeleniumUtil.sleepByMilliSeconds(800);
+							SeleniumUtil.sleepByMilliSeconds(300);
 							continue;
 						}
 					} catch (Exception e) {
@@ -356,7 +366,6 @@ public class Boss2 {
 
 		// 工作名称
 
-
 		if (jobNamesLike.stream().anyMatch(a -> job.getJobName().contains(a))) {
 			jobNameMatch = true;
 		} else {
@@ -439,10 +448,6 @@ public class Boss2 {
 		try {
 			// 近期活跃
 
-
-
-
-
 			WebElement infoPublic2 = CHROME_DRIVER.findElement(By.xpath("//span[@class='boss-active-time']"));
 			String text = infoPublic2.getText();
 			boolean contains = bossStatusWhiteList.contains(text);
@@ -455,9 +460,9 @@ public class Boss2 {
 
 			if (contains1) {
 
-
 				// 使用 JavaScript 修改 span 的文本内容
-				CHROME_DRIVER.executeScript("document.querySelector('div.job-detail-op').textContent = '"+ text+"';");
+				CHROME_DRIVER.executeScript(
+						"document.querySelector('div.job-detail-op').textContent = '" + text + "';");
 
 				// # 滚动到底部
 				CHROME_DRIVER.executeScript("arguments[0].style.fontSize = '33px';", infoPublic2);

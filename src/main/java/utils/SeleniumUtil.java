@@ -50,9 +50,15 @@ public class SeleniumUtil {
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
                 break;
             case "mac":
-                options.setBinary("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome");
-                System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
-                break;
+				options.setBinary("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome");
+				System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
+			{
+				String s = ThreadLocalUtil.getBrowser();
+				options.setBinary(s);
+				System.setProperty("webdriver.chrome.driver", ThreadLocalUtil.getBrowserDriver());
+
+			}
+			  break;
             default:
                 log.info("你这什么破系统，没见过，别跑了!");
                 break;
@@ -66,7 +72,9 @@ public class SeleniumUtil {
         options.addArguments("--start-maximized"); //最大化窗口
 //        options.addArguments("--headless"); //使用无头模式
 
-		WebDriverManager.chromedriver().setup();
+		if (ThreadLocalUtil.isChrome()) {
+			WebDriverManager.chromedriver().setup();
+		}
         CHROME_DRIVER = new ChromeDriver(options);
     }
 
