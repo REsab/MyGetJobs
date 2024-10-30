@@ -109,6 +109,15 @@
     "管理",
     "设计"
   ],
+  "jobNamesLike": [
+    "java",
+    "Java",
+    "JAVA",
+    "开发",
+    "研发",
+    "后端工程师"
+
+  ],
   "bossStatusBlackList": [
     "本周活跃",
     "1周内活跃",

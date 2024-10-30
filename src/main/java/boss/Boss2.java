@@ -296,6 +296,8 @@ public class Boss2 {
 				.collect(Collectors.toList());
 		bossStatusWhiteList = jsonObject.getJSONArray("bossStatusWhiteList").toList().stream().map(Object::toString)
 				.collect(Collectors.toList());
+		jobNamesLike = jsonObject.getJSONArray("jobNamesLike").toList().stream().map(Object::toString)
+				.collect(Collectors.toList());
 
 		for (int i = 0; i < 3; i++) {
 			blackCompanies.remove("");
@@ -303,6 +305,7 @@ public class Boss2 {
 			blackJobs.remove("");
 			bossStatusBlackList.remove("");
 			bossStatusWhiteList.remove("");
+			jobNamesLike.remove("");
 		}
 	}
 
@@ -353,11 +356,6 @@ public class Boss2 {
 
 		// 工作名称
 
-		jobNamesLike.add("java");
-		jobNamesLike.add("Java");
-		jobNamesLike.add("JAVA");
-		jobNamesLike.add("开发");
-		jobNamesLike.add("研发");
 
 		if (jobNamesLike.stream().anyMatch(a -> job.getJobName().contains(a))) {
 			jobNameMatch = true;
