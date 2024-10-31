@@ -73,7 +73,7 @@ public class SeleniumUtil {
 //        options.addArguments("--headless"); //使用无头模式
 
 		if (ThreadLocalUtil.isChrome()) {
-			WebDriverManager.chromedriver().setup();
+			// WebDriverManager.chromedriver().setup();
 		}
         CHROME_DRIVER = new ChromeDriver(options);
     }

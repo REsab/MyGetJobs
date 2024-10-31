@@ -18,6 +18,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import static utils.Constant.CHROME_DRIVER;
@@ -47,14 +48,27 @@ public class Boss2 {
 	static Integer resultSize = 0;
 
 	public static void main(String[] args) {
-
 		String browserChange = System.getProperty("user");
 		if ("user2".equals(browserChange)) {
+			// vm options : -Duser=user2
 			ThreadLocalUtil.setBrowser(Constant.BROWSER_CHROME_CANARY);
 			cookiePath = "./src/main/java/boss/cookie3.json";
 			log.info("user2  login");
 		}
 
+		int times = 1;
+		while (true) {
+			doFindJob();
+
+			try {
+				log.warn("restart  times" + times++);
+				Thread.sleep(1000 * 60 * 2);
+			} catch (Exception e) {
+			}
+		}
+	}
+
+	private static void doFindJob() {
 		loadData(dataPath);
 		SeleniumUtil.initDriver();
 		Date start = new Date();
@@ -112,8 +126,19 @@ public class Boss2 {
 		String message = "共发起 " + returnList.size() + " 个聊天,用时" + minutes + "分" + seconds + "秒";
 		//        saveData(dataPath);
 		log.info(message);
-		CHROME_DRIVER.close();
-		CHROME_DRIVER.quit();
+
+		try {
+			CHROME_DRIVER.close();
+			log.info("end job");
+		} catch (Exception e) {
+			log.error("end job");
+		}
+		try {
+			CHROME_DRIVER.quit();
+			log.info("end work");
+		} catch (Exception e) {
+			log.error("end work");
+		}
 	}
 
 	private static void findJobs(String url) {
@@ -155,11 +180,9 @@ public class Boss2 {
 						WebElement jobName = jobCard.findElement(By.cssSelector("a.job-name"));
 						WebElement jobSalary = jobCard.findElement(By.cssSelector("span.job-salary"));
 						WebElement company = jobCard.findElement(By.cssSelector("span.boss-name"));
-						WebElement bossName = CHROME_DRIVER.findElement(By.xpath("//h2[@class='name']"));
 
 						String text1 = jobSalary.getText();
 						String salary = changeSalary(text1);
-						job.setRecruiter(bossName.getText());
 						job.setCompanyTag(company.getText());
 						job.setSalary(salary);
 						job.setJobName(jobName.getText());
@@ -172,7 +195,7 @@ public class Boss2 {
 							((JavascriptExecutor) CHROME_DRIVER).executeScript("window.scrollTo(0," + y + " );");
 
 							log.info("【{}】[{}]，跳过...", job.getJobName(), job.getSalary());
-							SeleniumUtil.sleepByMilliSeconds(300);
+							SeleniumUtil.sleepByMilliSeconds(100);
 							continue;
 						}
 					} catch (Exception e) {
@@ -195,6 +218,14 @@ public class Boss2 {
 						}
 					} catch (Exception e) {
 						log.error("查看详情失败, {}", e);
+					}
+
+					try {
+						// hr name
+						WebElement bossName = CHROME_DRIVER.findElement(By.xpath("//h2[@class='name']"));
+						job.setRecruiter(bossName.getText());
+					} catch (Exception e) {
+						log.error("查看详情失败 hr name , {}", e);
 					}
 
 					try {
