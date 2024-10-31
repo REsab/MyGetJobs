@@ -46,10 +46,14 @@ public class Boss2 {
 	static int lastSize;
 	static BossConfig config = BossConfig.init();
 	static Integer resultSize = 0;
+	private static final Logger logger = LoggerFactory.getLogger(Boss2.class);
 
 	public static void main(String[] args) {
 		String browserChange = System.getProperty("user");
 		if ("user2".equals(browserChange)) {
+
+
+
 			// vm options : -Duser=user2
 			ThreadLocalUtil.setBrowser(Constant.BROWSER_CHROME_CANARY);
 			cookiePath = "./src/main/java/boss/cookie3.json";
