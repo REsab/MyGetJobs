@@ -48,11 +48,8 @@ public class Boss2 {
 	static Integer resultSize = 0;
 
 	public static void main(String[] args) {
-		String browserChange = System.getProperty("user");
-		if ("user2".equals(browserChange)) {
 
-			// vm options : -Duser=user2
-			ThreadLocalUtil.setBrowser(Constant.BROWSER_CHROME_CANARY);
+		if (SeleniumUtil.isUser2()) {
 			cookiePath = "./src/main/java/boss/cookie3.json";
 			log.info("user2  login");
 		}
@@ -94,10 +91,9 @@ public class Boss2 {
 					// 找工作
 					findJobs(url);
 					log.info("投递【{}】关键词第【{}】页 done.", keyword, page);
-
 				} catch (Exception e) {
 					resultSize = -8;
-					log.error("出现异常访问:{}",e);
+					log.error("出现异常访问:{}", e);
 				}
 
 				if (resultSize == -1) {
@@ -148,6 +144,7 @@ public class Boss2 {
 	}
 
 	private static void findJobs(String url) {
+
 		{
 			// prepare
 			CHROME_DRIVER.get("https://www.zhipin.com/web/geek/job-recommend?ka=header-job-recommend");
@@ -272,9 +269,8 @@ public class Boss2 {
 
 						// 总结日志
 						log.info("投递【{}】公司，N【{}】,【{}】职位， 【{}】招聘官:【{}】,在线：【{}】",
-								job.getCompanyName() == null ? "未知公司: " : job.getCompanyName(),
-								returnList.size(),job.getJobName(),
-								job.getSalary(), job.getRecruiter(), job.getBossActiveTime());
+								job.getCompanyName() == null ? "未知公司: " : job.getCompanyName(), returnList.size(),
+								job.getJobName(), job.getSalary(), job.getRecruiter(), job.getBossActiveTime());
 
 						returnList.add(job);
 						noJobPages = 0;
@@ -324,6 +320,7 @@ public class Boss2 {
 	}
 
 	private static void loadData(String path) {
+
 		try {
 			String json = new String(Files.readAllBytes(Paths.get(path)));
 			parseJson(json);
@@ -333,6 +330,7 @@ public class Boss2 {
 	}
 
 	private static void parseJson(String json) {
+
 		JSONObject jsonObject = new JSONObject(json);
 		blackCompanies = jsonObject.getJSONArray("blackCompanies").toList().stream().map(Object::toString)
 				.collect(Collectors.toList());
@@ -424,6 +422,7 @@ public class Boss2 {
 
 	@SneakyThrows
 	private static void login() {
+
 		log.info("打开Boss直聘网站中...");
 		CHROME_DRIVER.get(homeUrl);
 		if (SeleniumUtil.isCookieValid(cookiePath)) {
@@ -439,6 +438,7 @@ public class Boss2 {
 	}
 
 	private static boolean isLoginRequired() {
+
 		try {
 			String text = CHROME_DRIVER.findElement(By.className("btns")).getText();
 			return text != null && text.contains("登录");
@@ -450,6 +450,7 @@ public class Boss2 {
 
 	@SneakyThrows
 	private static void scanLogin() {
+
 		CHROME_DRIVER.get(homeUrl + "/web/user/?ka=header-login");
 		log.info("等待登陆..");
 		// Thread.sleep(20000);
@@ -516,4 +517,5 @@ public class Boss2 {
 		log.error("找不到boss状态");
 		return false;
 	}
+
 }

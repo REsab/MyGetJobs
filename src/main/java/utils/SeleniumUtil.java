@@ -56,6 +56,20 @@ public class SeleniumUtil {
 				String s = ThreadLocalUtil.getBrowser();
 				options.setBinary(s);
 				System.setProperty("webdriver.chrome.driver", ThreadLocalUtil.getBrowserDriver());
+			}
+			  break;
+            case "mac2":
+			{
+
+				options.setBinary("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome");
+				System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver-mac-x64/chromedriver");
+
+				if (isUser2()) {
+					options.setBinary("/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary");
+
+					System.setProperty("webdriver.chrome.driver",
+							"src/main/resources/chromedriver-mac-x64-canary/chromedriver");
+				}
 
 			}
 			  break;
@@ -72,8 +86,8 @@ public class SeleniumUtil {
         options.addArguments("--start-maximized"); //最大化窗口
 //        options.addArguments("--headless"); //使用无头模式
 
-		if (ThreadLocalUtil.isChrome()) {
-			// WebDriverManager.chromedriver().setup();
+		if (ThreadLocalUtil.isWebDriverManager()) {
+			WebDriverManager.chromedriver().setup();
 		}
         CHROME_DRIVER = new ChromeDriver(options);
     }
@@ -82,7 +96,14 @@ public class SeleniumUtil {
         if (osName.contains("win")) {
             return "windows";
         } else if (osName.contains("mac") || osName.contains("nix") || osName.contains("nux") || osName.contains("aix")) {
-            return "mac";
+
+			String osArch = System.getProperty("os.arch");
+			if (osArch.contains("86")) {
+				return  "mac2";
+			}
+
+
+			return "mac";
         } else {
             return "unknown";
         }
@@ -222,5 +243,13 @@ public class SeleniumUtil {
     public static boolean isCookieValid(String cookiePath) {
         return Files.exists(Paths.get(cookiePath));
     }
+	public static Boolean isUser2() {
+		// vm options : -Duser=user2
 
+		String browserChange = System.getProperty("user");
+		if ("user2".equals(browserChange)) {
+			return true;
+		}
+		return false;
+	}
 }
