@@ -46,13 +46,10 @@ public class Boss2 {
 	static int lastSize;
 	static BossConfig config = BossConfig.init();
 	static Integer resultSize = 0;
-	private static final Logger logger = LoggerFactory.getLogger(Boss2.class);
 
 	public static void main(String[] args) {
 		String browserChange = System.getProperty("user");
 		if ("user2".equals(browserChange)) {
-
-
 
 			// vm options : -Duser=user2
 			ThreadLocalUtil.setBrowser(Constant.BROWSER_CHROME_CANARY);
@@ -66,7 +63,7 @@ public class Boss2 {
 
 			try {
 				log.warn("restart  times" + times++);
-				Thread.sleep(1000 * 60 * 2);
+				Thread.sleep(1000 * 10);
 			} catch (Exception e) {
 			}
 		}
@@ -74,6 +71,8 @@ public class Boss2 {
 
 	private static void doFindJob() {
 		loadData(dataPath);
+
+		returnList = new ArrayList<>();
 		SeleniumUtil.initDriver();
 		Date start = new Date();
 		login();
@@ -83,6 +82,7 @@ public class Boss2 {
 			page = 1;
 			noJobPages = 0;
 			lastSize = -1;
+			resultSize = 0;
 			while (true) {
 				log.info("投递【{}】关键词第【{}】页", keyword, page);
 				String url = searchUrl;
@@ -93,16 +93,18 @@ public class Boss2 {
 					loadData(dataPath);
 					// 找工作
 					findJobs(url);
+					log.info("投递【{}】关键词第【{}】页 done.", keyword, page);
+
 				} catch (Exception e) {
-					resultSize = -2;
-					e.printStackTrace();
+					resultSize = -8;
+					log.error("出现异常访问:{}",e);
 				}
 
 				if (resultSize == -1) {
 					log.info("今日沟通人数已达上限，请明天再试");
 					break endSubmission;
 				}
-				if (resultSize == -2) {
+				if (resultSize == -8) {
 					log.info("出现异常访问，请手动过验证后再继续投递...");
 					break endSubmission;
 				}
@@ -203,7 +205,7 @@ public class Boss2 {
 							continue;
 						}
 					} catch (Exception e) {
-						log.error("解析失败 job", e);
+						log.error("解析失败 job");
 						continue;
 					}
 
@@ -243,7 +245,7 @@ public class Boss2 {
 
 						boolean isMsgTo = checkOnLine(job);
 						if (!isMsgTo) {
-							log.info("ignore job: " + job.getJobName() + job.getBossActiveTime());
+							log.info("ignore job offline : " + job.getJobName() + "-" + job.getBossActiveTime());
 							SeleniumUtil.sleepByMilliSeconds(1300);
 							continue;
 						}
@@ -269,8 +271,9 @@ public class Boss2 {
 						}
 
 						// 总结日志
-						log.info("投递【{}】公司，【{}】职位， 【{}】招聘官:【{}】,在线：【{}】",
-								job.getCompanyName() == null ? "未知公司: " : job.getCompanyName(), job.getJobName(),
+						log.info("投递【{}】公司，N【{}】,【{}】职位， 【{}】招聘官:【{}】,在线：【{}】",
+								job.getCompanyName() == null ? "未知公司: " : job.getCompanyName(),
+								returnList.size(),job.getJobName(),
 								job.getSalary(), job.getRecruiter(), job.getBossActiveTime());
 
 						returnList.add(job);
@@ -294,7 +297,7 @@ public class Boss2 {
 		//-K·薪  28-55k·16薪
 		//-K 				19-23k
 		//-K·薪  28-35k·13薪
-		log.debug("changeSalary {}", text1);
+		// log.debug("changeSalary {}", text1);
 
 		text1 = text1.replace("\uE032", "1");
 		text1 = text1.replace("\uE033", "2");
@@ -487,9 +490,9 @@ public class Boss2 {
 			String text = infoPublic2.getText();
 			boolean contains = bossStatusWhiteList.contains(text);
 			boolean contains1 = bossStatusBlackList.contains(text);
+			job.setBossActiveTime(text);
 
 			if (contains) {
-				job.setBossActiveTime(text);
 				return true;
 			}
 
