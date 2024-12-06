@@ -204,6 +204,9 @@ public class Boss2 {
 
 						if (!checkJob(job)) {
 
+							//todo 148 是页面上的岗位卡片高度
+							// 通过手动在浏览器获取 你的浏览器 卡片高度
+							// 数值不匹配不影响使用，但滚动距离 会不同步
 							int y = 148 * index;
 
 							((JavascriptExecutor) CHROME_DRIVER).executeScript("window.scrollTo(0," + y + " );");

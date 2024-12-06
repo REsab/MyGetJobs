@@ -8,10 +8,31 @@
 [![Forks](https://img.shields.io/github/forks/loks666/get_jobs?style=flat&label=%F0%9F%8F%85Forks&labelColor=800080&color=912CEE)](https://github.com/loks666/get_jobs/forks)
 </div>
 
-### 🌴 引用源码地址
 
-- Github(国外访问)：https://github.com/loks666/get_jobs 
-- Gitee·码云(中国大陆)：https://github.com/loks666/get_jobs
+# 使用jdk 8 + idea+ chrome + chrome selenium  driver  
+# Boss2 实现在boss 直聘按规则自动向boss发现首次沟通
+## 项目需要有一写的java经验，具体配置位置 参看 代码todo 可以全局搜索todo 
+
+
+### boss2 类 支持规则如下
+工资范围： m-n k  范围内的 才发起沟通
+岗位白名单：岗位名包含 xxx  才发起沟通
+岗位黑名单：岗位名包含 xxx  不发起沟通
+公司黑名单：公司名包含 xxx  不发起沟通
+boss最近活跃时间： 最近钦活跃 才发起沟通
+
+
+#### 程序执行太久 可能会被反爬虫识别，需要手动验证
+# 多账号
+### 支持同时两个账号,需要再安装一个 chrome canary 浏览器
+
+
+
+
+
+
+
+# 以下是源项目的文档
 
 ### 🌞 特色功能
 
@@ -254,3 +275,12 @@ cd get_jobs
 [fossa-license-shield]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Floks666%2Fget_jobs.svg?type=shield
 
 [fossa-license-link]: https://app.fossa.com/projects/git%2Bgithub.com%2Floks666%2Fget_jobs?ref=badge_shield
+
+
+
+
+
+### 🌴 引用源码地址
+
+- Github(国外访问)：https://github.com/loks666/get_jobs
+- Gitee·码云(中国大陆)：https://github.com/loks666/get_jobs
