@@ -18,7 +18,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import static utils.Constant.CHROME_DRIVER;
@@ -26,6 +25,7 @@ import static utils.Constant.WAIT;
 
 /**
  * @author loks666 Boss直聘自动投递
+ * todo 在这里启动程序 用debug启动
  */
 public class Boss2 {
 	private static final Logger log = LoggerFactory.getLogger(Boss2.class);
@@ -39,6 +39,9 @@ public class Boss2 {
 	static List<String> bossStatusBlackList;
 	static List<String> bossStatusWhiteList;
 	static List<Job> returnList = new ArrayList<>();
+
+
+	//  todo 在data.json 文件配置公司黑名单，职位黑名单，职位名白名单
 	static String dataPath = "./src/main/java/boss/data.json";
 	static String cookiePath = "./src/main/java/boss/cookie.json";
 	static final int noJobMaxPages = 15; // 一次性加载出来页数
@@ -51,7 +54,8 @@ public class Boss2 {
 		String browserChange = System.getProperty("user");
 		if ("user2".equals(browserChange)) {
 
-			// vm options : -Duser=user2
+			// todo 使用第二个账号的时候，用另一个浏览器
+			//  -Duser=user2 -Dlog4j.appender.file.File=/Users/resab/github/get_jobs/log2/myapp.log
 			ThreadLocalUtil.setBrowser(Constant.BROWSER_CHROME_CANARY);
 			cookiePath = "./src/main/java/boss/cookie3.json";
 			log.info("user2  login");
@@ -76,7 +80,6 @@ public class Boss2 {
 		SeleniumUtil.initDriver();
 		Date start = new Date();
 		login();
-		String searchUrl = "https://www.zhipin.com/web/geek/job-recommend";
 		endSubmission:
 		for (String keyword : config.getKeywords()) {
 			page = 1;
@@ -85,19 +88,18 @@ public class Boss2 {
 			resultSize = 0;
 			while (true) {
 				log.info("投递【{}】关键词第【{}】页", keyword, page);
-				String url = searchUrl;
 				int startSize = returnList.size();
 
 				try {
 					// reload data
 					loadData(dataPath);
 					// 找工作
-					findJobs(url);
+					findJobs("");
 					log.info("投递【{}】关键词第【{}】页 done.", keyword, page);
-
 				} catch (Exception e) {
+					checkUrl();
 					resultSize = -8;
-					log.error("出现异常访问:{}",e);
+					log.error("出现异常访问:{}", e);
 				}
 
 				if (resultSize == -1) {
@@ -105,6 +107,8 @@ public class Boss2 {
 					break endSubmission;
 				}
 				if (resultSize == -8) {
+
+					checkUrl();
 					log.info("出现异常访问，请手动过验证后再继续投递...");
 					break endSubmission;
 				}
@@ -148,9 +152,13 @@ public class Boss2 {
 	}
 
 	private static void findJobs(String url) {
+
 		{
 			// prepare
-			CHROME_DRIVER.get("https://www.zhipin.com/web/geek/job-recommend?ka=header-job-recommend");
+			// https://www.zhipin.com/web/geek/job-recommend?scale=303,304,302
+			CHROME_DRIVER.get(
+					// "https://www.zhipin.com/web/geek/job-recommend?ka=header-job-recommend&scale=303,304,302");
+					"https://www.zhipin.com/web/geek/job-recommend?ka=header-job-recommend");
 			WAIT.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[class*='rec-job-list']")));
 
 			// 选择城市
@@ -158,16 +166,16 @@ public class Boss2 {
 			city.click();
 
 			// 执行滚动并等待一段时间让新内容加载
-			for (int i = 0; i < noJobMaxPages; i++) {
+			for (int i = 0; i < 8; i++) {
 				((JavascriptExecutor) CHROME_DRIVER).executeScript("window.scrollTo(0, document.body.scrollHeight);");
 				SeleniumUtil.sleepByMilliSeconds(1500);
 			}
 			// 返回顶部
 			((JavascriptExecutor) CHROME_DRIVER).executeScript("window.scrollTo(0, 0);");
 		}
+		checkUrl();
+		SeleniumUtil.sleepByMilliSeconds(5000);
 
-		// 执行滚动并等待一段时间让新内容加载
-		log.debug("开始访问【{}】", url);
 		// rec-job-list
 		List<WebElement> jobCards = CHROME_DRIVER.findElements(By.cssSelector("li.job-card-box"));
 		log.debug("jobcards size {}", jobCards.size());
@@ -205,32 +213,53 @@ public class Boss2 {
 							continue;
 						}
 					} catch (Exception e) {
+						checkUrl();
 						log.error("解析失败 job");
 						continue;
 					}
 
 					// 查看岗位详情
 					jobCard.click();
-					SeleniumUtil.sleepByMilliSeconds(500);
+					SeleniumUtil.sleepByMilliSeconds(1200);
 
 					try {
 						// 地区
-						WebElement area = CHROME_DRIVER.findElement(By.xpath("//p[@class='job-address-desc']"));
-						String address = area.getText();
+						// WebElement area =
+
+						WAIT.until(ExpectedConditions.presenceOfElementLocated(
+								By.xpath("//p[@class='job-address-desc']")));
+						String address = CHROME_DRIVER.findElement(By.xpath("//p[@class='job-address-desc']"))
+								.getText();
+
 						job.setJobArea(address);
-						if (!job.getJobArea().contains("杭州")) {
+						if (!address.contains("杭州")) {
 							log.debug("area : {}", address);
 							continue;
 						}
 					} catch (Exception e) {
-						log.error("查看详情失败, {}", e);
+						log.error("查看地区详情失败, {}", e.getMessage());
+						checkUrl();
+						continue;
 					}
+					// try {
+					// 	// 职位描述
+					// 	String address =
+					// 			CHROME_DRIVER.findElement(By.xpath("//ul[@class='job-label-list']")).getText();
+					// 	job.setJobInfo(address);
+					// 	if (!address.contains("杭州")) {
+					// 		log.debug("职位描述 : {}", address);
+					// 		continue;
+					// 	}
+					// } catch (Exception e) {
+					// 	log.error("查看职位描述失败, {}",e);
+					// }
 
 					try {
 						// hr name
 						WebElement bossName = CHROME_DRIVER.findElement(By.xpath("//h2[@class='name']"));
 						job.setRecruiter(bossName.getText());
 					} catch (Exception e) {
+						checkUrl();
 						log.error("查看详情失败 hr name , {}", e);
 					}
 
@@ -246,7 +275,7 @@ public class Boss2 {
 						boolean isMsgTo = checkOnLine(job);
 						if (!isMsgTo) {
 							log.info("ignore job offline : " + job.getJobName() + "-" + job.getBossActiveTime());
-							SeleniumUtil.sleepByMilliSeconds(1300);
+							SeleniumUtil.sleepByMilliSeconds(300);
 							continue;
 						}
 
@@ -272,9 +301,8 @@ public class Boss2 {
 
 						// 总结日志
 						log.info("投递【{}】公司，N【{}】,【{}】职位， 【{}】招聘官:【{}】,在线：【{}】",
-								job.getCompanyName() == null ? "未知公司: " : job.getCompanyName(),
-								returnList.size(),job.getJobName(),
-								job.getSalary(), job.getRecruiter(), job.getBossActiveTime());
+								job.getCompanyName() == null ? "未知公司: " : job.getCompanyName(), returnList.size(),
+								job.getJobName(), job.getSalary(), job.getRecruiter(), job.getBossActiveTime());
 
 						returnList.add(job);
 						noJobPages = 0;
@@ -282,11 +310,30 @@ public class Boss2 {
 						SeleniumUtil.sleepByMilliSeconds(5000);
 					} catch (Exception e) {
 						log.error("查看详情失败", e);
+						checkUrl();
 					}
 				}
 			} catch (Exception e) {
+				checkUrl();
 				log.warn("第{}个 异常 {} , error : ", index, job, e.getMessage());
 			}
+		}
+	}
+
+	private static void checkUrl() {
+
+		String currentUrl = CHROME_DRIVER.getCurrentUrl();
+
+		//todo 注意： 异常时，会检查当前url 是否被系统下线、反爬虫，需要手动处理
+		// 使用debug启动，在if 里打断点
+		// 断点卡在这里时，手动在浏览器验证后继续运行
+		if (currentUrl.contains("slider")) {
+			log.debug("todo man....");
+			log.debug("todo man....");
+		}
+		if (currentUrl.contains("403")) {
+			log.debug("todo man....");
+			log.debug("todo man....");
 		}
 	}
 
@@ -319,7 +366,7 @@ public class Boss2 {
 		// text1 = text1.replace("", "9");
 		// text1 = text1.replace("\uE031", "0");
 
-		log.debug("text1 {}", text1);
+		// log.debug("text1 {}", text1);
 		return text1;
 	}
 
@@ -426,6 +473,8 @@ public class Boss2 {
 	private static void login() {
 		log.info("打开Boss直聘网站中...");
 		CHROME_DRIVER.get(homeUrl);
+		SeleniumUtil.sleepByMilliSeconds(1500);
+		checkUrl();
 		if (SeleniumUtil.isCookieValid(cookiePath)) {
 			SeleniumUtil.loadCookie(cookiePath);
 			CHROME_DRIVER.navigate().refresh();

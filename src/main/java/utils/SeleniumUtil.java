@@ -44,6 +44,10 @@ public class SeleniumUtil {
         String osName = System.getProperty("os.name").toLowerCase();
         log.info("当前操作系统为【{}】", osName);
         String osType = getOSType(osName);
+
+		//todo 1 按系统配置谷歌浏览器的文件路径
+		// 用户2用使用的是谷歌cannary 浏览器
+		//todo  webdriver.chrome.driver 是浏览器调试驱动，网上下载对应版本，放到对应的目录
         switch (osType) {
             case "windows":
                 options.setBinary("C:/Program Files/Google/Chrome/Application/chrome.exe");

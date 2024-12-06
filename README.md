@@ -8,7 +8,7 @@
 [![Forks](https://img.shields.io/github/forks/loks666/get_jobs?style=flat&label=%F0%9F%8F%85Forks&labelColor=800080&color=912CEE)](https://github.com/loks666/get_jobs/forks)
 </div>
 
-### 🌴源码地址
+### 🌴 引用源码地址
 
 - Github(国外访问)：https://github.com/loks666/get_jobs 
 - Gitee·码云(中国大陆)：https://github.com/loks666/get_jobs
