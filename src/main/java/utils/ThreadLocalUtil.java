@@ -21,9 +21,17 @@ public class ThreadLocalUtil {
 		}
 
 		return true;
+	}	public static boolean isWebDriverManager() {
+
+		String browserChange = System.getProperty("WebDriverManager");
+		if ("true".equals(browserChange)) {
+			return true;
+		}
+		return false;
 	}
 
 	public static String getBrowserDriver() {
+
 		if (getBrowser().equals(Constant.BROWSER_CHROME_CANARY)) {
 			return "src/main/resources/chromedriver-canary/chromedriver";
 		}
@@ -32,11 +40,14 @@ public class ThreadLocalUtil {
 	}
 
 	public static void setBrowser(String browser1) {
+
 		browser.set(browser1);
 	}
 
 	public static void main(String[] args) {
+
 		ThreadLocalUtil.browser.set(Constant.BROWSER_CHROME);
 		ThreadLocalUtil.browser.get();
 	}
+
 }
