@@ -9,11 +9,15 @@
 </div>
 
 
-# 使用jdk 8 + idea+ chrome + chrome selenium  driver  
-# Boss2 实现在boss 直聘按规则自动向boss发现首次沟通
-## 项目需要有一写的java经验，具体配置位置 参看 代码todo 可以全局搜索todo 
+# start 
+### 1 程序环境： 使用jdk 8 + idea+ chrome + chrome selenium  driver  
+### 2 工作机制： Boss2 类工作机制：通过刷新推荐的岗位页面， 按规则筛选岗位，并向boss发起首次沟通
+### 3 项目配置：项目需要有一定的java经验，具体配置位置 参看 代码todo 可以全局搜索todo 
+每一个todo 都了解一下
 
 
+
+# 沟通规则
 ### boss2 类 支持规则如下
 工资范围： m-n k  范围内的 才发起沟通
 岗位白名单：岗位名包含 xxx  才发起沟通
