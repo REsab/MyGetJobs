@@ -10,7 +10,7 @@
 
 
 # start 
-### 1 程序环境： 使用jdk 8 + idea+ chrome + chrome selenium  driver  
+### 1 程序环境： 使用jdk 17 + idea+ chrome + chrome selenium  driver  
 ### 2 工作机制： Boss2 类工作机制：通过刷新推荐的岗位页面， 按规则筛选岗位，并向boss发起首次沟通
 ### 3 项目配置：项目需要有一定的java经验，具体配置位置 参看 代码todo 可以全局搜索todo 
 每一个todo 都了解一下
